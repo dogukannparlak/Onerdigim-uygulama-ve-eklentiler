@@ -1,0 +1,15 @@
+# Şablon (yerel geliştirme — repoya dahil edilmez)
+TEMPLATE.md
+
+# Geçici taslak dosyalar
+_tmp_*.md
+
+# IDE / editör
+.idea/
+.vscode/
+.cursor/
+
+# İşletim sistemi
+.DS_Store
+Thumbs.db
+desktop.ini

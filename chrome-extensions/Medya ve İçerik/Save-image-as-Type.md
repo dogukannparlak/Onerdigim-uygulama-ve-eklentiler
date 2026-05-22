@@ -1,93 +1,99 @@
-# Save-image-as-Type
+# 🛠️ Save image as Type
 
-### 🖼️ Save image as Type
+> **Kısa Açıklama:** Web'deki resimlere sağ tıklayarak PNG, JPG veya WebP formatında kaydetmeni sağlar.
 
-**1 milyon kullanıcının tercihi - Gelişmiş resim format dönüştürücü**
+Güncel (Chrome Web Store) · Chrome, Edge, Brave · Açık kaynak · Medya ve İçerik
 
-Resimler üzerinde sağ tık yaparak PNG, JPG veya WebP formatında kaydetme imkanı sunan context menu uzantısı. Eski Save Image As Type uzantısının yenilenmiş, Chrome Manifest V3 uyumlu versiyonu.
+---
 
-### 🎯 Ana Özellikler
+## 📌 Genel Bakış
 
-| Özellik | Açıklama | Avantaj |
-| --- | --- | --- |
-| **Context Menu** | Sağ tık ile format seçimi | Hızlı erişim |
-| **3 Format Desteği** | PNG, JPG, WebP | Kapsamlı seçenek |
-| **Açık Kaynak** | Şeffaf kod yapısı | Güvenilir |
-| **Çoklu Dil** | 15 dil desteği | Global kullanım |
-| **Hafif Boyut** | Sadece 109 KiB | Performanslı |
+Save image as Type, tarayıcının varsayılan "Resmi farklı kaydet" seçeneğine format seçimi ekler. Resmi indirmeden önce PNG, JPG veya WebP olarak kaydetmek isteyip istemediğini seçebilirsin. Özellikle logo, ekran görüntüsü ve web grafikleri indirirken işe yarar.
 
-### 🎨 Desteklenen Formatlar
+---
 
-| Format | Kullanım Alanı | Özellik |
-| --- | --- | --- |
-| **PNG** | Şeffaflık gerekli | Kayıpsız sıkıştırma |
-| **JPG** | Fotoğraflar | Kayıplı sıkıştırma |
-| **WebP** | Modern web | Gelişmiş sıkıştırma |
+## ✨ Öne Çıkan Özellikler
 
-### 🛠️ Çalışma Prensibi
+- **Sağ tık menüsü** — Resme sağ tıkla, format seç, kaydet
+- **3 format desteği** — PNG, JPG ve WebP
+- **Hafif eklenti** — Minimum kaynak kullanımı
+- **Açık kaynak** — Şeffaf ve güvenilir kod yapısı
+- **Çoklu dil** — Türkçe dahil birçok dilde menü
+- **Kurulum sonrası hazır** — Ek ayar gerektirmez
 
-**Basit 3 adım süreci:**
+---
 
-```
-1. 🖱️ Resim üzerinde sağ tık
-2. 📋 "Save image as..." menüsünden format seç
-3. 💾 Seçtiğiniz formatta otomatik kaydet
-```
+## 📥 İndirme ve Kurulum
 
-### 🔧 Teknoloji Güncellemeleri
+### Chrome Web Store
 
-**Chrome Manifest V3 uyumluluğu:**
+1. [Save image as Type sayfasına git](https://chromewebstore.google.com/detail/save-image-as-type/agddafeppiiohhalnjfhcfjemjjcgmcb)
+2. **Chrome'a ekle** butonuna tıkla
+3. İzinleri onayla ve kurulumu tamamla
+4. Herhangi bir sitedeki resme sağ tıkla; yeni menü seçeneklerini gör
 
-```
-⚡ Service Worker kullanımı - Chrome önerisi
-🛡️ Gelişmiş güvenlik standartları
-🔄 Content script yerine modern API
-📱 Chrome 108+ tam uyumluluk
-🌐 Cross-platform optimize
-```
+> Edge veya Brave kullanıyorsan aynı bağlantı üzerinden eklenti mağazasına yönlendirilirsin.
 
-### 🚀 Kurulum ve Kullanım
+---
 
-**2 dakikada başlayın:**
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-```
-1. Chrome Web Store'dan "Save image as Type" indir
-2. Herhangi bir web sayfasındaki resme sağ tık yap
-3. Context menu'den "Save image as PNG/JPG/WebP" seç
-4. Format seçin ve kaydetme konumunu belirleyin
-5. Resim otomatik olarak seçilen formatta kaydedilir
-```
+Bu eklenti kurulduktan sonra ek ayar gerektirmez. Format seçimi her indirmede sağ tık menüsünden yapılır.
 
-### 💡 Pro İpuçları
+> 💡 **İpucu:** PNG şeffaflık gerektiren görseller için, JPG fotoğraflar için, WebP küçük dosya boyutu istediğinde tercih edilir.
 
-```
-📷 PNG - Şeffaflık ve kalite öncelikli projeler için
-🎯 PNG logoları ve ikonlar için en iyi
-📱 JPG - Fotoğraflar ve küçük dosya boyutu için
-📊 JPG sosyal medya paylaşımları için optimize
-🌐 WebP - Modern web siteleri için ideal
-⚡ WebP %25-35 daha küçük dosya boyutu
-```
+---
 
-### 🔧 Teknik Özellikler
+## 🚀 Temel Kullanım
 
-**Modern Chrome API’leri:**
+### Resmi farklı formatta kaydetme
 
-```
-🛡️ Chrome Extension Manifest V3
-⚡ Service Worker teknolojisi
-🔄 Context Menus API kullanımı
-💾 Chrome Downloads API entegrasyonu
-🌐 Internationalization (i18n) desteği
-📱 Cross-platform uyumluluk
-```
+1. Kaydetmek istediğin resme sağ tıkla
+2. **Save image as PNG / JPG / PDF/...**  seçeneklerinden birini seç
+3. Kayıt konumunu belirle
+4. Resim seçtiğin formatta indirilir
 
-### ⚠️ Sınırlamalar ve Notlar
+---
 
-```
-🌐 Sadece web sayfalarındaki resimler için çalışır
-🔒 CORS korumalı resimler için sınırlı
-📱 Mobile Chrome'da context menu deneyimi farklı
-🎯 Canvas ve SVG resimler için ek adımlar gerekebilir
-⚡ Büyük resimler için işlem süresi artabilir
-```
+## ⚠️ Bilinen Sorunlar ve Çözümleri
+
+
+| Sorun                    | Neden Olur                        | Çözüm                                          |
+| ------------------------ | --------------------------------- | ---------------------------------------------- |
+| Menü seçeneği görünmüyor | Sayfa dinamik yükleniyor olabilir | Sayfayı yenile ve tekrar dene                  |
+| İndirme başarısız        | CORS korumalı resim               | Resmi yeni sekmede aç, oradan kaydet           |
+| İşlem yavaş              | Çok büyük resim dosyası           | Bekle veya daha küçük formatta (JPG/WebP) dene |
+
+
+---
+
+## 🔗 Faydalı Bağlantılar
+
+- 💾 [GitHub Sayfası](https://github.com/david-araseki/save-image-as-type)
+- 📦 [Chrome Web Store](https://chromewebstore.google.com/detail/save-image-as-type/agddafeppiiohhalnjfhcfjemjjcgmcb)
+
+---
+
+## 📝 Notlar
+
+> Eklenti yalnızca web sayfalarındaki resimlerle çalışır. Telif hakkı korumalı içerikleri indirmeden önce kullanım koşullarını kontrol et. CORS korumalı bazı resimlerde dönüştürme mümkün olmayabilir.
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-22*

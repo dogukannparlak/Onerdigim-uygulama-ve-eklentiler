@@ -1,72 +1,107 @@
-# Multiselect-for-YouTube
+# 🛠️ Multiselect for YouTube
 
-### 🎯 Multiselect for YouTube™
+> **Kısa Açıklama:** YouTube playlist'lerinde birden fazla videoyu seçip kopyalama, taşıma ve sıralama işlemlerini kolaylaştırır.
 
-**40,000+ kullanıcının tercihi - Gelişmiş playlist yönetim uzantısı**
+Güncel (Chrome Web Store) · Chrome, Edge, Brave · Ücretsiz · YouTube Optimizasyonu
 
-YouTube playlistlerinizdeki videoları taşıma, sıralama ve kopyalama işlemlerini hızlı ve kolay hale getirir. Zaman kazandıran gelişmiş özelliklerle playlist yönetimini tamamen yeniden tasarlar.
+---
 
-### 🎯 Ana Özellikler
+## 📌 Genel Bakış
 
-| Özellik | Açıklama | Avantaj |
-| --- | --- | --- |
-| **Çoklu Seçim** | Birden fazla video seçimi | Toplu işlemler |
-| **Copy/Cut/Paste** | Videoları kopyala, kes, yapıştır | Hızlı organize |
-| **Drag & Drop** | Sürükle bırak ile sıralama | Kolay düzenleme |
-| **Duplicate Finder** | Tekrarlayan videoları bul | Temizlik |
-| **Title Filter** | Başlık ile video arama | Hızlı bulma |
-| **Keyboard Navigation** | Klavye kısayolları | Verimli çalışma |
+Multiselect for YouTube, YouTube'un varsayılan playlist düzenleme arayüzüne çoklu seçim ve toplu işlem özellikleri ekler. Videoları tek tek taşımak yerine birden fazlasını seçip kopyalayabilir, kesebilir veya sürükleyerek sıralayabilirsin. Büyük playlist'leri düzenlemek için zaman kazandırır.
 
-### 🚀 Yeni Nesil Özellikler
+---
 
-**Manifest V3 ve Modern UI:**
+## ✨ Öne Çıkan Özellikler
 
-```
-✔️ Manifest V3 desteği - Gelecek uyumluluğu
-✔️ Sıfırdan yeniden tasarlanmış UX - Modern deneyim
-✔️ Dark/Light mod uyumluluğu - YouTube teması ile eşleşir
-✔️ Seçili videolar vurgulanır - Görsel netlik
-✔️ Icon toggle butonu - Çoklu seçimi aç/kapat
-✔️ Action bar - Hızlı erişim araçları
-✔️ Context menu - Sağ tık menü desteği
-```
+- **Çoklu seçim** — Ctrl+Click ile birden fazla video seç
+- **Kopyala / kes / yapıştır** — Seçili videoları playlist'ler arası taşı
+- **Sürükle bırak** — Seçili videoları sürükleyerek sırala
+- **Tekrar bulucu** — Playlist'teki duplicate videoları tespit et
+- **Başlık filtresi** — Video adına göre hızlı arama
+- **Klavye kısayolları** — Ctrl+C/X/V/A ile verimli düzenleme
 
-### 🎮 Gelişmiş Kontroller
+---
 
-**Klavye navigasyonu ve kısayollar:**
+## 📥 İndirme ve Kurulum
 
-```
-🚀 Keyboard Navigation - Fare olmadan tam kontrol
-⌨️ Copy (Ctrl+C) - Seçili videoları kopyala
-⌨️ Cut (Ctrl+X) - Seçili videoları kes
-⌨️ Paste (Ctrl+V) - Videoları yapıştır
-⌨️ Select All (Ctrl+A) - Tüm videoları seç
-⌨️ Delete - Seçili videoları sil
-🖱️ Shift+Click - Aralık seçimi
-🖱️ Ctrl+Click - Tekli ekleme/çıkarma
-```
+### Chrome Web Store
 
-### 🔧 Gelişmiş İşlemler
+1. [Multiselect for YouTube sayfasına git](https://chromewebstore.google.com/detail/youtube-i%C3%A7in-%C3%A7oklu-se%C3%A7im/gpgbiinpmelaihndlegbgfkmnpofgfei)
+2. **Chrome'a ekle** butonuna tıkla
+3. İzinleri onayla ve kurulumu tamamla
+4. YouTube'da bir playlist'e git; çoklu seçim simgesini gör
 
-**Verimlilik artırıcı özellikler:**
+> Edge veya Brave kullanıyorsan aynı bağlantı üzerinden eklenti mağazasına yönlendirilirsin.
 
-```
-✨ Find Duplicates - Tekrarlayan videoları otomatik bul
-🎁 Title Filter - Video başlığına göre filtreleme
-📋 Bulk Operations - Toplu taşıma/kopyalama
-🔄 Cross-Playlist - Farklı playlistler arası işlem
-📊 Quick Select - Hızlı seçim araçları
-🎯 Smart Highlighting - Akıllı vurgulama
-```
+---
 
-### 🚀 Kurulum ve Kullanım
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-**5 adımda başlayın:**
+1. **Çoklu seçimi aç:** Playlist sayfasında eklenti simgesine tıklayarak çoklu seçim modunu etkinleştir.
+2. **Klavye kısayollarını öğren:** Ctrl+Click seçim, Ctrl+A tümünü seç — günlük kullanımda hız kazandırır.
 
-```
-1. Chrome Web Store'dan "Multiselect for YouTube™" indir
-2. YouTube'da herhangi bir playlist'e git
-3. Uzantı simgesine tıklayarak çoklu seçimi aktifleştir
-4. Ctrl+Click ile videoları seç, Drag&Drop ile düzenle
-5. Action bar'dan işlemlerinizi gerçekleştir
-```
+> 💡 **İpucu:** Duplicate bulucu özelliği büyük playlist'lerde tekrarlayan videoları temizlemek için kullanışlıdır.
+
+---
+
+## 🚀 Temel Kullanım
+
+### Videoları toplu seçme ve taşıma
+
+1. YouTube'da bir playlist sayfasına git
+2. Eklenti simgesine tıklayarak çoklu seçimi aç
+3. Ctrl+Click ile videoları seç
+4. Ctrl+X ile kes veya Ctrl+C ile kopyala; hedef playlist'te Ctrl+V ile yapıştır
+
+### Klavye kısayolları
+
+| Kısayol | İşlev |
+| ------- | ----- |
+| `Ctrl + Click` | Video ekle/çıkar |
+| `Shift + Click` | Aralık seç |
+| `Ctrl + A` | Tümünü seç |
+| `Ctrl + C / X / V` | Kopyala / kes / yapıştır |
+| `Delete` | Seçili videoları sil |
+
+---
+
+## ⚠️ Bilinen Sorunlar ve Çözümleri
+
+| Sorun | Neden Olur | Çözüm |
+| ----- | ---------- | ----- |
+| Çoklu seçim görünmüyor | YouTube arayüzü güncellenmiş olabilir | Eklentiyi güncelle; simgeye tıkla |
+| İşlem başarısız | Playlist düzenleme izni yok | Kendi playlist'inde olduğundan emin ol |
+| Mobil uygulamada yok | Yalnızca web tarayıcısında çalışır | Masaüstü tarayıcı kullan |
+
+---
+
+## 🔗 Faydalı Bağlantılar
+
+- 📦 [Chrome Web Store](https://chromewebstore.google.com/detail/youtube-i%C3%A7in-%C3%A7oklu-se%C3%A7im/gpgbiinpmelaihndlegbgfkmnpofgfei)
+
+---
+
+## 📝 Notlar
+
+> Multiselect for YouTube resmi YouTube özelliği değildir. Yalnızca düzenleme yetkin olan playlist'lerde çalışır. YouTube arayüz değişikliklerinde geçici sorunlar yaşanabilir.
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-22*

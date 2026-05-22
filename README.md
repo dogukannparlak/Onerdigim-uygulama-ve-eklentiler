@@ -5,6 +5,7 @@ Bu repository, Windows kullanıcıları için özenle seçilmiş uygulama ve ekl
 ## 📋 İçindekiler
 
 ### 🖥️ Sistem Araçları
+
 - **7-Zip** - Güçlü arşiv yöneticisi
 - **EarTrumpet** - Gelişmiş ses kontrolü
 - **Everything** - Hızlı dosya arama
@@ -17,77 +18,67 @@ Bu repository, Windows kullanıcıları için özenle seçilmiş uygulama ve ekl
 - **Windhawk** - Windows özelleştirme aracı
 - **Nilesoft Shell** - Bağlam menüsü özelleştirme
 
-### 🌐 Web Tarayıcıları
-- **Brave** - Gizlilik odaklı tarayıcı
-- **Chrome** - Google'ın popüler tarayıcısı
-- **Edge** - Microsoft'un modern tarayıcısı
-- **Firefox** - Mozilla'nın açık kaynak tarayıcısı
-- **Opera** - Hızlı ve özellik açısından zengin
-- **Opera GX** - Oyuncular için tarayıcı
-
 ### 🧩 Chrome Eklentileri
 
+> Tam liste, bağlantılar ve kurulum rehberleri: **[chrome-extensions/README.md](chrome-extensions/README.md)** · 21 eklenti, 6 kategori
+
 #### 🛡️ Güvenlik ve Gizlilik
+
+- **uBlock Origin** - Açık kaynak reklam ve izleyici engelleyici
 - **AdBlock** - Reklam engelleyici
 - **Dark Reader** - Karanlık mod
 - **I don't care about cookies** - Çerez uyarıları
 
 #### 🎬 Medya ve İçerik
+
 - **GoFullPage** - Tam sayfa ekran görüntüsü
 - **Hover Zoom+** - Resim büyütme
 - **Save image as Type** - Resim formatı değiştirme
-- **Volume Master** - Ses kontrolü
+- **Volume Master** - Sekme bazlı ses kontrolü
 
 #### 📚 Okuma ve Metin
+
 - **Immersive Translate** - Çeviri aracı
-- **LanguageTool** - Dil bilgisi kontrolü
 - **Medium Parser** - Medium okuma deneyimi
 
-#### 🤖 Otomatikleştirme ve Araçlar
-- **Anori** - Özelleştirilebilir yeni sekme
-- **Buster** - Captcha çözücü
-- **Homey** - Başlangıç sayfası
-- **Momentum** - Üretkenlik odaklı yeni sekme
-- **Tampermonkey** - Kullanıcı betik yöneticisi
-- **Violentmonkey** - Açık kaynak betik yöneticisi
-- **Wappalyzer** - Teknoloji dedektörü
-- **WhatFont** - Font tanımlayıcı
-
 #### 🎮 Steam ve Oyun
+
 - **Augmented Steam** - Steam geliştirici
 - **Steam TRY** - Steam Türk Lirası fiyatları
 - **SteamDB** - Steam veritabanı
 
 #### 🌐 Web Araçları
+
 - **Web Archives** - Web arşivi erişimi
+- **Buster: Captcha Solver** - reCAPTCHA sesli doğrulama çözümü
+- **Resim içinde Resim (PiP)** - Kayan video oynatıcı
+- **Search by Image** - Tersine görsel arama
 
 #### 📺 YouTube Optimizasyonu
-- **Enhancer for YouTube** - YouTube geliştirici
+
+- **Enhancer for YouTube** - YouTube oynatıcı özelleştirme
 - **Multiselect for YouTube** - Çoklu seçim
 - **SponsorBlock** - Sponsor atlatma
 - **YouTube Playlist Duration Calculator** - Playlist süre hesaplama
 
-### 🍎 Apple Uygulamaları
-- **Apple Devices** - Apple cihaz bilgileri
-- **Apple TV** - Apple TV rehberi
-- **iCloud** - iCloud kullanımı
-
 ### 📄 PDF Araçları
+
 - **PDFgear** - PDF düzenleyici
 - **StirlingPDF** - PDF işleme aracı
 - **SumatraPDF** - Hafif PDF okuyucu
 
 ### 📝 Ofis ve Medya
-- **LibreOffice** - Açık kaynak ofis paketi
-- **Notion** - Not alma ve organizasyon
+
 - **VLC** - Çok amaçlı medya oynatıcı
 - **Stremio** - Medya merkezi
 
 ### 🎮 Oyun ve Eğlence
+
 - **Playnite** - Oyun kütüphanesi yöneticisi
 - **QBittorrent** - Torrent istemcisi
 
 ### 🗑️ Kaldırma Araçları
+
 - **Bulk Crap Uninstaller** - Toplu kaldırma
 - **Revo Uninstaller** - Gelişmiş kaldırma
 - **Revo vs Bulk Crap Uninstaller** - Karşılaştırma
@@ -123,4 +114,8 @@ Her uygulama ve eklenti için detaylı kurulum rehberleri, kullanım ipuçları 
 
 ---
 
-⭐ Bu koleksiyonu beğendiyseniz, yıldız vermeyi unutmayın! 
+⭐ Bu koleksiyonu beğendiyseniz, yıldız vermeyi unutmayın!
+
+---
+
+*Son güncelleme: 2026-05-22*
