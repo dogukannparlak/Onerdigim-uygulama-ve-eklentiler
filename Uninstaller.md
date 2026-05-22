@@ -1,41 +1,73 @@
-# Uninstaller
+# 🗑️ Kaldırma Araçları
 
-Windows sistemlerde etkili program kaldırma işlemleri için **en popüler üçüncü taraf uninstaller araçları** hakkında kapsamlı dokümantasyon içermektedir.
+> **Kısa Açıklama:** Windows'un yerleşik kaldırıcısının bıraktığı artıkları temizlemek için Revo Uninstaller ve Bulk Crap Uninstaller rehberleri.
 
-## **📂 İçindekiler**
+Windows · Ücretsiz seçenekler mevcut · Sistem Araçları
 
-### **📊 Karşılaştırma Analizi**
+---
 
-- İki popüler uninstaller aracının detaylı karşılaştırması
+## 📌 Genel Bakış
 
-### **🔧 Araç Dokümantasyonları**
+Windows "Uygulamalar ve Özellikler" yalnızca program kaydını siler; dosya ve kayıt defteri kalıntıları çoğu zaman kalır. Bu klasörde iki popüler üçüncü taraf kaldırıcı ve aralarındaki karşılaştırma yer alır.
 
-- Revo Uninstaller detaylı kullanım rehberi
-- BCU kapsamlı kullanım kılavuzu
+**Hızlı öneri:** Tek tek program ve Hunter Mode → **Revo**. Onlarca program / bloatware temizliği → **BCU**.
 
-## **🎯 Hızlı Başlangıç**
+---
 
-## **🚀 Öne Çıkan Özellikler**
+## 📂 Rehberler
 
-### **🔴 Revo Uninstaller**
+| Rehber | Ne için? |
+| ------ | -------- |
+| [Revo-Uninstaller .md](Uninstaller/Revo-Uninstaller%20.md) | Derin artık taraması, Hunter Mode, Free vs Pro |
+| [Bulk-Crap-Uninstaller .md](Uninstaller/Bulk-Crap-Uninstaller%20.md) | Toplu kaldırma, Steam/UWP/portable algılama, ücretsiz |
+| [Revo-vs-Bulk-Crap-Uninstaller.md](Uninstaller/Revo-vs-Bulk-Crap-Uninstaller.md) | Hangisini ne zaman kullanmalısın? |
 
-- **Avcı Modu** - Programları doğrudan hedefle
-- **İzlenen Programlar** - Kurulum sırasında takip et
-- **Çoklu Tarama Modları** - Güvenli, Orta, Gelişmiş
+---
 
-### **🔵 Bulk Crap Uninstaller (BCU)**
+## ✨ Özet
 
-- **Toplu Kaldırma** - Onlarca programı aynı anda
-- **Geniş Platform Desteği** - Steam, UWP, Chocolatey
-- **Otomasyon** - Komut satırı ve betikleme
+### Revo Uninstaller
 
-## **🔗 Hızlı Bağlantılar**
+- Kaldırma sonrası **Güvenli / Orta / Gelişmiş** artık taraması
+- **Hunter Mode** — simge veya pencereye sürükleyerek kaldır
+- **Free** çoğu kullanıcıya yeter; **Pro** zorla kaldırma ve toplu silme ekler
 
-- 🌐 **Revo Uninstaller:** [revouninstaller.com](https://www.revouninstaller.com/)
-- 🌐 **Bulk Crap Uninstaller:** [GitHub](https://github.com/Klocman/Bulk-Crap-Uninstaller)
+### Bulk Crap Uninstaller (BCU)
 
-[Revo-Uninstaller](Uninstaller%2021ee1be5707d80d481ced4bbecd3e54a/Revo-Uninstaller%2021ee1be5707d80809344e1fd02a30fde.md)
+- **Toplu kaldırma** — birden fazla programı tek seferde sil
+- Steam, UWP, portable, Chocolatey desteği
+- Tamamen **ücretsiz** ve açık kaynak; indirme: [SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
 
-[Bulk-Crap-Uninstaller](Uninstaller%2021ee1be5707d80d481ced4bbecd3e54a/Bulk-Crap-Uninstaller%2021ee1be5707d80138822d061d4c318b1.md)
+---
 
-[Revo-vs-Bulk-Crap-Uninstaller](Uninstaller%2021ee1be5707d80d481ced4bbecd3e54a/Revo-vs-Bulk-Crap-Uninstaller%2021ee1be5707d80a39ab3d50188f949bf.md)
+## 🔗 Resmi Siteler
+
+- [Revo Uninstaller](https://www.revouninstaller.com/)
+- [BCU — SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
+- [BCU — bcuninstaller.com](https://www.bcuninstaller.com/)
+
+---
+
+## 📝 Notlar
+
+> Kaldırmadan önce geri yükleme noktası oluştur. Bilinmeyen veya Windows sistem bileşenlerine dokunma. İki aracı aynı anda çalıştırma; kaldırma işlemlerini sırayla yap.
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-22*

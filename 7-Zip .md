@@ -1,207 +1,130 @@
-# 7-Zip
+# 🛠️ 7-Zip
+
+> **Kısa Açıklama:** Yüksek sıkıştırma oranı ve geniş format desteği sunan ücretsiz, açık kaynaklı dosya arşivleyici.
+
+Güncel · Windows, Linux, macOS · Açık kaynak (LGPL) · Sistem Araçları
 
 ---
 
-## 🎯 Genel Bakış
+## 📌 Genel Bakış
 
-### Araç Hakkında
+7-Zip, Igor Pavlov tarafından geliştirilen ücretsiz bir arşiv yöneticisidir. Windows'un yerleşik ZIP desteğine kıyasla daha yüksek sıkıştırma (özellikle 7z formatında), AES-256 şifreleme ve 60'tan fazla arşiv formatını açma imkânı sunar. Reklamsızdır ve düşük bellek kullanır.
 
-7-Zip, Igor Pavlov tarafından geliştirilen ücretsiz ve açık kaynaklı bir dosya arşivleyicidir. Yüksek sıkıştırma oranları, güçlü AES-256 şifreleme desteği ve geniş format yelpazesi ile öne çıkar. Windows, Linux ve macOS platformlarında çalışır.
+---
 
-### Temel Özellikler
+## ✨ Öne Çıkan Özellikler
 
-- ✅ **Yüksek Sıkıştırma Oranı**: 7z formatında %30-70 daha iyi sıkıştırma
-- ✅ **Çok Format Desteği**: 60+ arşiv formatını okuyabilir
-- ✅ **Güçlü Şifreleme**: AES-256 bit şifreleme desteği
-- ✅ **Ücretsiz ve Açık Kaynak**: Reklamsız ve güvenilir
-- ✅ **Düşük RAM Kullanımı**: Hafıza dostu çalışma
-- ✅ **Komut Satırı Desteği**: Otomasyon ve toplu işlemler
+- **Yüksek sıkıştırma** — 7z formatında güçlü oran; ZIP/RAR/TAR ve daha fazlasını açar
+- **AES-256 şifreleme** — Arşivlere parola koruması
+- **Explorer entegrasyonu** — Sağ tık menüsünden sıkıştır/çıkar
+- **Komut satırı** — `7z` ile otomasyon ve toplu işlem
+- **Ücretsiz ve açık kaynak** — Reklamsız, güvenilir
+- **Düşük RAM** — Hafif çalışma
 
-## 🚀 Kurulum ve Başlangıç
+---
 
-### Kurulum Yöntemleri
+## 📥 İndirme ve Kurulum
 
-### 1️⃣ Resmi Web Sitesinden İndirme (Önerilen)
+### Yöntem 1: Resmi Site ( Önerilen )
 
-1. https://www.7-zip.org adresine gidin
-2. İşletim sisteminize uygun sürümü seçin:
-    - **64-bit Windows**: `7z2301-x64.exe`
-    - **32-bit Windows**: `7z2301.exe`
-3. İndirilen dosyayı çalıştırın ve kurulum talimatlarını takip edin
+1. [7-zip.org](https://www.7-zip.org/) adresine git
+2. **Download** bölümünden **64-bit Windows x64** kurulum dosyasını indir
+3. İndirilen `.exe` dosyasını çalıştır ve kurulum sihirbazını takip et
+4. Kurulumda **Associate 7-Zip with file extensions** seçeneğini işaretle
 
-### 2️⃣ Winget ile Kurulum
+> 32-bit sistem kullanıyorsan sitedeki 32-bit sürümü seç.
 
-```
+### Yöntem 2: WinGet (Terminal)
+
+```powershell
 winget install 7zip.7zip
 ```
 
-### 3️⃣ Chocolatey ile Kurulum
+### Yöntem 3: UniGetUI
 
-```
+> UniGetUI açıkken arama çubuğuna **7-Zip** yaz ve kur.
+
+### Yöntem 4: Chocolatey
+
+```powershell
 choco install 7zip
 ```
 
-### ⚠️ Kurulum Notları
+---
 
-**✅ ÖNERİLER**:
-- Windows File Explorer entegrasyonu için “Associate 7-Zip with file extensions” seçeneğini işaretleyin
-- Sistem PATH’ine ekleme seçeneğini aktif edin
-- Düzenli güncellemeleri takip edin
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-## 🖥️ Komut Satırı Kullanımı
+1. **Dosya ilişkilendirme:** `.7z`, `.zip`, `.rar` gibi uzantıları 7-Zip ile aç (kurulumda veya 7-Zip → Tools → Options → System).
+2. **PATH (isteğe bağlı):** Komut satırından `7z` kullanmak için kurulumda PATH'e ekleme seçeneğini aç.
+3. **Varsayılan format:** En iyi sıkıştırma için `.7z`; paylaşım/uyumluluk için `.zip` tercih et.
 
-### 📋 Temel Komut Yapısı
+> 💡 **İpucu:** Şifreli arşivlerde **AES-256** kullan; eski ZipCrypto zayıftır.
 
-```
-7z <komut> <anahtarlar> <arşiv> <dosyalar>
-```
+---
 
-### 🔧 Ana Komutlar
+## 🚀 Temel Kullanım
 
-| Komut | Açıklama | Örnek |
-| --- | --- | --- |
-| **a** | Arşiv oluştur/ekle | `7z a backup.7z *.txt` |
-| **x** | Tam yol ile çıkar | `7z x backup.7z` |
-| **e** | Çıkar (yol olmadan) | `7z e backup.7z` |
-| **l** | İçeriği listele | `7z l backup.7z` |
-| **t** | Arşivi test et | `7z t backup.7z` |
-| **u** | Güncelle | `7z u backup.7z newfile.txt` |
-| **d** | Sil | `7z d backup.7z oldfile.txt` |
+### Sağ tık ile sıkıştırma
 
-### ⚙️ Önemli Anahtarlar
+1. Dosya veya klasöre sağ tıkla
+2. **7-Zip** → **Add to "dosya.7z"** (en iyi sıkıştırma) veya **Add to "dosya.zip"** (uyumluluk)
+3. Detaylı ayar için **Add to archive…** → format, seviye ve parola belirle
 
-| Anahtar | Açıklama | Örnek |
-| --- | --- | --- |
-| **-t{type}** | Arşiv formatı | `-tzip`, `-t7z` |
-| **-mx{level}** | Sıkıştırma seviyesi | `-mx9` (ultra) |
-| **-p{password}** | Şifre | `-pmypassword` |
-| **-y** | Tüm sorulara evet | Otomasyon için |
-| **-o{dir}** | Çıkarma dizini | `-oc:\extract` |
-| **-r** | Alt klasörler dahil | Recursive işlem |
+### Sağ tık ile çıkarma
 
-### 💡 Pratik Örnekler
+1. Arşiv dosyasına sağ tıkla
+2. **7-Zip** → **Extract Here** (mevcut klasöre) veya **Extract to "klasör** (yeni klasöre)
 
-### Şifreli Arşiv Oluşturma:
+### Komut satırı (temel)
 
-```
-7z a -p secret.7z documents\
+```powershell
+7z a yedek.7z C:\Belgeler\proje\    # Arşiv oluştur
+7z x yedek.7z -oC:\cikti\            # Çıkar
+7z t yedek.7z                        # Arşivi test et
 ```
 
-### Split Arşiv Oluşturma:
+---
 
-```
-7z a -v100m backup.7z folder\
-```
+## ⚠️ Bilinen Sorunlar ve Çözümleri
 
-### Test ve Onarım:
 
-```
-7z t backup.7z
-7z x backup.7z -y
-```
+| Sorun              | Neden Olur                   | Çözüm                                                                                |
+| ------------------ | ---------------------------- | ------------------------------------------------------------------------------------ |
+| Arşiv açılmıyor    | Bozuk dosya veya eksik parça | `7z t arsiv.7z` ile test et; split arşivde tüm parçaların olduğundan emin ol         |
+| Sağ tık menüsü yok | İlişkilendirme kapalı        | 7-Zip → Tools → Options → System → ilişkilendirmeyi aç                               |
+| Yanlış parola      | Hatalı şifre                 | Parolayı kontrol et; AES-256 ile oluşturulmuş arşivlerde büyük/küçük harf duyarlıdır |
 
-### Toplu İşlem:
 
-```
-for %f in (*.zip) do 7z x "%f" -o"%~nf"
-```
+---
 
-## 💻 Temel İşlemler
+## 🔗 Faydalı Bağlantılar
 
-### 🗂️ Dosya Sıkıştırma
+- 🌐 [Resmi Web Sitesi](https://www.7-zip.org/)
+- 📥 [İndirme Sayfası](https://www.7-zip.org/download.html)
+- 📖 [Komut Satırı Kılavuzu](https://www.7-zip.org/faq.html)
 
-### Sağ Tık Menüsü ile Hızlı Sıkıştırma:
+---
 
-| Seçenek | Açıklama | Kullanım Senaryosu |
-| --- | --- | --- |
-| **Add to “filename.7z”** | 7z formatında sıkıştır | En yüksek sıkıştırma |
-| **Add to “filename.zip”** | ZIP formatında sıkıştır | Uyumluluk için |
-| **Add to archive…** | Detaylı ayarlarla sıkıştır | Özelleştirme gerekli |
+## 📝 Notlar
 
-### 7-Zip File Manager ile Sıkıştırma:
+> 7-Zip salt arşivleme aracıdır; bulut yedekleme veya senkronizasyon sunmaz. Paylaşılan arşivlerde `.zip` daha evrensel kabul görür; kişisel yedeklerde `.7z` daha iyi sıkıştırır. Şifre unutulursa arşiv kurtarılamaz — parolayı güvenli bir yerde sakla.
 
-1. **7-Zip File Manager**’ı açın
-2. Sıkıştırılacak dosyaları seçin
-3. **Add** butonuna tıklayın
-4. Sıkıştırma ayarlarını yapılandırın:
+---
 
-| Ayar | Açıklama | Önerilen Değer |
-| --- | --- | --- |
-| **Archive Format** | Arşiv formatı | 7z (en iyi sıkıştırma) |
-| **Compression Level** | Sıkıştırma seviyesi | Normal (varsayılan) |
-| **Split to volumes** | Bölümlere ayırma | Büyük dosyalar için |
+## ⚠️ Sorumluluk Reddi
 
-### 📁 Dosya Açma/Çıkarma
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
 
-### Sağ Tık Menüsü ile Hızlı Çıkarma:
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
 
-| Seçenek | Açıklama | Sonuç |
-| --- | --- | --- |
-| **Extract Here** | Mevcut konuma çıkar | Dosyalar aynı klasöre |
-| **Extract to “foldername”** | Yeni klasöre çıkar | Düzenli çıkarma |
-| **Extract files…** | Detaylı ayarlarla çıkar | Hedef seçimi |
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
 
-### Çıkarma Ayarları:
+---
 
-| Ayar | Açıklama | Kullanım |
-| --- | --- | --- |
-| **Extract to** | Hedef klasör | Dosya organizasyonu |
-| **Overwrite mode** | Üzerine yazma | Mevcut dosyalar için |
-| **Path mode** | Yol yapısı | Klasör hiyerarşisi |
-
-### 🔍 Arşiv İçeriğini Görüntüleme
-
-7-Zip arşivleri Windows Explorer’da klasör gibi görüntülenebilir:
-
-- **Çift tıklama**: Arşivi 7-Zip File Manager’da aç
-- **Enter tuşu**: Seçili dosyayı geçici olarak çıkar ve aç
-- **F3 tuşu**: İç görüntüleyici ile dosyayı göster
-
-## ⚙️ Gelişmiş Özellikler
-
-### 🔄 Çok Parçalı Arşivler
-
-Büyük dosyaları bölmek için:
-
-1. **Split to volumes** seçeneğini işaretleyin
-2. Parça boyutunu belirleyin:
-
-| Boyut | Kullanım Alanı |
-| --- | --- |
-| **1.44 MB** | Floppy disk (eski) |
-| **650 MB** | CD |
-| **4.7 GB** | DVD |
-| **25 GB** | Blu-ray |
-| **Özel** | USB, email limit |
-
-### 🧩 Solid Arşivleme
-
-Solid arşivleme benzer dosyaları daha iyi sıkıştırır:
-
-**Avantajları:**
-- ✅ Daha yüksek sıkıştırma oranı
-- ✅ Benzer dosyalar için ideal
-
-**Dezavantajları:**
-- ❌ Tek dosya çıkarma yavaş
-- ❌ Corrupt olma riski yüksek
-
-## 🔐 Şifreleme ve Güvenlik
-
-### 🛡️ Şifreleme Yöntemleri
-
-7-Zip iki şifreleme algoritması destekler:
-
-| Algoritma | Anahtar Boyutu | Güvenlik |
-| --- | --- | --- |
-| **AES-256** | 256 bit | ⭐⭐⭐⭐⭐ |
-| **ZipCrypto** | 96 bit | ⭐⭐ |
-
-### 🗃️ Dosya Adı Şifreleme
-
-7z formatında dosya adları da şifrelenebilir:
-
-1. **Add to archive** seçeneğini kullanın
-2. **Encryption** bölümünde:
-    - **Encrypt file names** seçeneğini işaretleyin
-    - Bu durumda arşiv içeriği görünmez
+*Son güncelleme: 2026-05-22*

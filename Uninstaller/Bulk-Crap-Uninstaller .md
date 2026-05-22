@@ -1,186 +1,132 @@
-# Bulk-Crap-Uninstaller
+# 🛠️ Bulk Crap Uninstaller (BCU)
 
-# Bulk Crap Uninstaller (BCU): Kapsamlı Bir Analiz
+> **Kısa Açıklama:** Çok sayıda programı toplu kaldırır; artık dosya ve kayıt defteri kalıntılarını temizler.
 
-## 🎯 Yönetici Özeti
-
-Bulk Crap Uninstaller (BCU), Windows işletim sistemleri için geliştirilmiş, **ücretsiz ve açık kaynaklı**, güçlü bir toplu program kaldırma aracıdır. Temel amacı, çok sayıda uygulamayı minimum kullanıcı etkileşimiyle kaldırmak ve Windows’un yerleşik kaldırıcısının sıklıkla geride bıraktığı artık dosyaları ve kayıt defteri girdilerini temizlemektir.
-
-### 🔑 Temel Güçlü Yönler
-
-- **Geniş uygulama algılama yetenekleri**
-- **Toplu kaldırma için gelişmiş otomasyonu**
-- **Kapsamlı artık temizleme mekanizmaları**
-- **Açık kaynak ve ücretsiz**
-
-BCU, işlevsel ancak estetik açıdan sade bir kullanıcı arayüzüne ve geleneksel müşteri desteği yerine topluluk odaklı bir destek modeline sahiptir. Bununla birlikte, karşılaştırmalı analizler, birçok ücretli alternatife kıyasla daha fazla özellik sunduğunu ve zorlu kaldırma senaryolarında üstün performans sergilediğini göstermektedir.
-
-### 🔒 Gizlilik Yaklaşımı
-
-Gizlilik konusunda **şeffaf bir yaklaşım** benimseyen BCU, yalnızca anonim kullanım verileri toplamakta ve bunları üçüncü taraflarla paylaşmamaktadır.
-
-> 💡 Sonuç: Bu rapor, BCU’nun özellikle BT profesyonelleri ve ileri düzey kullanıcılar için ideal bir araç olduğunu ortaya koymaktadır.
-> 
+6.1 · Windows 10/11 · Apache 2.0 / ücretsiz · Sistem Araçları
 
 ---
 
-## 1. Bulk Crap Uninstaller (BCU)’a Giriş
+## 📌 Genel Bakış
 
-### 🎯 BCU Nedir? Tanımı, Geliştiricisi ve Lisanslama Modeli
+Bulk Crap Uninstaller (BCU), Windows'un yerleşik kaldırıcısının ötesinde gizli, taşınabilir, Steam, UWP ve Chocolatey paketlerini de algılar. Önce programın kendi kaldırıcısını çalıştırır; ardından artıkları tarar. Bloatware temizliği veya format öncesi toplu kaldırma için idealdir; tamamen ücretsiz ve açık kaynaktır.
 
-Bulk Crap Uninstaller (kısaca **BCUninstaller** veya **BCU**), Windows işletim sistemleri için tasarlanmış, ücretsiz ve açık kaynaklı bir toplu program kaldırma aracıdır. Temel işlevi, gelişmiş otomasyon özellikleri sayesinde çok sayıda uygulamayı minimum kullanıcı girdisiyle kaldırmaktır.
+---
 
-### 🔧 Temel Yetenekler
+## ✨ Öne Çıkan Özellikler
 
-- Taşınabilir veya kayıtlı olmayanlar dahil çoğu uygulamayı ve oyunu algılama
-- Geride kalan artıkları temizleme
-- Zorla kaldırma
-- Önceden hazırlanmış listelere göre otomatik kaldırma
+- **Toplu kaldırma** — Birden fazla uygulamayı tek seferde sil
+- **Geniş algılama** — Normal, gizli, portable, UWP, Steam, Windows Update
+- **Artık temizliği** — Kaldırma sonrası dosya ve kayıt defteri taraması
+- **Zorla kaldırma** — Bozuk veya kaldırıcısı olmayan programlar
+- **Başlangıç yöneticisi** — Otomatik başlayan uygulamaları yönet
+- **Taşınabilir sürüm** — USB'den çalıştırılabilir
 
-### 👨‍💻 Geliştirici Bilgileri
+---
 
-**Geliştirici:** Marcin Szeniak (Klocman Software)
-- Tek Polonyalı geliştirici
-- Sürekli güncellemeler ve iyileştirmeler
-- Aktif GitHub deposu yönetimi
+## 📥 İndirme ve Kurulum
 
-## 2. Temel Özellikler ve İşlevsellik
+### Yöntem 1: SourceForge — Önerilen
 
-### 🔍 Kapsamlı Uygulama Algılama Yetenekleri
+1. [SourceForge proje sayfasına](https://sourceforge.net/projects/bulk-crap-uninstaller/) git
+2. **Download** ile en güncel sürümü indir
+3. **Setup** (normal kurulum) veya **Portable** (taşınabilir) dosyasını çalıştır
 
-BCU, Windows’un yerleşik kaldırıcısının genellikle gösterdiğinden **çok daha geniş bir yelpazedeki** yüklü yazılımları algılama konusunda üstün bir performans sergilemektedir.
+> **Setup:** .NET 8 gerekirse otomatik kurulur. **Portable:** .NET dahil, dosya boyutu daha büyük.
 
-### 📋 Algılanabilen Uygulama Türleri
+### Yöntem 2: Resmi Site
 
-| Kategori | Açıklama |
-| --- | --- |
-| **Normal Uygulamalar** | Standart yüklü programlar |
-| **Gizli/Korumalı** | Sistem tarafından gizlenen uygulamalar |
-| **Taşınabilir Yazılımlar** | Portable uygulamalar |
-| **UWP Uygulamaları** | Windows Mağazası/Universal Windows Platform |
-| **Windows Güncellemeleri** | Sistem güncellemeleri ve özellikleri |
-| **Oyun Platformları** | Oculus ve Steam oyunları |
-| **Paket Yöneticileri** | Chocolatey aracılığıyla yüklenen yazılımlar |
+1. [bcuninstaller.com](https://www.bcuninstaller.com/) adresine git
+2. İndirme bağlantısından sürümü seç ve kur
 
-### 🔒 Güvenlik Özellikleri
+### Yöntem 3: WinGet (Terminal)
 
-- **“Yetim uygulamaları”** tespit etme (çalışan kaldırıcıya sahip olmayan yazılımlar)
-- **Kaldırıcı sertifikalarını doğrulama** (kötü amaçlı yazılım koruması)
+```powershell
+winget install Klocman.BulkCrapUninstaller
+```
 
-### ⚡ Otomatik ve Toplu Kaldırma
+### Yöntem 4: UniGetUI
 
-BCU’nun **temel gücü**, birden fazla uygulamanın tek bir toplu işlemde tamamen veya neredeyse tamamen otomatik olarak kaldırılabilmesidir.
+> UniGetUI açıkken arama çubuğuna **Bulk Crap Uninstaller** yaz ve kur.
 
-### 🎯 Kaldırma Stratejisi
+Alternatif: [GitHub Releases](https://github.com/Klocman/Bulk-Crap-Uninstaller/releases)
 
-**Katmanlı Yaklaşım:**
-1. **Birincil**: Uygulamanın orijinal kaldırıcıyı kullanma
-2. **Yedek**: Çöken/takılan kaldırıcıları yönetme
-3. **Alternatif**: Zorla kaldırma mekanizmaları
-4. **Esnek**: Pencere/kısayol/dizin yoluyla kaldırma
+---
 
-### 🔧 Gelişmiş Kaldırma Özellikleri
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-**Minimum Kullanıcı Girdisi:**
-- Sessiz kaldırmayı destekleyen programlar için otomatik işlem
-- Sessiz kaldırmayı desteklemeyen kaldırıcıları bile sessizce kaldırabilme
-- Çöken veya takılan kaldırıcıları yönetme
+1. **İlk tarama:** Uygulamayı aç; yüklü program listesi otomatik yüklenir
+2. **Yedek:** Ayarlardan kaldırma öncesi **Sistem Geri Yükleme Noktası** oluşturmayı aç
+3. **Filtre:** Gereksiz sistem bileşenlerini yanlışlıkla silmemek için filtre kullan
 
-**Esnek Kaldırma Yöntemleri:**
-- Uygulama penceresi yoluyla
-- Kısayol yoluyla
-- Dizin yoluyla kaldırma
-- Geleneksel kaldırıcıları olmayan uygulamalar için özel yöntemler
+> 💡 Kaldırmadan önce program adını ve yayıncısını kontrol et; bilinmeyen girişleri araştır.
 
-**Kaldırma Listeleri:**
-- Önceden tanımlanmış kaldırma setleri
-- BT profesyonelleri için ideal
-- Benzer bilgisayarları yönetmek için kullanışlı
+---
 
-> 🔧 Tasarım Felsefesi: BCU, dosyaları körü körüne kaldırmak değil, katmanlı ve sağlam bir yaklaşım benimsemektedir. Bu “kemer ve askı” stratejisi, en inatçı veya kötü tasarlanmış yazılımları bile kaldırmak için önemli ölçüde daha yüksek bir başarı oranı sağlamaktadır.
-> 
+## 🚀 Temel Kullanım
 
-### 🧹 Artık Temizleme ve Zorla Kaldırma Mekanizmaları
+### Tek program kaldırma
 
-### 🔍 Artık Temizleme Süreci
+1. Listeden programı seç
+2. **Uninstall** (Kaldır) butonuna tıkla
+3. Orijinal kaldırıcı çalışır → artık taraması sorulur → onayla
 
-Kaldırma işleminden sonra, BCU aktif olarak arar:
-- **Geçici dosyalar**
-- **Ayar dosyaları**
-- **Kısayollar**
-- **Kayıt defteri girdileri**
+### Toplu kaldırma
 
-**Amaçlar:**
-- Disk alanından tasarruf
-- Sistem yavaşlamalarını önleme
-- Tam temizlik sağlama
+1. Birden fazla program seç
+2. **Uninstall** → toplu kaldırma başlar
+3. Sessiz kaldırma destekleyen programlar otomatik işlenir
 
-### 💪 Zorla Kaldırma Özelliği
+### Artık temizliği
 
-- Herhangi bir uygulamayı yerel kaldırıcıyı atlayarak manuel kaldırma
-- İnatçı veya bozuk yazılımlar için etkili
-- Program Files dizinlerini boş klasörlerden temizleme araçları
+1. Zaten kaldırılmış bir programın kalıntıları varsa listede ara
+2. Kaldırma sonrası **Leftovers** (artıklar) ekranında işaretle
+3. Silmeden önce listeyi gözden geçir
 
-### 🛠️ Entegre Sistem Yönetim Araçları
+---
 
-### 🚀 Başlangıç Yöneticisi
+## ⚠️ Bilinen Sorunlar ve Çözümleri
 
-- Windows ile başlayan uygulamaları görüntüleme ve devre dışı bırakma
-- Ana uygulama listesiyle doğrudan bağlantı
-- Sorunlu yazılımları tanımlama ve yönetme için merkezi nokta
 
-### 💾 Güvenlik Yedeklemeleri
+| Sorun                  | Neden Olur                | Çözüm                                                                                           |
+| ---------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- |
+| .NET hatası            | Runtime eksik             | [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download) kur veya Portable sürümü kullan |
+| Program silinmiyor     | Edge gibi sistem bileşeni | Windows'un entegre uygulamaları zor kaldırılır; dikkatli ol                                     |
+| Yanlış program silindi | Toplu seçim hatası        | Geri yükleme noktasından geri dön                                                               |
+| Liste çok uzun         | Çok sayıda algılama       | Filtre ve arama kullan; gizli korumalıları ayrı incele                                          |
+| Kaldırıcı takılıyor    | Bozuk uninstaller         | BCU çöken kaldırıcıları yönetir; gerekirse Force Uninstall                                      |
 
-- **Sistem Geri Yükleme Noktası** oluşturma
-- **Kayıt Defteri Yedekleme**
-- İstenmeyen sonuçlar için güvenlik ağı
 
-### ⚙️ Gelişmiş Seçenekler
+---
 
-### 💻 Konsol Arayüzü
+## 🔗 Faydalı Bağlantılar
 
-- Önceden tanımlanmış koşullara göre otomatik kaldırma
-- Betikleme ve büyük ölçekli dağıtımlar için ideal
-- Komut satırı desteği
+- 📦 [SourceForge (İndirme)](https://sourceforge.net/projects/bulk-crap-uninstaller/)
+- 🌐 [Resmi Web Sitesi](https://www.bcuninstaller.com/)
+- 💾 [GitHub Sayfası](https://github.com/Klocman/Bulk-Crap-Uninstaller)
+- 📖 [Çevrimiçi Kılavuz](https://github.com/Klocman/Bulk-Crap-Uninstaller/wiki)
 
-### 🎛️ Özel Komutlar
+---
 
-- Kaldırma işleminden önce ve sonra özel komutlar
-- Kapsamlı özelleştirme ve entegrasyon olanakları
+## 📝 Notlar
 
-### 🔧 Gelişmiş Filtreleme ve Sıralama
+> BCU güçlü bir araçtır; kayıt defteri ve sistem dosyalarına müdahale eder. Kritik Windows bileşenlerini kaldırmaktan kaçın. [Revo-vs-Bulk-Crap-Uninstaller.md](Revo-vs-Bulk-Crap-Uninstaller.md) dosyasında Revo ile karşılaştırmaya bakabilirsin — toplu kaldırma ve ücretsiz kullanım için BCU genelde tercih edilir.
 
-| Filtreleme Türü | Açıklama |
-| --- | --- |
-| **Ortak Ön Ayarlar** | Hazır filtre setleri |
-| **Regex Desteği** | Tamamen özel kurallar |
-| **Üreticiye Göre** | Geliştirici bazında sıralama |
-| **Yükleme Tarihine Göre** | Kronolojik sıralama |
-| **Boyuta Göre** | Dosya boyutu bazında |
-| **Dijital İmzaya Göre** | Güvenlik sertifikası bazında |
+---
 
-## 📊 BCU’nun Güçlü Yönleri ve Sınırlamalarının Özeti
+## ⚠️ Sorumluluk Reddi
 
-### 🌟 Güçlü Yönleri
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
 
-| Kategori | Özellik | Fayda |
-| --- | --- | --- |
-| **Maliyet** | Ücretsiz ve Açık Kaynak | Özel/ticari kullanım için maliyet yok |
-| **Özellikler** | Kapsamlı Araç Paketi | Birçok ücretli alternatifi geride bırakıyor |
-| **Algılama** | Derin Uygulama Tespiti | Gizli, taşınabilir, UWP uygulamaları |
-| **Otomasyon** | Gelişmiş Otomasyon | Konsol, özel komutlar, kaldırma listeleri |
-| **Etkinlik** | İnatçı Yazılım Yönetimi | Zorla kaldırma, çöken kaldırıcıları yönetme |
-| **Sistem Araçları** | Entegre Yönetim | Başlangıç yöneticisi, kayıt defteri yedekleme |
-| **Esneklik** | Taşınabilir Sürüm | USB’den çalışma, hareket halinde kullanım |
-| **Gizlilik** | Şeffaf Yaklaşım | Anonim veri, üçüncü taraf paylaşım yok |
-| **Geliştirme** | Aktif Sürdürme | GitHub’da tutarlı güncellemeler |
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
 
-### ⚠️ Sınırlamaları
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
 
-| Kategori | Sınırlama | Etki |
-| --- | --- | --- |
-| **Arayüz** | Görsel Cila Eksikliği | Estetikten çok işlevselliğe odaklı |
-| **Destek** | Sınırlı Müşteri Desteği | Topluluk ve GitHub odaklı |
-| **Kullanıcı Sorumluluğu** | Dikkat Gereksinimi | Yanlış pozitifler için araştırma gerekli |
-| **Artık Temizleme** | Değişken Performans | Test metodolojisine bağlı sonuçlar |
-| **İşletim Sistemi** | Entegre Bileşen Sınırları | Microsoft Edge gibi uygulamalarda zorluk |
+---
+
+*Son güncelleme: 2026-05-22*

@@ -66,6 +66,7 @@ Bu repository, Windows kullanıcıları için özenle seçilmiş uygulama ve ekl
 - **PDFgear** - PDF düzenleyici
 - **StirlingPDF** - PDF işleme aracı
 - **SumatraPDF** - Hafif PDF okuyucu
+- **BentoPDF** - Gizlilik odaklı tarayıcı PDF araç seti (50+ araç)
 
 ### 📝 Ofis ve Medya
 

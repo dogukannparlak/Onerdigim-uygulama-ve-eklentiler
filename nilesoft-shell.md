@@ -1,80 +1,148 @@
-# nilesoft-shell
+# 🛠️ Nilesoft Shell
 
-# 🎯 Genel Bakış
+> **Kısa Açıklama:** Windows sağ tık menüsünü özelleştirir; gereksiz öğeleri kaldırır, kendi komutlarını ekler ve menüyü sadeleştirir.
 
----
-
-### Araç Hakkında
-
-**Nilesoft Shell**, Windows Dosya Gezgini için güçlü bir bağlam menüsü (sağ tık menüsü) yöneticisidir. Bu araç, standart Windows sağ tık menüsünü tamamen özelleştirmenize, yeni özel komutlar eklemenize ve mevcut menü öğelerini değiştirmenize veya kaldırmanıza olanak tanır.
-
-### Ana Avantajları
-
-- 🎨 **Tam Özelleştirme**: Menü görünümünü istediğiniz gibi tasarlayın
-- ⚡ **Hafif ve Hızlı**: Minimal sistem kaynağı kullanımı
-- 🛠️ **Güçlü Komut Desteği**: Uygulama başlatma, dosya işlemleri, sistem komutları
-- 🌐 **Web Entegrasyonu**: Favori web sitelerinizi menüye entegre edin
-- 🔧 **Sistem Yönetimi**: Üçüncü taraf menü öğelerini kontrol edin
-- 📁 **Evrensel Destek**: Dosyalar, klasörler, masaüstü ve görev çubuğu için
-- 🎯 **İfade Sistemi**: Yerleşik fonksiyonlar ve değişkenler
-- 🔍 **Arama ve Filtreleme**: Menü öğelerini organize edin
+1.9.18 · Windows 7/8/10/11 · Ücretsiz / açık kaynak · Sistem Araçları
 
 ---
 
-## 🚀 Kurulum ve Başlangıç
+## 📌 Genel Bakış
 
-### Kurulum
+Nilesoft Shell, Dosya Gezgini, masaüstü ve görev çubuğundaki bağlam menüsünü metin tabanlı `shell.nss` dosyasıyla yönetir. Windows'un kalabalık sağ tık menüsünden kurtulmak, WinRAR/7-Zip gibi üçüncü parti girişleri düzenlemek veya tek tıkla uygulama/komut eklemek isteyenler için uygundur. Registry düzenlemek yerine okunabilir bir yapılandırma dosyası kullanır.
 
-### Resmi Web Sitesinden İndirme
+---
 
+## ✨ Öne Çıkan Özellikler
+
+- **Tam menü kontrolü** — Mevcut öğeleri gizle, sırala veya kaldır
+- **Özel komutlar** — Uygulama, web sitesi veya script menüye eklenebilir
+- **İç içe menüler** — Alt menü, ayırıcı ve çok sütunlu düzen
+- **Win11 uyumu** — Modern ve klasik menü arasında geçiş desteği
+- **Hafif çalışma** — Arka planda sürekli açık bir arayüz yok
+- **Ücretsiz** — Kişisel ve ticari kullanım için bedava
+
+---
+
+## 📥 İndirme ve Kurulum
+
+> Kurulum için **yönetici izni** gerekir. Kurulum sonunda Explorer'ı yeniden başlatmayı onayla.
+
+### Yöntem 1: Resmi Site — Önerilen
+
+1. [nilesoft.org/download](https://nilesoft.org/download) adresine git
+2. **Setup x64** (veya sisteme uygun sürüm) indir
+3. `setup.exe`'yi yönetici olarak çalıştır
+4. Kurulum sihirbazını tamamla
+
+Varsayılan kurulum yolu: `C:\Program Files\Nilesoft Shell\`
+
+### Yöntem 2: WinGet (Terminal)
+
+```powershell
+winget install Nilesoft.Shell
 ```
-📥 Resmi İndirme:
-1. https://nilesoft.org/download adresine gidin
-2. En son sürümü seçin (v1.9.8+)
-3. Setup dosyasını indirin
-4. Yönetici olarak çalıştırın
-```
 
-## ⚙️ İlk Yapılandırma
+> WinGet hata verirse terminali **yönetici olarak** açıp tekrar dene.
 
-### Kurulum Sonrası Adımlar
+### Yöntem 3: UniGetUI
 
-```
-🚀 İlk Kurulum Kontrolleri:
-1. ✅ Shell menüsünün çalıştığını kontrol edin
-2. ✅ Varsayılan yapılandırma dosyasını inceleyin
-3. ✅ Yedek oluşturun
-4. ✅ Temel özelleştirmeleri yapın
-```
+> UniGetUI açıkken arama çubuğuna **Nilesoft Shell** yaz ve kur.
 
-### Varsayılan Dosya Konumları**(olmayabilir siz oluşturun)**
+---
+
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
+
+Kurulumdan sonra:
+
+1. **Çalıştığını kontrol et** — Masaüstünde veya bir dosyada sağ tıkla; Shell menüsü görünmeli
+2. **Yapılandırma klasörünü aç** — Görev çubuğunda **Shift + sağ tık** → Shell → **directory**
+3. **`shell.nss` yedeği al** — Düzenlemeden önce dosyayı kopyala
+4. **Küçük bir değişiklikle başla** — Önce tek menü öğesi ekle veya gizle
 
 | Dosya | Konum | Açıklama |
-| --- | --- | --- |
-| **shell.nss** | `%USERPROFILE%\.nilesoft\shell\` | Ana yapılandırma |
-| **imports.nss** | `%USERPROFILE%\.nilesoft\shell\` | İçe aktarılan menüler |
-| **default.nss** | `%PROGRAMFILES%\Nilesoft\Shell\` | Varsayılan ayarlar |
-| **themes.nss** | `%USERPROFILE%\.nilesoft\shell\` | Tema tanımları |
+| ----- | ----- | -------- |
+| `shell.nss` | Kurulum klasörü | Ana yapılandırma |
+| `imports/` | Kurulum klasörü | İçe aktarılan menü dosyaları |
+| `shell.log` | Kurulum klasörü | Hata kayıtları |
 
-## 🛠️ Sorun Giderme
+> 💡 Yapılandırma dosyaları varsayılan olarak program klasöründedir; `%USERPROFILE%\.nilesoft\` yolu eski veya özel kurulumlarda kullanılabilir.
 
-### ❌ Yaygın Sorunlar ve Çözümleri
+---
 
-### 1. Menü Görünmüyor
+## 🚀 Temel Kullanım
 
-```bash
-# Çözüm adımları:1. Shell servisinin çalışıp çalışmadığını kontrol edin
-2. Yapılandırma dosyasında sözdizimi hatası var mı kontrol edin
-3. Shell'i yeniden başlatın:   
-- shell.exe -r (restart)   
-- shell.exe -reload
+### İlk menü öğesini ekleme
+
+1. `shell.nss` dosyasını Not Defteri veya VS Code ile aç
+2. Örnek satırı ekle:
+
+```ini
+item(title='Merhaba!' cmd=msg('Selam @user.name'))
 ```
 
-### 2. Yönetici İzni Sorunları
+3. Kaydet
+4. **Ctrl + sağ tık** (masaüstü veya görev çubuğunda) ile yapılandırmayı yeniden yükle
 
-```bash
-# UAC sorunları için:
-1. Shell'i yönetici olarak çalıştırın
-2. UAC'ı geçici olarak devre dışı bırakın
-3. Kullanıcı hesabı ayarlarını kontrol edin
-```
+### Menüyü yeniden yükleme
+
+- **Ctrl + sağ tık** — Yapılandırmayı yükle
+- **Sağ tık + sol tık** — Alternatif yenileme
+- Komut satırı: `shell -restart` (Explorer'ı yeniden başlatır)
+
+### Klavye kısayolları
+
+Sağ tık veya **Shift + F10** sırasında:
+
+| Kısayol | İşlev |
+| ------- | ----- |
+| `Ctrl` + sağ tık | Shell'i etkinleştir ve `shell.nss`'yi yeniden yükle |
+| `Win` + sağ tık | Win11 modern menüye öncelik ver |
+| `Ctrl + Win` + sağ tık | Shell'i geçici kapat, klasik menüyü kullan |
+
+---
+
+## ⚠️ Bilinen Sorunlar ve Çözümleri
+
+| Sorun | Neden Olur | Çözüm |
+| ----- | ---------- | ----- |
+| Menü görünmüyor | Kayıt veya sözdizimi hatası | `shell -register -restart` çalıştır; `shell.log` dosyasını kontrol et |
+| Değişiklikler yansımıyor | Yapılandırma yenilenmemiş | **Ctrl + sağ tık** ile yeniden yükle |
+| WinGet kurulumu başarısız | Yönetici izni yok | Terminali yönetici olarak aç |
+| Win11'de farklı menü | Modern bağlam menüsü | `Win + sağ tık` ile modern menü; `Ctrl + Win` ile Shell'i kapat |
+| Explorer sorunu | Hatalı `shell.nss` | Yedeği geri yükle veya `shell -unregister -restart` ile kaldır |
+
+---
+
+## 🔗 Faydalı Bağlantılar
+
+- 🌐 [Resmi Web Sitesi](https://nilesoft.org/)
+- 📥 [İndirme Sayfası](https://nilesoft.org/download)
+- 📖 [Başlangıç Rehberi](https://nilesoft.org/docs/get-started)
+- 📖 [Yapılandırma Dokümantasyonu](https://nilesoft.org/docs/configuration)
+- 💾 [GitHub Sayfası](https://github.com/moudey/shell)
+
+---
+
+## 📝 Notlar
+
+> Nilesoft Shell sistem genelinde sağ tık menüsüne müdahale eder; StartAllBack, ExplorerBlurMica veya başka bağlam menüsü araçlarıyla çakışma olabilir. Gelişmiş özelleştirme NSS sözdizimi gerektirir — karmaşık menüler için resmi dokümantasyona bak. Resmi siteden indirmek önerilir; üçüncü parti paketlerde istenmeyen yazılım bulunabilir.
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-22*

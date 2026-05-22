@@ -1,132 +1,82 @@
-# ExplorerBlurMica
+# 🛠️ ExplorerBlurMica
 
-## Genel Bakış
+> **Kısa Açıklama:** Windows Dosya Gezgini'ne blur, Acrylic veya Mica efekti ekleyerek şeffaf, modern bir görünüm sağlar.
 
-ExplorerBlurMica, Windows 10 ve Windows 11 için dosya gezgininde arka plan blur (bulanıklık), Acrylic veya Mica efektleri ekleyen bir uygulamadır. Bu proje, Windows Explorer’ın görsel deneyimini modern ve şeffaf efektlerle zenginleştirmek için geliştirilmiştir.
+2.0.1 · Windows 10/11 · Açık kaynak (LGPL/GPL) · Görsel / Kişiselleştirme
 
-**Proje URL:** [https://github.com/Maplespe/ExplorerBlurMica](https://github.com/Maplespe/ExplorerBlurMica)
+---
 
-## Özellikler
+## 📌 Genel Bakış
 
-### Efekt Türleri
+ExplorerBlurMica, yalnızca **Dosya Gezgini** pencerelerine cam benzeri arka plan efektleri uygular. Windows 11'in Mica görünümünü Explorer'a taşımak veya Windows 10'da Acrylic efekti kullanmak isteyenler için pratik bir çözümdür. StartAllBack, OldNewExplorer ve üçüncü parti temalarla uyumludur.
 
-- **Blur (Bulanıklık):** Klasik bulanıklık efekti
-- **Acrylic:** Windows 10 tarzı yarı saydam efekt
-- **Mica:** Windows 11’e özel modern material efekt
-- **Blur (Clear):** Temiz bulanıklık efekti (Windows 10 ve 11’de çalışır)
-- **MicaAlt:** Mica’nın alternatif versiyonu
+> Tüm sistem genelinde blur istiyorsan geliştiricinin **DWMBlurGlass** projesine bak.
 
-### Kişiselleştirme Seçenekleri
+---
 
-- Özel karışım renkleri ayarlama
-- Açık/Koyu mod otomatik uyum
-- RGBA renk bileşenleri ile tam kontrol
-- Adres çubuğu arka plan temizleme
-- Scrollbar arka plan temizleme
-- WinUI arka plan temizleme
+## ✨ Öne Çıkan Özellikler
 
-### Uyumluluk
+- **Blur / Acrylic / Mica** — Beş farklı efekt türü (`effect=0`–`4`)
+- **Açık/koyu mod uyumu** — Sistem temasına göre renk ayarı
+- **RGBA renk kontrolü** — Karışım rengini ve şeffaflığı ince ayarla
+- **Temiz arayüz** — Adres çubuğu, scrollbar ve WinUI arka planlarını kaldır
+- **Hafif kurulum** — DLL kaydı; arka planda çalışan ayrı bir uygulama yok
+- **Ücretsiz ve açık kaynak** — GitHub'dan indirilir
 
-- **Windows 10:** Tam destek
-- **Windows 11 22H2:** XamlIslands desteği
-- **Windows 11 23H2:** WinUI3 desteği
-- **Üçüncü parti yazılımlar:** StartAllBack, OldNewExplorer gibi uygulamalarla uyumlu
-- **Temalar:** Üçüncü parti temalarla uyumlu
+---
 
-## Kurulum
+## 📥 İndirme ve Kurulum
 
-### Adım 1: İndirme
+> WinGet veya Store paketi yok; kurulum GitHub Release üzerinden yapılır.
 
-1. [GitHub Release sayfasından](https://github.com/Maplespe/ExplorerBlurMica/releases) en son sürümü indirin
-2. Dosyayı `C:\Program Files` gibi uygun bir konuma çıkarın
+### Yöntem 1: GitHub Release — Önerilen
 
-### Adım 2: Kurulum
-
-1. `register.cmd` dosyasını **yönetici olarak** çalıştırın
-2. Dosya Gezgini pencerelerini yeniden açın
-3. Efektlerin devreye girmesi için birkaç saniye bekleyin
-
-**Manuel kurulum komutu:**
-
-```
-regsvr32 "dosya_yolu/ExplorerBlurMica.dll"
-```
+1. [Release sayfasından](https://github.com/Maplespe/ExplorerBlurMica/releases/latest) `Release_x64.zip` indir
+2. Arşivi `C:\Program Files\ExplorerBlurMica` gibi kalıcı bir klasöre çıkar
+3. `register.cmd` dosyasını **yönetici olarak** çalıştır
+4. Açık Dosya Gezgini pencerelerini kapatıp yeniden aç
 
 ### Kaldırma
 
-1. `uninstall.cmd` dosyasını **yönetici olarak** çalıştırın
-2. Kalan dosyaları silin
+1. `uninstall.cmd` dosyasını **yönetici olarak** çalıştır
+2. Klasörü sil
 
-**Manuel kaldırma komutu:**
+> Explorer çökerse `ESC` tuşunu basılı tutarak Gezgini aç, ardından kaldır.
 
-```
-regsvr32 /u "dosya_yolu/ExplorerBlurMica.dll"
-```
+---
 
-**⚠️ Önemli Not:** Eğer Explorer çökerse, `ESC` tuşunu basılı tutarak Explorer’ı açın ve programı kaldırın.
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-## Yapılandırma Dosyası
+Kurulumdan sonra aynı klasördeki `config.ini` dosyasını düzenle. Kaydettikten sonra Gezgini yeniden aç.
 
-Yapılandırma dosyası (`config.ini`) ile tüm ayarları özelleştirebilirsiniz:
+### Efekt seçimi
 
-### Temel Ayarlar
 
-```
-[config]
-# Efekt türü: 0=Blur, 1=Acrylic, 2=Mica, 3=Blur(Clear), 4=MicaAlt
-effect=1
+| `effect` | Efekt        | Uyumluluk           |
+| -------- | ------------ | ------------------- |
+| `0`      | Blur         | Win11 22H2'ye kadar |
+| `1`      | Acrylic      | Win10 ve Win11      |
+| `2`      | Mica         | Yalnızca Win11      |
+| `3`      | Blur (Clear) | Win10 ve Win11      |
+| `4`      | MicaAlt      | Yalnızca Win11      |
 
-# Adres çubuğu arka planını temizle
-clearAddress=true
 
-# Scrollbar arka plan rengini temizle
-clearBarBg=true
+### Önerilen ayarlarım
 
-# Windows 11 WinUI/XamlIslands toolbar arka planını kaldır
-clearWinUIBg=true
-
-# TreeView ve DUIView arasında ayırıcı çizgi göster
-showLine=true
-
-[light]
-# Açık mod için RGBA renk değerleri
-r=220    # Kırmızı (0-255)
-g=220    # Yeşil (0-255)
-b=220    # Mavi (0-255)
-a=160    # Şeffaflık (0-255, 0=tamamen şeffaf, 255=opak)
-
-[dark]
-# Koyu mod için RGBA renk değerleri
-r=0      # Kırmızı
-g=0      # Yeşil
-b=0      # Mavi
-a=120    # Şeffaflık
-```
-
-### Efekt Türü Açıklamaları
-
-| Efekt | Açıklama | Uyumluluk |
-| --- | --- | --- |
-| 0 - Blur | Klasik bulanıklık | Windows 11 22H2’ye kadar |
-| 1 - Acrylic | Yarı saydam cam efekt | Windows 10 ve 11 |
-| 2 - Mica | Modern material | Sadece Windows 11 |
-| 3 - Blur(Clear) | Temiz bulanıklık | Windows 10 ve 11 |
-| 4 - MicaAlt | Mica alternatifi | Sadece Windows 11 |
-
-## Kişisel Ayarlarım
-
-```
+```ini
 [config]
 effect=1
 clearAddress=true
 clearBarBg=true
 clearWinUIBg=true
 showLine=true
+
 [light]
 r=255
 g=255
 b=255
 a=200
+
 [dark]
 r=0
 g=0
@@ -134,71 +84,72 @@ b=0
 a=120
 ```
 
-### Ayar Açıklamaları
+- **Acrylic (`effect=1`)** — Win10/11'de en dengeli seçenek
+- **Temizleme seçenekleri** — Adres çubuğu, scrollbar ve WinUI arka planı kaldırılır
+- `**showLine=true`** — Sol panel ile dosya listesi arasındaki ayırıcı çizgiyi gizler
+- **Renkler** — Açık modda beyaz ton, koyu modda siyah ton; `a` değeri şeffaflığı belirler (0–255)
 
-- **Efekt:** Acrylic (1) - Modern yarı saydam cam efekti
-- **Adres çubuğu temizleme:** Aktif - Daha temiz görünüm
-- **Scrollbar temizleme:** Aktif - Scrollbar arka planı şeffaf
-- **WinUI temizleme:** Aktif - Toolbar arka planı şeffaf
-- **Ayırıcı çizgi:** Aktif - TreeView ve liste arasında çizgi
-
-**Renk Ayarları:**
-- **Açık mod:** Beyaz tonları (255,255,255) %78 şeffaflık ile
-- **Koyu mod:** Siyah tonları (0,0,0) %47 şeffaflık ile
-
-## Sorun Giderme
-
-### Yaygın Sorunlar
-
-1. **Efekt görünmüyor:**
-    - Explorer pencerelerini tamamen kapatıp yeniden açın
-    - Yapılandırma dosyasını kontrol edin
-    - DLL dosyasının doğru konumda olduğundan emin olun
-2. **Explorer çöküyor:**
-    - ESC tuşunu basılı tutarak Explorer’ı açın
-    - Programı kaldırın (`uninstall.cmd`)
-    - Yapılandırma ayarlarını varsayılana döndürün
-3. **Renkler yanlış:**
-    - RGBA değerlerini kontrol edin (0-255 arası)
-    - Sistem tema ayarlarını kontrol edin
-
-### Performans İpuçları
-
-- Düşük performanslı sistemlerde `effect=0` (Blur) kullanın
-- Şeffaflık değerini (a) düşürerek performansı artırabilirsiniz
-- Gereksiz temizleme seçeneklerini kapatın
-
-## Teknik Detaylar
-
-### Gereksinimler
-
-- Windows 10 1809+ veya Windows 11
-- .NET Framework (otomatik yüklenir)
-- Yönetici hakları (kurulum için)
-
-### Kullanılan Teknolojiler
-
-- C++ ile geliştirilmiş DLL
-- Python GUI (minhook ve customtkinter bağımlılıkları)
-- Windows API entegrasyonu
-- Shell Extension mimarisi
-
-### Lisans
-
-- LGPL-3.0 ve GPL-3.0 çifte lisans
-- Açık kaynak proje
-- Ticari kullanım için uygun
-
-## İlgili Projeler
-
-Eğer sistem genelinde blur efekti istiyorsanız, aynı geliştiricinin **DWMBlurGlass** projesine bakın.
+> 💡 Düşük performanslı sistemlerde `effect=0` veya `a` değerini düşürmeyi dene.
 
 ---
 
-**Son Güncelleme:** 2024-02-11
+## 🚀 Temel Kullanım
 
-**Sürüm:** 2.0.1
+### Efektin devreye girmesi
 
-**Geliştirici:** Maplespe
+1. Kurulumdan sonra yeni bir Dosya Gezgini penceresi aç
+2. Efekt birkaç saniye içinde görünür
+3. Değişiklik yoksa `config.ini`'yi kontrol et ve pencereleri tamamen kapatıp aç
 
-**GitHub:** [https://github.com/Maplespe/ExplorerBlurMica](https://github.com/Maplespe/ExplorerBlurMica)
+### Ayar değiştirme
+
+1. Kurulum klasöründeki `config.ini` dosyasını Not Defteri ile aç
+2. `effect`, `clearAddress`, `[light]` / `[dark]` bölümlerini düzenle
+3. Kaydet → Dosya Gezgini pencerelerini kapatıp yeniden aç
+
+---
+
+## ⚠️ Bilinen Sorunlar ve Çözümleri
+
+
+| Sorun            | Neden Olur              | Çözüm                                                                            |
+| ---------------- | ----------------------- | -------------------------------------------------------------------------------- |
+| Efekt görünmüyor | Eski pencere oturumu    | Tüm Gezgini pencerelerini kapat; gerekirse `register.cmd`'yi tekrar çalıştır     |
+| Explorer çöküyor | Uyumsuz efekt veya ayar | `ESC` basılı tut → `uninstall.cmd` çalıştır → `config.ini`'yi varsayılana döndür |
+| Renkler yanlış   | Hatalı RGBA değeri      | `r/g/b/a` değerlerinin 0–255 arasında olduğundan emin ol                         |
+| Mica çalışmıyor  | Win10 veya eski Win11   | `effect=1` (Acrylic) veya `effect=3` dene                                        |
+| Performans düşük | Yoğun blur/Mica         | `effect=0` kullan veya `a` değerini düşür                                        |
+
+
+---
+
+## 🔗 Faydalı Bağlantılar
+
+- 💾 [GitHub Sayfası](https://github.com/Maplespe/ExplorerBlurMica)
+- 📦 [Son Sürüm (Release)](https://github.com/Maplespe/ExplorerBlurMica/releases/latest)
+
+---
+
+## 📝 Notlar
+
+> ExplorerBlurMica bir shell extension'dır; yönetici haklarıyla kayıt edilir ve Explorer sürecine müdahale eder. Windows güncellemelerinden sonra efekt kaybolursa `register.cmd`'yi yeniden çalıştırmak yeterli olabilir. Resmi son sürüm Şubat 2024'ten beri 2.0.1; yeni Windows sürümlerinde uyumluluk sorunu yaşarsan GitHub Issues sayfasını kontrol et.
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-22*

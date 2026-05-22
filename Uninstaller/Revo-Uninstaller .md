@@ -1,292 +1,130 @@
-# Revo-Uninstaller
+# 🛠️ Revo Uninstaller
 
-## 1. Revo Uninstaller’a Genel Bakış
+> **Kısa Açıklama:** Programları kaldırırken artık dosya ve kayıt defteri girdilerini tarayıp temizler; Windows kaldırıcısının bıraktığı kalıntıları giderir.
 
-### 🎯 Tanım ve Temel Amacı
+Free / Pro · Windows 10/11 · Freeware / ücretli · Sistem Araçları
 
-Revo Uninstaller, bilgisayar sistemlerinden programları kaldırma sürecini optimize etmek amacıyla geliştirilmiş bir yazılımdır. Temel işlevi, standart program kaldırma rutinlerinin genellikle geride bıraktığı gereksiz dosyaları, klasörleri ve kayıt defteri girdilerini tespit edip güvenli bir şekilde temizlemektir.
+---
 
-### 📦 Sürümler
+## 📌 Genel Bakış
 
-- **Free (Ücretsiz)**: Temel özellikler
-- **Pro (Ücretli)**: Gelişmiş özellikler
+Revo Uninstaller, önce programın kendi kaldırıcısını çalıştırır, ardından sistemde kalan dosya ve kayıt defteri artıklarını tarar. Windows'un "Program Ekle/Kaldır" bölümü yalnızca ana kaydı siler; Revo derinlemesine temizlik sunar. **Free** sürümü çoğu kullanıcı için yeterlidir; **Pro** zorla kaldırma, toplu silme ve gerçek zamanlı kurulum izleme ekler.
 
-### ❓ Neden İhtiyaç Duyuluyor?
+---
 
-**Windows’un Yerleşik Kaldırıcısının Yetersizlikleri:**
-- Yalnızca programın sistemdeki başvurusunu kaldırır
-- Tüm ilişkili dosya ve kayıt defteri girdilerini temizlemez
-- “Dijital çöp” birikintilerine yol açar
+## ✨ Öne Çıkan Özellikler
 
-**Sonuçlar:**
-- Sistem performansının düşmesi
-- Disk alanının gereksiz işgali
-- Yazılım çakışmaları ve sistem sorunları
+- **Derin tarama** — Kaldırma sonrası artık dosya ve registry temizliği
+- **Hunter Mode** — Simge veya pencereye sürükleyerek program bul ve kaldır
+- **Windows UWP** — Mağaza uygulamalarını ayrı listeden yönet
+- **Yedekleme** — Kaldırma öncesi otomatik geri yükleme noktası
+- **Ek araçlar (Free)** — Başlangıç yöneticisi, geçici dosya ve tarayıcı temizliği
+- **Pro ekstraları** — Zorla kaldırma, toplu kaldırma, kurulum monitörü, Logs Database
 
-> 💡 Önemli Not: Revo Uninstaller sadece bir “program kaldırıcı” olmaktan öte, Windows işletim sisteminin temel bir zayıflığını gideren ve sistem sağlığının sürdürülmesi için önemli bir araçtır.
-> 
+---
 
-## 2. Çalışma Prensibi ve Program Kaldırma Süreci
+## 📥 İndirme ve Kurulum
 
-### 🔄 Çok Aşamalı Kaldırma Süreci
+### Yöntem 1: Resmi Site — Önerilen
 
-### Aşama 1: Standart Kaldırma
+1. [revouninstaller.com](https://www.revouninstaller.com/) adresine git
+2. **Revo Uninstaller Free** veya **Pro** indir (30 gün Pro denemesi mevcut)
+3. Kurulum sihirbazını takip et — istenmeyen ek yazılım tekliflerine dikkat et
 
-- Programın kendi yerleşik kaldırıcıyı çalıştırır
-- Geliştirici tarafından belirlenen standart prosedürü uygular
+### Yöntem 2: WinGet (Terminal) — Free
 
-### Aşama 2: Derinlemesine Tarama
+```powershell
+winget install RevoUninstaller.RevoUninstaller
+```
 
-- **12+ yıllık** hassas algoritmalar kullanır
-- Kalan dosyaları, klasörleri ve kayıt defteri girişlerini tarar
-- İnatçı programları ve geçici dosyaları tespit eder
+> WinGet genelde Free sürümünü kurar. Pro için resmi siteden lisans satın al.
 
-### 🔑 Kayıt Defteri Temizliği
+### Yöntem 3: UniGetUI
 
-**Önem:**
-- Kalan kayıt defteri girdileri sistem kararsızlığına neden olabilir
-- Manuel düzenleme son derece riskli ve uzmanlık gerektiriyor
-- Revo Uninstaller bu süreci otomatikleştirir
+> UniGetUI açıkken arama çubuğuna **Revo Uninstaller** yaz ve kur.
 
-### 📊 Gerçek Zamanlı Kurulum Monitörü (Pro)
+---
 
-**Özellikler:**
-- Program kurulumu sırasında sistem değişikliklerini takip eder
-- Dosya oluşturma ve kayıt defteri değişikliklerini izler
-- Tam geri döndürme imkanı sağlar
-- Günlükleri dışa/içe aktarabilir
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-### 🔒 Güvenlik Önlemleri
+1. **Yedekleme açık kalsın:** Ayarlar → kaldırma öncesi **Sistem Geri Yükleme Noktası** oluştur
+2. **Tarama modu:** Varsayılan **Orta** tarama çoğu program için yeterli; **Gelişmiş** yalnızca inatçı kalıntılar için
+3. **Hunter Mode:** Sistem tepsisindeki veya masaüstündeki bilinmeyen programlar için kullan
+4. **Free vs Pro:** Günlük kullanımda Free yeterli; zorla kaldırma veya toplu silme gerekiyorsa Pro düşün
 
-**Çok Seviyeli Yedekleme Sistemi:**
-- ✅ Otomatik Sistem Geri Yükleme Noktası
-- ✅ Tam Kayıt Defteri yedeği
-- ✅ Dosyalar Geri Dönüşüm Kutusu’na taşınır
-- ✅ Yedekleme Yöneticisi ile kolay erişim
-- ✅ Günlük kayıt defteri yedeği (Pro)
+> 💡 Modern 64-bit Windows'ta Free sürümün 64-bit program desteği sınırlı olabilir; sorun yaşarsan Pro veya [BCU](Bulk-Crap-Uninstaller%20.md) alternatifine bak.
 
-## 3. Sürümler Arası Karşılaştırma: Free vs Pro
+---
 
-### 💰 Lisanslama Modelleri
+## 🚀 Temel Kullanım
 
-| Sürüm | Lisans Türü | Kurulum Modeli |
-| --- | --- | --- |
-| **Free** | Ücretsiz | Normal kurulum |
-| **Pro Standart** | Shareware | Bilgisayar başına lisans |
-| **Pro Portable** | Shareware | Kullanıcı başına lisans |
+### Normal kaldırma
 
-### 🔧 Özellik Karşılaştırması
+1. Revo'yu aç → listeden programı seç
+2. **Uninstall** → programın kendi kaldırıcısı çalışır
+3. Tarama modunu seç (Güvenli / Orta / Gelişmiş)
+4. Bulunan artıkları incele → **Delete** ile temizle
+
+### Hunter Mode
+
+1. Ana pencerede **Hunter Mode** ikonuna tıkla (hedef simgesi)
+2. Kaldırmak istediğin program simgesine veya penceresine sürükle
+3. Menüden **Uninstall** seç
+
+### Free vs Pro — hızlı karşılaştırma
 
 | Özellik | Free | Pro |
-| --- | --- | --- |
-| **64-bit Uygulama Desteği** | Kısmi (32-bit tam) | ✅ Tam |
-| **Gerçek Zamanlı İzleme** | ❌ | ✅ |
-| **Zorunlu Kaldırma** | ❌ | ✅ |
-| **Hızlı/Çoklu Kaldırma** | ❌ | ✅ |
-| **Komut Satırı Desteği** | ❌ | ✅ |
-| **Günlük Veritabanı** | ❌ | ✅ |
-| **Taşınabilirlik** | ❌ | ✅ (Portable Sürüm) |
-| **Ek Temizlik Araçları** | 8 araç | 6+ araç |
+| ------- | ---- | --- |
+| Artık tarama | Evet | Evet |
+| Hunter Mode | Evet | Evet |
+| Zorla kaldırma | Hayır | Evet |
+| Toplu kaldırma | Hayır | Evet |
+| Kurulum monitörü | Hayır | Evet |
+| Logs Database | Hayır | Evet |
 
-### ⚠️ Kritik Fark: 64-bit Desteği
+---
 
-> Önemli: Modern Windows sistemlerinin (10, 11) neredeyse tamamı 64-bit olduğundan, Pro sürümü güncel sistemler için çok daha uygundur. Ücretsiz sürüm modern kullanıcılar için tam anlamıyla işlevsel olmayabilir.
-> 
+## ⚠️ Bilinen Sorunlar ve Çözümleri
 
-## 4. Revo Uninstaller Free’nin Özellikleri
+| Sorun | Neden Olur | Çözüm |
+| ----- | ---------- | ----- |
+| Sistem bozuldu | Kritik registry silindi | Geri yükleme noktasından dön; Gelişmiş taramada dikkatli ol |
+| 64-bit program kaldırılamıyor | Free sürüm sınırı | Pro kullan veya BCU dene |
+| WinGet eski sürüm | Paket gecikmesi | [revouninstaller.com](https://www.revouninstaller.com/) üzerinden güncel sürüm indir |
+| Kurulumda ek yazılım | Installer bundle | Önerilen yazılımları reddet; özelleştirilmiş kurulum seç |
+| Program listede yok | Bozuk kayıt | Pro **Forced Uninstall** veya BCU **Force Uninstall** |
 
-### 🆓 Temel Özellikler
+---
 
-### Kaldırıcı (Uninstaller) Modülü
+## 🔗 Faydalı Bağlantılar
 
-- Programları tamamen kaldırma
-- Artık dosya ve kayıt defteri taraması
-- Potansiyel sistem sorunlarını önleme
+- 🌐 [Resmi Web Sitesi](https://www.revouninstaller.com/)
+- 📥 [Free İndirme](https://www.revouninstaller.com/free-download/)
+- 📖 [Nasıl Yapılır Rehberleri](https://www.revouninstaller.com/support/how-to-guides/)
+- ❓ [SSS](https://www.revouninstaller.com/support/faq/)
 
-### Windows Uygulamaları Desteği
+---
 
-- Önceden yüklenmiş uygulamalar
-- Kullanıcı tarafından yüklenen uygulamalar
-- Normal programlardan ayrı listeleme
+## 📝 Notlar
 
-### Avcı Modu (Hunter Mode)
+> Revo kayıt defterine müdahale eder; "Gelişmiş" taramada bilmediğin girdileri silme. Free sürüm temel temizlik ve Hunter Mode için iyidir; onlarca program toplu silmek için [Bulk Crap Uninstaller](Bulk-Crap-Uninstaller%20.md) daha uygun olabilir.
 
-- Esnek program kaldırma
-- Hedefleme simgesi
-- Masaüstü kısayol desteği
-- Sistem tepsisi erişimi
+---
 
-### 🧹 8 Ek Temizleme Aracı
+## ⚠️ Sorumluluk Reddi
 
-1. **Autorun Manager** - Başlangıç programları kontrolü
-2. **Junk Files Cleaner** - Geçici dosya temizliği
-3. **Windows Tools** - Windows araçları erişimi
-4. **Browsers Cleaner** - Tarayıcı temizliği
-5. **MS Office Cleaner** - Office geçmişi
-6. **Windows Cleaner** - Sistem temizliği
-7. **Evidence Remover** - Gizli veri silme
-8. **Unrecoverable Delete** - Kalıcı silme
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
 
-### 📋 Sistem Gereksinimleri
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
 
-- **Desteklenen Sistemler:** Windows Vista, 7, 8, 8.1, 10, 11
-- **Server Sürümleri:** Windows Server sürümleri
-- **Mimari:** 32-bit ve 64-bit desteği
-- **Güncel Sürüm:** 2.6.0
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
 
-> 💡 Avantaj: Birçok ücretsiz yazılımın aksine, Revo Uninstaller Free sadece bir “kaldırıcı” olmaktan öte, temel bir “sistem bakım paketi” sunmaktadır.
-> 
+---
 
-## 5. Revo Uninstaller Pro’nun Detaylı Özellikleri
-
-### 🗑️ Kaldırıcı (Uninstaller) Modülü
-
-- Birincil ve temel özellik
-- Normal kaldırılmayan programlar için tasarlanmış
-- Gelişmiş tarama algoritmaları
-
-### 💪 Zorunlu Kaldırma (Forced Uninstall)
-
-**Kullanım Alanları:**
-- Yerleşik kaldırıcı düzgün çalışmıyorsa
-- Program listelerde görünmüyorsa
-- Kısmen yüklenmiş/kaldırılmış programlar
-- Kurulumu bozulmuş programlar
-
-### ⚡ Hızlı/Çoklu Kaldırma (Quick/Multiple Uninstall)
-
-- Birden fazla programı arka arkaya kaldırır
-- Otomatikleştirilmiş süreç
-- Kullanıcı müdahalesi gerektirmez
-
-### 📱 Windows Uygulamaları ve Tarayıcı Uzantıları
-
-**Windows Uygulamaları:**
-- Yerleşik ve Microsoft Mağazası uygulamaları
-- Arama ve filtreleme imkanı
-- Toplu kaldırma desteği (v5)
-
-**Desteklenen Tarayıcılar:**
-- Google Chrome
-- Mozilla Firefox
-- Microsoft Internet Explorer
-- Microsoft Edge
-- Opera
-
-### 📚 Günlük Veritabanı ve Kurulum Günlükleri
-
-**Günlük Veritabanı:**
-- Ekip tarafından oluşturulan geniş program koleksiyonu
-- Sunucuda saklanır
-- Tek tıklamayla kaldırma imkanı
-- Önceden kaldırılmış program kalıntılarını temizleme
-
-**Günlük Yönetimi:**
-- Dışa/içe aktarma
-- Düzenleme komutları
-- Kayıt defteri ve dosya sistem değişikliklerini görme
-
-### 🎯 Avcı Modu (Hunter Mode)
-
-**Özellikler:**
-- Esnek program seçimi
-- Hedefleme simgesi
-- Sürükle-bırak işlevi
-- Sistem tepsisi programları için ideal
-
-**Kullanım Alanları:**
-- Başlangıçta yüklenen programlar
-- İzinsiz sistem tepsisi programları
-- Bilinmeyen programlar
-
-### 🛠️ Ek Temizlik Araçları
-
-1. **Autorun Manager** - Windows başlangıç kontrolü
-2. **Junk Files Cleaner** - Gereksiz dosya temizliği
-3. **Windows Tools** - Windows araçları merkezi
-4. **Browsers Cleaner** - Tarayıcı geçmiş temizliği
-5. **MS Office Cleaner** - Office kullanım geçmişi
-6. **Windows Cleaner** - Sistem kalıntı temizliği
-7. **Evidence Remover** - Gizli veri koruma
-8. **Unrecoverable Delete** - Kalıcı dosya silme
-
-### 🆕 Revo Uninstaller Pro 5 Yenilikleri
-
-**Yeni Özellikler:**
-- ✅ Kaldırma Geçmişi Modülü
-- ✅ Karanlık Mod
-- ✅ Renk Özelleştirme Seçenekleri
-- ✅ Ayarları Dışa/İçe Aktarma
-- ✅ Otomatik Sessiz Güncelleme
-- ✅ İyileştirilmiş kullanıcı arayüzü
-
-**Windows Araçları Eklentileri:**
-- DISM (Windows 10+ görüntü onarımı)
-- DNS önbellek temizleme
-- DirectX bilgisi/tanılama
-
-## 6. Windows’un Yerleşik Kaldırıcısına Göre Avantajları
-
-### 🧽 Derinlemesine Temizlik ve Artık Giderme
-
-**Windows’un Yetersizlikleri:**
-- ❌ Tüm bileşenleri kaldıramaz
-- ❌ Dosya ve klasör artıkları kalır
-- ❌ Kayıt defteri girdileri birikir
-- ❌ Sistem performansı düşer
-
-**Revo Uninstaller’ın Çözümü:**
-- ✅ Artıkları tespit eder ve kaldırır
-- ✅ Gereksiz veri birikimini önler
-- ✅ Potansiyel performans sorunlarını engeller
-- ✅ Sistemin uzun süre hızlı kalmasını sağlar
-
-### 🔧 Bozuk ve İnatçı Program Kaldırma
-
-**Sorunlu Durumlar:**
-- Yerleşik kaldırıcı çalışmıyor
-- Program listelerde görünmüyor
-- Kısmen yüklenmiş/kaldırılmış programlar
-
-**Revo Uninstaller’ın Çözümü:**
-- **Zorunlu Kaldırma** özelliği
-- Standart yöntemlerle kaldırılamayan programları temizler
-
-### 🛡️ Kötü Amaçlı Yazılımlara Karşı Direnç
-
-**Kritik Avantaj:**
-- Windows’un “Program Ekle/Kaldır” bölümü etkisiz hale getirilse bile çalışır
-- Sistem kurtarma aracı olarak işlev görür
-- Güvenlik önlemi sağlar
-- Sistemin bütünlüğünü korur
-
-> 🔒 Güvenlik Notu: Revo Uninstaller sadece bir “kolaylık” aracı değil, aynı zamanda sistem güvenliği için kritik bir “can simidi” rolü üstlenebilir.
-> 
-
-## 7. Dezavantajları ve Sınırlamaları
-
-### 🎨 Kullanıcı Arayüzü Sınırlamaları
-
-**Eleştiriler:**
-- Temel düzey tasarım
-- Yeni başlayanlar için kafa karıştırıcı olabilir
-- Rakipler daha çekici arayüzler sunar
-
-### ⚠️ Potansiyel Riskler
-
-**Güçlü Araçların Riskleri:**
-- Yanlışlıkla kritik sistem dosyalarının silinmesi
-- Kayıt defteri girdilerinin yanlış kaldırılması
-- Sistem kararsızlığı riski
-- Kullanıcı hatası potansiyeli
-
-**Risk Azaltma:**
-- ✅ Çok seviyeli yedekleme sistemi
-- ✅ Sistem Geri Yükleme Noktaları
-- ✅ Kayıt defteri yedeklemeleri
-- ✅ Yedekleme Yöneticisi
-
-### 🎯 Stratejik Konumlandırma
-
-> 📊 Analiz: Revo Uninstaller “hepsini yapan” sistem optimizasyon paketi olmaktan ziyade, program kaldırma ve artık temizleme konusundaki uzmanlığına odaklanmıştır. Bu niş uzmanlık stratejisi, belirli kullanıcı kitlesine hitap ederken, genel sistem bakımı arayanlar için eksik kalabilir.
->
+*Son güncelleme: 2026-05-22*

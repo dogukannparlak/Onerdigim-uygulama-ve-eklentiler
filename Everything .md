@@ -1,348 +1,175 @@
-# Everything
+# 🛠️ Everything
 
-## Everything Nedir?
+> **Kısa Açıklama:** Windows'ta dosya ve klasör adlarına göre anlık arama yapan hafif ve hızlı arama aracı.
 
-**Everything**, Windows işletim sistemi için geliştirilmiş, dosya ve klasörleri dosya adına göre **anlık** olarak bulan güçlü bir arama motorudur. Windows’un yerleşik arama özelliğinin aksine, Everything başlangıçta bilgisayarınızdaki tüm dosya ve klasörleri görüntüler (bu nedenle adı “Everything”).
-
-### Ana Avantajları:
-
-- ⚡ **Anlık arama** - Yazarken sonuçlar gerçek zamanlı görünür
-- 💾 **Minimal kaynak kullanımı** - Çok az RAM ve disk alanı
-- 🔄 **Gerçek zamanlı güncelleme** - Dosya sistemi değişikliklerini otomatik izler
-- 🆓 **Tamamen ücretsiz** - Reklam, malware veya spyware içermez
-- 🎯 **Yüksek doğruluk** - NTFS dosya sistemi entegrasyonu
+Güncel · Windows · Ücretsiz · Sistem Araçları
 
 ---
 
-## Özellikler
+## 📌 Genel Bakış
 
-### 🚀 Temel Özellikler
-
-- **Anlık indeksleme**: Yeni Windows 10 kurulumu (~120,000 dosya) yaklaşık 1 saniyede indekslenir
-- **Gerçek zamanlı izleme**: Dosya sistemi değişiklikleri anlık olarak yansıtılır
-- **Boolean operatörler**: AND, OR, NOT işlemleri ile gelişmiş arama
-- **Joker karakterler**:  ve `?` karakterleri ile esnek arama
-- **İçerik arama**: `content:` fonksiyonu ile dosya içeriği arama
-
-### 📊 Performans Bilgileri
-
-| Dosya Sayısı | İndeksleme Süresi | RAM Kullanımı | Disk Kullanımı |
-| --- | --- | --- | --- |
-| 120,000 | ~1 saniye | ~14 MB | <9 MB |
-| 1,000,000 | ~1 dakika | ~75 MB | ~45 MB |
-
-### 🛠️ Desteklenen Dosya Sistemleri
-
-- **NTFS**: Tam otomatik indeksleme (önerilen)
-- **FAT/FAT32/exFAT**: Manuel ekleme gerekli
-- **Ağ sürücüleri**: Desteklenir (özel konfigürasyon gerekebilir)
+Everything, Windows'un yerleşik aramasına kıyasla dosya adlarını neredeyse anında bulan bir arama motorudur. NTFS birimlerinde dosya adı indeksi tutar; yazdıkça sonuçlar gerçek zamanlı güncellenir. İçerik araması yapmaz — dosya adı ve meta veri odaklıdır. Reklamsız ve düşük bellek kullanır.
 
 ---
 
-## Sistem Gereksinimleri
+## ✨ Öne Çıkan Özellikler
 
-### NTFS İndeksleme Gereksinimleri
-
-NTFS indeksleme için aşağıdakilerden biri gerekli:
-- Everything Servisinin kurulu olması **VEYA**
-- Everything’in yönetici olarak çalıştırılması
-
----
-
-## Kurulum
-
-### 🔽 İndirme ve Kurulum
-
-1. [Voidtools resmi sitesinden](https://www.voidtools.com/) Everything’i indirin
-2. Kurulum dosyasını çalıştırın
-3. **Lite versiyonu** seçenekleri:
-    - Normal versiyon: Tüm özellikler dahil
-    - Lite versiyon: ETP/FTP sunucu, HTTP sunucu ve IPC özellikleri kaldırılmış
-
-### ⚙️ İlk Kurulum Ayarları
-
-### Önerilen Ayarlar:
-
-```
-Tools → Options → General:
-☑️ Store settings and data in %APPDATA%\Everything
-☑️ Everything Service
-☐ Run as administrator
-```
-
-Bu ayarlar:
-- UAC (Kullanıcı Hesabı Denetimi) uyarılarını engeller
-- Servis olarak çalışarak sürekli erişim sağlar
-- Standart kullanıcı olarak güvenli çalışma
+- **Anlık arama** — Yazarken sonuçlar görünür
+- **Düşük kaynak** — Az RAM ve disk kullanımı
+- **NTFS entegrasyonu** — Dosya değişikliklerini otomatik izler
+- **Gelişmiş sorgular** — Joker (`*`, `?`), OR (`|`), NOT (`!`)
+- **Filtreler** — Ses, video, resim, doküman grupları
+- **Ücretsiz** — Reklam veya spyware içermez
 
 ---
 
-## Kullanım Rehberi
+## 📥 İndirme ve Kurulum
 
-### 🔍 Temel Arama
+### Yöntem 1: Resmi Site — Önerilen
 
-Arama kutusuna yazmaya başladığınızda sonuçlar anında görünür:
+1. [voidtools.com](https://www.voidtools.com/) adresine git
+2. **Download** → **x64 Installer** (veya sisteme uygun sürüm) indir
+3. Kurulum sihirbazını takip et
+4. İsteğe bağlı: **Lite** sürüm — ETP/FTP/HTTP sunucu özellikleri olmadan daha sade kurulum
 
-```
-# Örnekler:
-document        # "document" içeren tüm dosyalar
-*.pdf           # Tüm PDF dosyaları
-photo 2023      # Hem "photo" hem "2023" içeren dosyalar
-```
+> Normal sürüm çoğu kullanıcı için uygundur; yalnızca arama istiyorsan Lite yeterli olabilir.
 
-### 📁 Konum Bazlı Arama
+### Yöntem 2: WinGet (Terminal)
 
-Belirli bir konumda arama yapmak için:
-
-```
-downloads\ .mp3          # Downloads klasöründeki MP3 dosyaları
-c:\users\yourname\ .txt  # Kullanıcı klasöründeki TXT dosyaları
+```powershell
+winget install voidtools.Everything
 ```
 
-**Alternatif**: `Search → Match Path` seçeneğini etkinleştirin:
+### Yöntem 3: UniGetUI
 
-```
-downloads .mp3   # Match Path aktifken
+> UniGetUI açıkken arama çubuğuna **Everything** yaz ve kur.
+
+### Yöntem 4: Chocolatey
+
+```powershell
+choco install everything
 ```
 
 ---
 
-## Arama Teknikleri
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-### 🔤 Boolean Operatörleri
+Ayarlar: **Araçlar → Seçenekler** (veya `Ctrl+P`)
 
-### AND (Varsayılan)
+1. **Everything Service:** Genel → **Everything Service** işaretle; **Run as administrator** kapalı bırak — UAC uyarısı azalır, NTFS indekslemesi sürekli çalışır.
+2. **Arayüz:** Genel → **Arayüz** → **Arka planda çalıştır**, **Tepsi simgesi göster** ve **Tepsi simgesine tek tıklamayla aç** açık kalsın.
+3. **Kısayol tuşu:** Genel → **Klavye** → hızlı açma kısayolunu tanımla (ör. `Ctrl+Alt+E`).
 
-```
-photo vacation    # Hem "photo" hem "vacation" içeren dosyalar
-```
-
-### OR (|)
-
-```
-.jpg | .png | .gif    # JPG, PNG veya GIF dosyaları
-report | document     # "report" VEYA "document" içeren dosyalar
-```
-
-### NOT (!)
-
-```
-!temp             # "temp" içermeyen dosyalar
-photo !backup     # "photo" içeren ama "backup" içermeyen dosyalar
-```
-
-### 🃏 Joker Karakterler
-
-### Asterisk (*) - Çoklu karakter
-
-```
-e*g              # "e" ile başlayıp "g" ile biten dosyalar
-*.??             # 2 karakterli uzantısı olan dosyalar
-report*2023      # "report" ile başlayıp "2023" içeren dosyalar
-```
-
-### Soru işareti (?) - Tek karakter
-
-```
-photo?.jpg       # photo1.jpg, photoA.jpg gibi
-test??.txt       # test01.txt, testAB.txt gibi
-```
-
-### 📝 Dosya Türü Arama
-
-```
-# Ses dosyaları
-*.mp3 | *.wav | *.flac
-
-# Video dosyaları
-*.mp4 | *.avi | *.mkv
-
-# Resim dosyaları
-*.jpg | *.png | *.gif | *.bmp
-
-# Doküman dosyaları
-*.pdf | *.doc | *.docx | *.txt
-```
-
-### 🔍 İçerik Arama
-
-```
-content:password     # İçeriğinde "password" geçen dosyalar
-content:"API key"    # İçeriğinde "API key" geçen dosyalar
-```
-
-⚠️ **Not**: İçerik arama indekslenmez, bu yüzden yavaştır.
-
-### 📏 Boyut Arama
-
-```
-size:>1GB           # 1 GB'dan büyük dosyalar
-size:<100MB         # 100 MB'dan küçük dosyalar
-size:500KB..2MB     # 500 KB ile 2 MB arası dosyalar
-```
-
-### 📅 Tarih Arama
-
-```
-# Oluşturulma tarihi
-created:today
-created:yesterday
-created:thisweek
-created:2023
-
-# Değiştirilme tarihi
-modified:today
-modified:lastyear
-
-# Erişim tarihi
-accessed:thismonth
-```
+> 💡 **İpucu:** NTFS dışı (FAT32, exFAT) veya ağ sürücüleri için **İndeksler → Klasörler → Ekle** ile manuel ekleme gerekir.
 
 ---
 
-## Gelişmiş Özellikler
+## 📋 Seçenekler — Son Kullanıcı İçin Önemli Ayarlar
 
-### 🎛️ Filtreler
+Sol menüdeki kategorilerden günlük kullanımda işine yarayanlar:
 
-Everything’de önceden tanımlı filtreler:
+### Genel → Arayüz
 
-```
-# Ana filtreler
-Everything    # Tüm dosyalar (varsayılan)
-Audio        # Ses dosyaları
-Video        # Video dosyaları
-Picture      # Resim dosyaları
-Document     # Doküman dosyaları
-```
+- **Yazdığım gibi ara** — Yazdıkça anında sonuç (varsayılan açık)
+- **Arka planda çalıştır** — Kapatınca tepsi simgesinde kalır
+- **Tepsi simgesine tek tıklamayla aç** — Bildirim alanından hızlı erişim
 
-### 🔧 Özel Filtreler Oluşturma
+### Genel → Arama
 
-```
-Tools → Options → Filters → Add...
+- **Hızlı ASCII araması** — Standart karakterlerde daha hızlı arama
+- **Yol ayıracı içerdiğinde yolu eşleştir** — `downloads\` gibi klasör yolu aramaları
+- **Jokerlerde bütün dosya adını eşleştir** — `*` ve `?` ile tam eşleşme
+- **İşletici üstünlüğü** — `OR > AND` (birden fazla kelimede mantık sırası)
 
-# Örnek: Geliştirme dosyaları filtresi
-Name: Dev Files
-Search: *.js | *.css | *.html | *.php | *.py
-```
+### Genel → Sonuçlar
 
-### 📊 Sıralama Seçenekleri
+- **Yeniden adlandırırken uzantıyı seçme** — `.pdf` uzantısını yanlışlıkla silmeyi önler
+- **Tarihi / boyutu büyükten küçüğe sırala** — En yeni veya en büyük dosyalar üstte
 
-```
-# Sıralama kriterleri
-Ctrl+1    # İsme göre
-Ctrl+2    # Boyuta göre
-Ctrl+3    # Türe göre
-Ctrl+4    # Değiştirilme tarihine göre
-Ctrl+5    # Oluşturulma tarihine göre
-```
+### Genel → Görünüm
 
----
+- **Vurgulanan arama terimlerini göster** — Eşleşen kısımlar vurgulanır
+- **Araç ipuçlarını göster** — Fare ile üzerine gelince bilgi
 
-## Everything Toolbar
+### Genel → Bağlam Menüsü
 
-Everything Toolbar, Everything’in işlevselliğini Windows görev çubuğuna entegre eden açık kaynak bir projedir.
+- Sağ tık menüsünden **Adı / Yolu / Tam adı panoya kopyala** — Dosya yolunu hızlı paylaş
 
-### 📦 Kurulum
+### İndeksler
 
-1. [GitHub sayfasından](https://github.com/srwi/EverythingToolbar) en son sürümü indirin
-2. MSI dosyasını çalıştırarak kurun
-3. Görev çubuğında sağ tıklayıp **Toolbars → EverythingToolbar** seçin
+- **NTFS** — Sabit diskler otomatik dahil; **Değişiklikleri izle** açık kalsın
+- **Klasörler** — NTFS olmayan veya ağ klasörlerini manuel ekle
+- **Dışında Tutma** — Temp, `$Recycle.Bin` gibi klasörleri aramadan hariç tut
+- **Yeniden Oluşturmaya Zorla** — İndeks bozulursa sıfırdan tara
 
-### ✨ Özellikler
-
-- 🔍 **Görev çubuğı entegrasyonu**: Doğrudan görev çubuğundan arama
-- ⌨️ **Klavye kısayolları**: Hızlı erişim için özelleştirilebilir
-- 🎨 **Tema desteği**: Windows tema ile uyumlu
-- 🔧 **Özelleştirilebilir**: Genişlik, pozisyon ve davranış ayarları
-
-### ⌨️ Varsayılan Kısayollar
-
-```
-Win + Alt + S     # Everything Toolbar'a odaklan
-Escape           # Arama kutusunu temizle
-Enter            # İlk sonucu aç
-Ctrl + Enter     # Klasörü aç
-```
-
-### ⚙️ Yapılandırma
-
-```
-# Toolbar ayarları
-- Genişlik: Piksel cinsinden ayarlanabilir
-- Placeholder metin: Özelleştirilebilir
-- Otomatik tamamlama: Etkinleştirilebilir
-- Sonuç sayısı: Gösterilecek maksimum sonuç
-```
+> ETP/FTP ve HTTP Sunucusu gelişmiş özelliklerdir; yalnızca ağ üzerinden erişim gerekiyorsa kullan. Lite sürümde bu seçenekler yoktur.
 
 ---
 
-## Sık Sorulan Sorular
+## 🚀 Temel Kullanım
 
-### ❓ Genel Sorular
+### Hızlı arama
 
-**S: Everything ne kadar güvenlidir?**
-C: Everything tamamen güvenlidir. Malware, spyware veya adware içermez. Açık kaynak topluluk tarafından incelenir.
+1. Everything'i aç
+2. Arama kutusuna yaz — sonuçlar anında listelenir
+3. Dosyaya çift tıkla veya Enter ile aç
 
-**S: Everything kapalıyken yapılan değişiklikler kaçırılır mı?**
-C: Hayır. NTFS USN Journal sayesinde Everything kapalıyken bile değişiklikler sistem tarafından kaydedilir.
+### Sık kullanılan sorgular
 
-**S: Neden Everything Windows arama özelliğinden daha hızlı?**
-C: Everything sadece dosya adlarını indeksler, içeriklerini değil. NTFS Master File Table’ı doğrudan okur.
+| Sorgu | Sonuç |
+| ----- | ----- |
+| `rapor` | Adında "rapor" geçen dosyalar |
+| `*.pdf` | Tüm PDF dosyaları |
+| `*.jpg \| *.png` | JPG veya PNG dosyaları |
+| `downloads\ *.mp3` | Downloads klasöründeki MP3'ler |
+| `size:>1GB` | 1 GB'dan büyük dosyalar |
 
-### 🔧 Teknik Sorular
-
-**S: UAC uyarılarından nasıl kurtulabilirim?**
-C: Everything Service’i yükleyin ve “Run as administrator” seçeneğini kapatın:
-
-```
-Tools → Options → General:
-☑️ Everything Service
-☐ Run as administrator
-```
-
-**S: FAT/FAT32 diskleri nasıl indekslerim?**
-C: Manuel olarak eklemeniz gerekir:
-
-```
-Tools → Options → Folders → Add...
-```
-
-**S: Ağ sürücüleri neden görünmüyor?**
-C: Everything’i standart kullanıcı olarak çalıştırmayı deneyin:
-
-```
-Tools → Options → General:
-☑️ Everything Service
-☐ Run as administrator
-```
+> `content:kelime` ile dosya içeriği aranabilir; indekslenmediği için yavaştır.
 
 ---
 
-## Performans ve Optimizasyon
+## ⚠️ Bilinen Sorunlar ve Çözümleri
 
-### ⚡ Hızlandırma İpuçları
 
-1. **SSD kullanın**: Özellikle Everything veritabanı için
-2. **NTFS kullanın**: FAT32’den çok daha hızlı
-3. **Servis modunu kullanın**: Sürekli çalışır durumda
-4. **Gereksiz klasörleri hariç tutun**: Temp, cache klasörleri gibi
+| Sorun | Neden Olur | Çözüm |
+| ----- | ---------- | ----- |
+| Sonuç yok / eksik | NTFS indekslenmemiş | Everything Service açık mı kontrol et; sürücü NTFS mi bak |
+| UAC uyarısı | Yönetici modu | Service kullan; "Run as administrator" kapat |
+| Ağ sürücüsü görünmüyor | Manuel ekleme gerekir | Seçenekler → İndeksler → Klasörler → Ekle |
+| FAT32 disk yok | Otomatik indeks yok | Seçenekler → İndeksler → Klasörler ile ekle |
+| İndeks güncel değil | USN veya servis sorunu | Seçenekler → İndeksler → **Yeniden Oluşturmaya Zorla** |
 
-```
-# Hariç tutulacak klasörler örneği
-Tools → Options → Exclude:
-C:\Windows\Temp\
-C:\Users\*\AppData\Local\Temp\
-C:\$Recycle.Bin\
-```
-
-### 📈 İndeksleme Optimizasyonu
-
-```
-# NTFS volumes için otomatik ayarlar
-Tools → Options → NTFS:
-☑️ Include in database
-☑️ Monitor changes
-☑️ Enable USN Journal on volume
-```
 
 ---
+
+## 🔗 Faydalı Bağlantılar
+
+- 🌐 [Resmi Web Sitesi](https://www.voidtools.com/)
+- 📖 [Arama Sözdizimi (FAQ)](https://www.voidtools.com/support/everything/searching/)
+- 🔧 [Everything Toolbar (isteğe bağlı)](https://github.com/srwi/EverythingToolbar) — Görev çubuğundan arama
+
+---
+
+## 📝 Notlar
+
+> Everything yalnızca **dosya adı** indeksler; Windows Search gibi e-posta veya belge içeriği taramaz — bu yüzden çok hızlıdır. Görev çubuğu entegrasyonu isteyenler [Everything Toolbar](https://github.com/srwi/EverythingToolbar) eklentisine bakabilir (ayrı kurulum).
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-22*
