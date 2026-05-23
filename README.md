@@ -1,95 +1,118 @@
 # 🚀 Önerdiğim Uygulama ve Eklentiler
 
-Bu repository, Windows kullanıcıları için özenle seçilmiş uygulama ve eklenti önerilerini içerir. Her uygulama detaylı olarak incelenmiş ve kullanım rehberleri ile birlikte sunulmuştur.
+> **Kısa Açıklama:** Windows, tarayıcı ve günlük kullanım için özenle seçilmiş uygulama ve eklenti rehberleri - kurulum, ayar ve kullanım adımlarıyla birlikte.
 
-## 📋 İçindekiler
+Windows · Chrome/Edge/Brave · Ücretsiz seçenekler ağırlıklı · Bilgilendirme amaçlı
 
-### 🖥️ Sistem Araçları
+---
 
-- **7-Zip** - Güçlü arşiv yöneticisi
-- **EarTrumpet** - Gelişmiş ses kontrolü
-- **Everything** - Hızlı dosya arama
-- **ExplorerBlurMica** - Windows Explorer görsel iyileştirme
-- **PowerToys** - Microsoft'un güçlü araç seti
-- **QuickLook** - Dosya önizleme aracı
-- **UniGetUI** - Paket yöneticisi arayüzü
-- **Wintoys** - Windows optimizasyon aracı
-- **Winutil** - Windows yardımcı araçları
-- **Windhawk** - Windows özelleştirme aracı
-- **Nilesoft Shell** - Bağlam menüsü özelleştirme
+## 📌 Genel Bakış
 
-### 🧩 Chrome Eklentileri
+Bu repository, kişisel kullanım için seçtiğim uygulama ve eklentilerin son kullanıcı rehberlerini içerir. Her dosyada kurulum yöntemleri, temel kullanım ve bilinen sorunlar anlatılır; mümkün olduğunca resmi kaynaklara yönlendirilir.
 
-> Tam liste, bağlantılar ve kurulum rehberleri: **[chrome-extensions/README.md](chrome-extensions/README.md)** · 21 eklenti, 6 kategori
+**Koleksiyon özeti:** 11 sistem aracı · 21 Chrome eklentisi · 2 PDF aracı · 4 medya/oyun uygulaması · 3 kaldırma rehberi
 
-#### 🛡️ Güvenlik ve Gizlilik
+---
 
-- **uBlock Origin** - Açık kaynak reklam ve izleyici engelleyici
-- **AdBlock** - Reklam engelleyici
-- **Dark Reader** - Karanlık mod
-- **I don't care about cookies** - Çerez uyarıları
+## 📂 Koleksiyonlar
 
-#### 🎬 Medya ve İçerik
+| Koleksiyon | Rehber | İçerik |
+| ---------- | ------ | ------ |
+| **Chrome eklentileri** | [chrome-extensions/README.md](chrome-extensions/README.md) | 21 eklenti, 6 kategori |
+| **Kaldırma araçları** | [Uninstaller/README.md](Uninstaller/README.md) | Revo, BCU, karşılaştırma |
 
-- **GoFullPage** - Tam sayfa ekran görüntüsü
-- **Hover Zoom+** - Resim büyütme
-- **Save image as Type** - Resim formatı değiştirme
-- **Volume Master** - Sekme bazlı ses kontrolü
+---
 
-#### 📚 Okuma ve Metin
+## 🖥️ Sistem Araçları
 
-- **Immersive Translate** - Çeviri aracı
-- **Medium Parser** - Medium okuma deneyimi
+Windows deneyimini güçlendiren, optimize eden ve özelleştiren araçlar.
 
-#### 🎮 Steam ve Oyun
+| Uygulama | Ne işe yarar |
+| -------- | ------------ |
+| [7-Zip](7-Zip%20.md) | Arşiv oluşturma ve açma |
+| [EarTrumpet](EarTrumpet.md) | Uygulama bazlı ses kontrolü |
+| [Everything](Everything%20.md) | Anlık dosya arama |
+| [ExplorerBlurMica](ExplorerBlurMica.md) | Dosya Gezgini'nde Mica/blur efekti |
+| [Nilesoft Shell](nilesoft-shell.md) | Sağ tık bağlam menüsü özelleştirme |
+| [PowerToys](powertoys%20.md) | Microsoft'un resmi Windows araç paketi |
+| [QuickLook](QuickLook%20.md) | Boşluk tuşuyla dosya önizleme |
+| [UniGetUI](UniGetUI%20.md) | WinGet, Chocolatey ve diğer paket yöneticileri için arayüz |
+| [WinToys](wintoys.md) | Sistem yönetimi, temizlik ve ince ayarlar |
+| [WinUtil](winutil.md) | Toplu kurulum, tweak, onarım ve güncelleme politikası |
+| [Windhawk](Windhawk.md) | Windows arayüzünü mod ile özelleştirme |
 
-- **Augmented Steam** - Steam geliştirici
-- **Steam TRY** - Steam Türk Lirası fiyatları
-- **SteamDB** - Steam veritabanı
+---
 
-#### 🌐 Web Araçları
+## 🧩 Chrome Eklentileri
 
-- **Web Archives** - Web arşivi erişimi
-- **Buster: Captcha Solver** - reCAPTCHA sesli doğrulama çözümü
-- **Resim içinde Resim (PiP)** - Kayan video oynatıcı
-- **Search by Image** - Tersine görsel arama
+Tam liste, kategori tabloları ve kurulum rehberleri: **[chrome-extensions/README.md](chrome-extensions/README.md)**
 
-#### 📺 YouTube Optimizasyonu
+| Kategori | Eklenti sayısı |
+| -------- | -------------- |
+| Güvenlik ve Gizlilik | 4 |
+| Medya ve İçerik | 4 |
+| Okuma ve Metin | 2 |
+| Steam ve Oyun | 3 |
+| Web Araçları | 4 |
+| YouTube Optimizasyonu | 4 |
 
-- **Enhancer for YouTube** - YouTube oynatıcı özelleştirme
-- **Multiselect for YouTube** - Çoklu seçim
-- **SponsorBlock** - Sponsor atlatma
-- **YouTube Playlist Duration Calculator** - Playlist süre hesaplama
+---
 
-### 📄 PDF Araçları
+## 📄 PDF Araçları
 
-- **PDFgear** - PDF düzenleyici
-- **StirlingPDF** - PDF işleme aracı
-- **SumatraPDF** - Hafif PDF okuyucu
-- **BentoPDF** - Gizlilik odaklı tarayıcı PDF araç seti (50+ araç)
+| Uygulama | Ne işe yarar |
+| -------- | ------------ |
+| [SumatraPDF](SumatraPDF.md) | Hafif PDF ve belge okuyucu |
+| [BentoPDF](BentoPDF.md) | Tarayıcıda gizlilik odaklı PDF düzenleme (50+ araç) |
 
-### 📝 Ofis ve Medya
+---
 
-- **VLC** - Çok amaçlı medya oynatıcı
-- **Stremio** - Medya merkezi
+## 📝 Ofis ve Medya
 
-### 🎮 Oyun ve Eğlence
+| Uygulama | Ne işe yarar |
+| -------- | ------------ |
+| [VLC](VLC.md) | Çok formatlı medya oynatıcı |
+| [Stremio](Stremio.md) | Film/dizi izleme merkezi |
 
-- **Playnite** - Oyun kütüphanesi yöneticisi
-- **QBittorrent** - Torrent istemcisi
+---
 
-### 🗑️ Kaldırma Araçları
+## 🎮 Oyun ve İndirme
 
-- **Bulk Crap Uninstaller** - Toplu kaldırma
-- **Revo Uninstaller** - Gelişmiş kaldırma
-- **Revo vs Bulk Crap Uninstaller** - Karşılaştırma
+| Uygulama | Ne işe yarar |
+| -------- | ------------ |
+| [Playnite](Playnite.md) | Tüm oyun kütüphanelerini tek arayüzde toplama |
+| [qBittorrent](QBittorrent%20.md) | Açık kaynak torrent istemcisi |
+
+---
+
+## 🗑️ Kaldırma Araçları
+
+Windows'un bıraktığı artıkları temizlemek için: **[Uninstaller/README.md](Uninstaller/README.md)**
+
+| Rehber | Ne işe yarar |
+| ------ | ------------ |
+| [Revo Uninstaller](Uninstaller/Revo-Uninstaller%20.md) | Derin artık taraması, Hunter Mode |
+| [Bulk Crap Uninstaller](Uninstaller/Bulk-Crap-Uninstaller%20.md) | Toplu kaldırma, Steam/UWP algılama |
+| [Revo vs BCU](Uninstaller/Revo-vs-Bulk-Crap-Uninstaller.md) | Hangisini ne zaman kullanmalısın? |
+
+---
 
 ## 🚀 Nasıl Kullanılır?
 
-1. **Kategoriye göre gezinme**: Yukarıdaki kategorilerden ihtiyacınız olan uygulama türünü seçin
-2. **Uygulama inceleme**: Her uygulama için detaylı rehber ve özellik listesi bulabilirsiniz
-3. **Kurulum**: Her dosyada kurulum adımları ve kullanım ipuçları mevcuttur
-4. **Özelleştirme**: Uygulamaları ihtiyaçlarınıza göre yapılandırma rehberleri
+1. Yukarıdaki kategoriden ihtiyacına uygun uygulamayı veya koleksiyonu seç
+2. İlgili `.md` dosyasını aç; kurulum ve ayar adımlarını oku
+3. Uygulamayı **yalnızca resmi kaynaktan** indir (Store, WinGet, GitHub, resmi site)
+4. Sistem araçlarında değişiklik yapmadan önce geri yükleme noktası oluştur
+
+> 💡 Yeni rehber eklerken [TEMPLATE.md](TEMPLATE.md) dosyasını şablon olarak kullanabilirsin.
+
+---
+
+## 📝 Notlar
+
+> Rehberler kişisel kullanım ve bilgilendirme amaçlıdır; uygulama sürümleri ve arayüzler zamanla değişebilir. Güncel bilgi için her zaman resmi dokümantasyonu kontrol et.
+
+---
 
 ## ⚠️ Sorumluluk Reddi
 
@@ -105,18 +128,6 @@ Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar
 
 **Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
 
-## 🔧 Katkıda Bulunma
-
-Bu proje sürekli güncellenmektedir. Yeni uygulama önerileri, güncellemeler veya düzeltmeler için katkıda bulunabilirsiniz.
-
-## 📚 Not
-
-Her uygulama ve eklenti için detaylı kurulum rehberleri, kullanım ipuçları ve özelleştirme seçenekleri ilgili dosyalarda bulunmaktadır. Uygulama indirme linklerini her zaman resmi kaynaklardan kontrol etmeyi unutmayın.
-
 ---
 
-⭐ Bu koleksiyonu beğendiyseniz, yıldız vermeyi unutmayın!
-
----
-
-*Son güncelleme: 2026-05-22*
+*Son güncelleme: 2026-05-23*
