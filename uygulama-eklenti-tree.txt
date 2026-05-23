@@ -1,0 +1,59 @@
+Onerdigim-uygulama-ve-eklentiler/
+├── chrome-extensions/
+│   ├── Güvenlik ve Gizlilik/
+│   │   ├── AdBlock.md
+│   │   ├── Dark-Reader.md
+│   │   ├── I-dont-care-about-cookies.md
+│   │   └── uBlock-Origin.md
+│   ├── Medya ve İçerik/
+│   │   ├── GoFullPage.md
+│   │   ├── Hover-Zoom+.md
+│   │   ├── Save-image-as-Type.md
+│   │   └── Volume-Master.md
+│   ├── Okuma ve Metin/
+│   │   ├── Immersive-Translate.md
+│   │   └── Medium-Parser.md
+│   ├── Steam ve Oyun/
+│   │   ├── Augmented-Steam.md
+│   │   ├── Steam-TRY.md
+│   │   └── SteamDB .md
+│   ├── Web Araçları/
+│   │   └── Web-Archives .md
+│   ├── Web Araçları/
+│   │   ├── Buster-Captcha-Solver.md
+│   │   ├── Picture-in-Picture.md
+│   │   └── Search-by-Image.md
+│   ├── YouTube Optimizasyonu/
+│   │   ├── Enhancer-for-YouTube.md
+│   │   ├── Multiselect-for-YouTube.md
+│   │   ├── SponsorBlock.md
+│   │   └── YouTube-Playlist-Duration-Calculator.md
+│   └── README.md
+├── Uninstaller/
+│   ├── Bulk-Crap-Uninstaller .md
+│   ├── README.md
+│   ├── Revo-Uninstaller .md
+│   └── Revo-vs-Bulk-Crap-Uninstaller.md
+├── 7-Zip .md
+├── AltSnap.md
+├── BentoPDF.md
+├── Brave.md
+├── EarTrumpet.md
+├── Everything .md
+├── ExplorerBlurMica.md
+├── LocalSend.md
+├── Monitorian.md
+├── nilesoft-shell.md
+├── Playnite.md
+├── powertoys .md
+├── QBittorrent .md
+├── QuickLook .md
+├── README.md
+├── Stremio.md
+├── SumatraPDF.md
+├── UniGetUI .md
+├── Uninstaller.md
+├── VLC.md
+├── Windhawk.md
+├── wintoys.md
+└── winutil.md
