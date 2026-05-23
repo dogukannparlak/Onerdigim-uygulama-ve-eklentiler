@@ -1,616 +1,410 @@
-# winutil
+# 🛠️ WinUtil
 
-# Chris Titus Tech Windows Utility
+> **Kısa Açıklama:** Windows'ta toplu uygulama kurulumu, sistem tweak'leri, onarım araçları ve güncelleme politikalarını tek arayüzden yöneten ücretsiz PowerShell aracı.
 
----
-
-## 🎯 Genel Bakış
-
-### Araç Hakkında
-
-Chris Titus Tech Windows Utility (WinUtil), Windows sistemlerini optimize etmek, gereksiz yazılımları kaldırmak ve gizlilik ayarlarını yapılandırmak için geliştirilmiş kapsamlı bir araçtır. Chris Titus Tech tarafından geliştirilen bu araç, Windows kullanıcılarının sistemlerini daha verimli, güvenli ve kullanıcı dostu hale getirmelerine yardımcı olur.
-
-### Temel Özellikler
-
-- ✅ **Otomatik Uygulama Kurulumu**: Popüler yazılımları toplu olarak kurma
-- ✅ **Sistem Optimizasyonu**: Performans artırıcı tweaklar
-- ✅ **Gizlilik Koruması**: Telemetri ve takip özelliklerini devre dışı bırakma
-- ✅ **Bloatware Temizliği**: Gereksiz uygulamaları kaldırma
-- ✅ **Özel ISO Oluşturma**: MicroWin ile optimize edilmiş Windows ISO’ları
-- ✅ **PowerShell Entegrasyonu**: Gelişmiş komut satırı desteği
-    
-    
+2026.x · Windows 10/11 · MIT / ücretsiz · Sistem yönetimi
 
 ---
 
-## 🚀 Kurulum ve Başlangıç
+## 📌 Genel Bakış
 
-### Kurulum Yöntemleri
+WinUtil (Chris Titus Tech Windows Utility), popüler programları toplu kurmanı, Windows gizlilik ve performans ayarlarını tek tıkla uygulamanı, sistem onarım araçlarına erişmeni ve Windows Update politikasını yapılandırmanı sağlar. Grafik arayüz sunar; arka planda PowerShell, WinGet veya Chocolatey kullanır.
 
-### 1️⃣ PowerShell ile Hızlı Kurulum (Önerilen)
+Bu rehberde 4 ana sekme anlatılır: **Install**, **Tweaks**, **Config**, **Updates**.
+
+> ⚠️ WinUtil sistem genelinde değişiklik yapar. **Yönetici olarak** çalıştırman gerekir. Tweaks uygulamadan önce geri yükleme noktası oluşturman önerilir.
+
+> En güncel bilgi için [resmi GitHub deposunu](https://github.com/ChrisTitusTech/winutil) ve [winutil.christitus.com](https://winutil.christitus.com) dokümantasyonunu kontrol et. Arayüz ve madde listesi sürüme göre değişebilir.
+
+---
+
+## ✨ Öne Çıkan Özellikler
+
+- **Install** — Kategorilere ayrılmış yüzlerce uygulamayı toplu kur, kaldır veya güncelle
+- **Tweaks** — Gizlilik, performans ve arayüz ayarlarını hazır profillerle veya tek tek uygula
+- **Config** — Windows özelliklerini aç/kapat, sistem onarımı çalıştır, klasik panellere kısayol
+- **Updates** — Windows Update politikasını varsayılan, dengeli veya kapalı moda al
+
+---
+
+## 📥 İndirme ve Kurulum
+
+### Yöntem 1: PowerShell — Önerilen
+
+1. Başlat menüsünde **Terminal** veya **PowerShell** ara
+2. Sağ tık → **Yönetici olarak çalıştır**
+3. Aşağıdaki komutu yapıştır:
 
 ```powershell
 irm "https://christitus.com/win" | iex
 ```
 
-### 2️⃣ Winget ile Kurulum
+Script indirilir ve WinUtil arayüzü açılır. Her çalıştırmada güncel sürüm çekilir; internet bağlantısı gerekir.
 
-```
+### Yöntem 2: WinGet
+
+```powershell
 winget install ChrisTitusTech.WinUtil
 ```
 
-### 3️⃣ Manuel Kurulum
+Kurulumdan sonra WinUtil'i yönetici PowerShell'den başlat.
 
-1. GitHub Releases sayfasından en son sürümü indirin: https://github.com/ChrisTitusTech/winutil/releases
-2. ZIP dosyasını çıkarın
-3. PowerShell ile çalıştırın:
+### Yöntem 3: GitHub Releases
+
+1. [github.com/ChrisTitusTech/winutil/releases](https://github.com/ChrisTitusTech/winutil/releases) adresine git
+2. `winutil.ps1` dosyasını indir
+3. Yönetici PowerShell'de çalıştır:
 
 ```powershell
 .\winutil.ps1
 ```
 
-### ⚠️ Güvenlik Uyarıları
+---
 
-**⚠️ DİKKAT**: Bu araç sistem dosyalarında değişiklik yapar. Kullanmadan önce:
-- Sistem yedeklemesi alın
-- Geri yükleme noktası oluşturun
-- Önemli dosyalarınızı yedekleyin
+## ⚙️ İlk Kullanım
 
-### Güvenlik Kontrolü:
+1. **Yönetici izni:** WinUtil sistem dosyalarına dokunur; normal kullanıcı hesabıyla tam çalışmaz
+2. **Geri yükleme noktası:** Tweaks sekmesinde **Restore Point - Create** ile veya Windows Ayarları → Sistem → Kurtarma üzerinden oluştur
+3. **Sekme seç:** İhtiyacına göre Install, Tweaks, Config veya Updates sekmesine geç
 
-- ✅ Geri yükleme noktası oluşturun
-- ✅ Önemli dosyalarınızı yedekleyin
-- ✅ Sistem özelliklerini not alın
-
-## 💻 Install Sekmesi - Uygulama Yönetimi
-
-Install sekmesi, popüler yazılımları kategoriler halinde gruplandırarak toplu kurulum imkanı sunar.
-
-### 🎛️ Actions (Eylemler)
-
-Install sekmesinin sol panelinde bulunan temel eylem düğmeleri:
-
-| Eylem | Açıklama | Kullanım Senaryosu |
-| --- | --- | --- |
-| **Install/Upgrade Applications** | Seçili uygulamaları kurar veya günceller | Yeni yazılım kurulumu |
-| **Uninstall Applications** | Seçili uygulamaları kaldırır | Sistem temizliği |
-| **Upgrade all Applications** | Tüm kurulu uygulamaları günceller | Sistem bakımı |
-
-### Kullanım Örneği:
-
-### 📦 Package Manager
-
-WinUtil iki farklı paket yöneticisi desteği sunar:
-
-| Package Manager | Açıklama | Avantajlar | Dezavantajlar |
-| --- | --- | --- | --- |
-| **Winget** (Varsayılan) | Microsoft’un resmi paket yöneticisi | ✅ Resmi destek✅ Güvenilir✅ Hızlı | ⚠️ Daha az uygulama |
-| **Chocolatey** | Topluluk tabanlı paket yöneticisi | ✅ Geniş uygulama desteği✅ Uzun geçmiş | ⚠️ 3. parti⚠️ Güvenlik riski |
-
-### ✅ Selection (Seçim Yönetimi)
-
-Uygulama seçimini yönetmek için araçlar:
-
-| Özellik | Açıklama | Kullanım Amacı |
-| --- | --- | --- |
-| **Clear Selection** | Tüm seçimleri temizle | Yeni seçim başlatma |
-| **Get Installed** | Kurulu uygulamaları listele | Mevcut durumu görme |
-| **Selected Apps: 0** | Seçili uygulama sayısı | İlerleme takibi |
-
-**Tipik kullanım adımları:**
-1. Kategori seç (Browsers, Development, etc.)
-2. İstenen uygulamaları işaretle
-3. “Selected Apps” sayısını kontrol et
-4. Package Manager seç
-5. Kurulum eylemini başlat
-
-### 🔄 Toplu İşlem Özellikleri
-
-### Kurulum Stratejileri:
-
-| Strateji | Açıklama | Öneri |
-| --- | --- | --- |
-| **Kategori Bazlı** | Tüm kategoriyi seç | Yeni sistem kurulumu |
-| **Seçici Kurulum** | Sadece gerekli uygulamalar | Mevcut sistem optimizasyonu |
-| **Güncelleme Odaklı** | “Upgrade all Applications” | Düzenli bakım |
-
-## ⚙️ Tweaks Sekmesi - Sistem Optimizasyonu
-
-Tweaks sekmesi, Windows sisteminin davranışını değiştiren çeşitli ayarları içerir. İki ana buton ile tweakları uygulayabilir veya geri alabilirsiniz.
-
-### 🔧 Essential Tweaks (Temel Düzenlemeler)
-
-### Sistem Güvenliği ve Koruma:
-
-| Tweak | Açıklama | Fayda | Risk |
-| --- | --- | --- | --- |
-| **Create Restore Point** | Sistem geri yükleme noktası oluşturur | Güvenlik backup’ı | 🟢 Yok |
-| **Delete Temporary Files** | Geçici dosyaları ve cache’leri temizler | Disk alanı kazanımı | 🟢 Yok |
-
-### Gizlilik ve Veri Koruması:
-
-| Tweak | Açıklama | Etki | Öneri |
-| --- | --- | --- | --- |
-| **Disable Consumer Features** | Microsoft Store önerilerini kapatır | Reklam temizliği | ✅ Önerilen |
-| **Disable Telemetry** | Microsoft’a veri gönderimi durdurur | Gizlilik artışı | ✅ Önerilen |
-| **Disable Activity History** | Aktivite takibi kapatır | Gizlilik koruması | ✅ Önerilen |
-
-### Dosya Sistemi ve Gezgin:
-
-| Tweak | Açıklama | Kullanım |
-| --- | --- | --- |
-| **Disable Explorer Automatic Folder Discovery** | Otomatik klasör keşfini kapatır | Performans |
-| **Disable Location Tracking** | Konum takibini devre dışı bırakır | Gizlilik |
-| **Disable Storage Sense** | Otomatik disk temizliği kapatır | Manuel kontrol |
-
-### Oyun ve Multimedya:
-
-| Tweak | Açıklama | Hedef Grup |
-| --- | --- | --- |
-| **Disable GameDVR** | Xbox oyun kaydedicisini kapatır | Gamers |
-| **Disable Hibernation** | Hibernate modunu devre dışı bırakır | Disk alanı |
-| **Disable Homegroup** | Ev grubu özelliğini kapatır | Ağ optimizasyonu |
-
-### Güvenlik ve Ağ:
-
-| Tweak | Açıklama | Önem |
-| --- | --- | --- |
-| **Disable Wifi Sense** | WiFi şifre paylaşımını kapatır | Güvenlik |
-| **Enable End Task With Right Click** | Sağ tık ile görev sonlandırma | Kullanılabilirlik |
-| **Run Disk Cleanup** | Disk temizliği çalıştır | Performans |
-
-### Terminal ve Sistem:
-
-| Tweak | Açıklama | Hedef |
-| --- | --- | --- |
-| **Change Windows Terminal default: PowerShell 5 > PowerShell 7** | Modern PowerShell varsayılan yap | Geliştiriciler |
-| **Disable PowerShell 7 Telemetry** | PowerShell telemetrisini kapat | Gizlilik |
-| **Disable Recall** | AI recall özelliğini kapat | Gizlilik |
-
-### Özel Ayarlar:
-
-| Tweak | Açıklama | Kullanım Amacı |
-| --- | --- | --- |
-| **Set Hibernation as default (good for laptops)** | Laptop’lar için hibernate varsayılan | Enerji tasarrufu |
-| **Set Services to Manual** | Servisleri manuel başlatma yap | Sistem kontrolü |
-| **Debloat Edge** | Microsoft Edge’i temizle | Performans |
-
-### ⚠️ Advanced Tweaks - CAUTION (Gelişmiş - Dikkat)
-
-**⚠️ UYARI**: Bu bölümdeki tweaklar sistem kararlılığını ciddi şekilde etkileyebilir!
-
-### Adobe İlgili Tweaklar:
-
-| Tweak | Açıklama | Risk Seviyesi | Geri Alma |
-| --- | --- | --- | --- |
-| **Adobe Network Block** | Adobe’nin ağ erişimini engeller | 🔴 Yüksek | Firewall kuralları |
-| **Adobe Debloat** | Adobe uygulamalarını kaldırır | 🔴 Yüksek | Manuel yeniden kurulum |
-
-### Ağ ve İnternet:
-
-| Tweak | Açıklama | Potansiyel Sorun | Çözüm |
-| --- | --- | --- | --- |
-| **Disable IPv6** | IPv6 protokolünü kapatır | Modern ağ sorunları | Ağ adaptörü ayarları |
-| **Prefer IPv4 over IPv6** | IPv4’ü öncelikli yap | Uyumluluk sorunları | Registry düzenleme |
-
-### Sistem Servisleri:
-
-| Tweak | Açıklama | Etki | Uyarı |
-| --- | --- | --- | --- |
-| **Disable Teredo** | Teredo tunnel’ını kapat | Ağ değişiklikleri | 🟡 Orta risk |
-| **Disable Background Apps** | Arka plan uygulamalarını kapat | Sistem performansı | 🟡 Uygulama sorunları |
-| **Disable Fullscreen Optimizations** | Tam ekran optimizasyonlarını kapat | Oyun performansı | 🟡 Görsel sorunlar |
-
-### Microsoft Servisleri:
-
-| Tweak | Açıklama | Sonuç | Risk |
-| --- | --- | --- | --- |
-| **Disable Microsoft Copilot** | AI asistanını devre dışı bırak | Özellik kaybı | 🟡 Orta |
-| **Disable Intel MM (vPro LMS)** | Intel Management Engine kapat | Donanım özellikleri | 🔴 Yüksek |
-| **Disable Notification Tray/Calendar** | Bildirim merkezini kapat | Sistem bildirimleri | 🟡 Orta |
-
-### Windows Özellikleri:
-
-| Tweak | Açıklama | Etki | Geri Alma |
-| --- | --- | --- | --- |
-| **Disable Windows Platform Binary Table (WPBT)** | WPBT’yi devre dışı bırak | Sistem başlatma | BIOS ayarları |
-| **Set Display for Performance** | Ekranı performans için optimize et | Görsel kalite | Görünüm ayarları |
-| **Set Classic Right-Click Menu** | Klasik sağ tık menüsü | Kullanıcı deneyimi | Registry |
-| **Set Time to UTC (Dual Boot)** | Dual boot için UTC zamanı | Çift sistem | Saat ayarları |
-
-### Uygulama Kaldırma (ÇOK RİSKLİ):
-
-| Tweak | Açıklama | Risk | Sonuç |
-| --- | --- | --- | --- |
-| **Remove ALL MS Store Apps - NOT RECOMMENDED** | Tüm Store uygulamalarını kaldır | 🔴 ÇOK YÜKSEK | Sistem kararsızlığı |
-| **Remove Microsoft Edge** | Edge tarayıcısını kaldır | 🔴 Yüksek | Web görüntüleme sorunları |
-| **Remove Home and Gallery from explorer** | Gezgin’den öğeleri kaldır | 🟡 Orta | Eksik özellikler |
-| **Remove OneDrive** | OneDrive’ı tamamen kaldır | 🟡 Orta | Bulut eşitleme kaybı |
-| **Block Razer Software Installs** | Razer yazılım kurulumunu engelle | 🟡 Orta | Donanım desteği |
-
-### 🎨 Customize Preferences (Özelleştirme Tercihleri)
-
-### Görünüm ve Tema:
-
-| Özellik | Açıklama | Görsel Etki |
-| --- | --- | --- |
-| **Dark Theme for Windows** | ✅ Sistem geneli koyu tema | Modern görünüm |
-| **Bing Search in Start Menu** | ✅ Başlangıç menüsünde Bing arama | İnternet arama |
-| **NumLock on Startup** | ⚪ Başlangıçta NumLock açık | Sayısal tuş takımı |
-| **Verbose Messages During Logon** | ⚪ Oturum açmada detaylı mesajlar | Sistem bilgisi |
-
-### Başlangıç Menüsü:
-
-| Özellik | Açıklama | Kullanıcı Deneyimi |
-| --- | --- | --- |
-| **Recommendations in Start Menu** | ✅ Başlangıç menüsünde öneriler | Kişiselleştirme |
-| **Remove Settings Home Page** | ⚪ Ayarlar ana sayfasını kaldır | Sadelik |
-
-### Pencere Yönetimi:
-
-| Özellik | Açıklama | Kullanım |
-| --- | --- | --- |
-| **Snap Window** | ✅ Pencere yapıştırma | Çoklu pencere |
-| **Snap Assist Flyout** | ✅ Yapıştırma yardımcısı | Verimlilik |
-| **Snap Assist Suggestion** | ✅ Yapıştırma önerileri | Otomatik düzenleme |
-
-### Fare ve Klavye:
-
-| Özellik | Açıklama | Erişilebilirlik |
-| --- | --- | --- |
-| **Mouse Acceleration** | ✅ Fare ivmesi | Hareket düzgünlüğü |
-| **Sticky Keys** | ✅ Yapışkan tuşlar | Erişim kolaylığı |
-
-### Dosya ve Sistem:
-
-| Özellik | Açıklama | Kullanıcı Kontrolü |
-| --- | --- | --- |
-| **Show Hidden Files** | ⚪ Gizli dosyaları göster | Gelişmiş kullanım |
-| **Show File Extensions** | ✅ Dosya uzantılarını göster | Güvenlik |
-
-### Görev Çubuğu:
-
-| Özellik | Açıklama | Görünüm |
-| --- | --- | --- |
-| **Search Button in Taskbar** | ⚪ Görev çubuğunda arama | Ekran alanı |
-| **Task View Button in Taskbar** | ✅ Görev görünümü düğmesi | Sanal masaüstler |
-| **Center Taskbar Items** | ✅ Görev çubuğu ortalama | Modern tasarım |
-| **Widgets Button in Taskbar** | ✅ Widget düğmesi | Hızlı bilgi |
-
-### Ayrıntılı Ayarlar:
-
-| Özellik | Açıklama | Teknik Detay |
-| --- | --- | --- |
-| **Detailed BSoD** | ⚪ Detaylı mavi ekran | Hata ayıklama |
-
-### 🎮 Tweaks Uygulama ve Kontrol
-
-### Eylem Düğmeleri:
-
-| Düğme | Açıklama | Kullanım |
-| --- | --- | --- |
-| **Run Tweaks** | Seçili tweakları uygular | Ana uygulama düğmesi |
-| **Undo Selected Tweaks** | Seçili tweakları geri alır | Hata durumunda geri alma |
-
-### Güvenli Kullanım Önerileri:
-
-1. **Öncesinde:** Her zaman geri yükleme noktası oluşturun
-2. **Seçim:** Sadece ihtiyaç duyduğunuz tweakları seçin
-3. **Test:** Tweakları küçük gruplar halinde uygulayın
-4. **Gözlem:** Her grup sonrası sistemi test edin
-5. **Geri alma:** Sorun yaşarsanız “Undo Selected Tweaks” kullanın
-
-### Risk Kategorileri:
-
-| Seviye | İşaret | Açıklama | Önerilen Eylem |
-| --- | --- | --- | --- |
-| 🟢 **Güvenli** | Essential Tweaks çoğunluğu | Sistem kararlılığını etkilemez | Güvenle uygulayın |
-| 🟡 **Orta Risk** | Bazı sistem değişiklikleri | Küçük sorunlara neden olabilir | Dikkatli uygulayın |
-| 🔴 **Yüksek Risk** | Advanced Tweaks | Sistem kararsızlığına yol açabilir | Sadece deneyimli kullanıcılar |
-| ⚫ **Kritik** | Store Apps kaldırma | Sistem işlevselliğini bozabilir | Önerilmez |
-
-## 🔧 Config Sekmesi - Gelişmiş Yapılandırma
-
-Config sekmesi, Windows’un gelişmiş yapılandırma seçeneklerini, sistem onarım araçlarını ve klasik kontrol panellerine erişimi sağlar.
-
-### 🎯 Features (Windows Özellikleri)
-
-### Temel .NET Framework Desteği:
-
-| Özellik | Açıklama | Kullanım Amacı | Gereksinim |
-| --- | --- | --- | --- |
-| **All .Net Framework (2, 3.4)** | Eski .NET Framework sürümlerini etkinleştirir | Legacy uygulamalar için | Windows özelliği |
-
-### Sanallaştırma Teknolojileri:
-
-| Özellik | Açıklama | Hedef Kitle | Sistem Etkisi |
-| --- | --- | --- | --- |
-| **Hyper-V Virtualization** | Microsoft’un yerleşik sanallaştırma çözümü | Geliştiriciler, IT uzmanları | Yüksek CPU/RAM kullanımı |
-| **Windows Subsystem for Linux** | Linux alt sistemini Windows’ta çalıştır | Geliştirici ortamları | Orta sistem etkisi |
-| **Windows Sandbox** | İzole Windows ortamı | Güvenli test için | Hyper-V gerektirir |
-
-### Medya ve Oyun Desteği:
-
-| Özellik | Açıklama | Hedef | Uyumluluk |
-| --- | --- | --- | --- |
-| **Legacy Media (WMP, DirectPlay)** | Eski medya ve oyun desteği | Retro oyunlar, eski uygulamalar | Windows 95/XP uygulamaları |
-
-### Ağ Dosya Sistemleri:
-
-| Özellik | Açıklama | Kullanım Alanı | Teknik Detay |
-| --- | --- | --- | --- |
-| **NFS - Network File System** | UNIX/Linux dosya paylaşım protokolü | Cross-platform ağ | Enterprise ortamlar |
-
-### Arama ve Kayıt Defteri:
-
-| Özellik | Açıklama | Etki | Yeniden Başlatma |
-| --- | --- | --- | --- |
-| **Enable Search Box Web Suggestions in Registry** | Web önerilerini etkinleştir | Arama deneyimi | Explorer restart gerekli |
-| **Disable Search Box Web Suggestions in Registry** | Web önerilerini devre dışı bırak | Gizlilik | Explorer restart gerekli |
-
-### Sistem Bakım ve Kurtarma:
-
-| Özellik | Açıklama | Zamanlama | Fayda |
-| --- | --- | --- | --- |
-| **Enable Daily Registry Backup Task 12:30am** | Günlük otomatik registry yedekleme | Gece 00:30 | Sistem güvenliği |
-| **Enable Legacy F8 Boot Recovery** | Klasik F8 boot menüsünü etkinleştir | Boot sırasında | Gelişmiş başlatma seçenekleri |
-| **Disable Legacy F8 Boot Recovery** | Klasik F8 boot menüsünü kapat | Hızlı boot için | Modern startup |
-
-### Özellik Yükleme Düğmesi:
-
-| Düğme | Açıklama | Kullanım |
-| --- | --- | --- |
-| **Install Features** | Seçili özellikleri sisteme yükler | Tüm seçimler sonrası |
-
-### 🛠️ Fixes (Sistem Onarım Araçları)
-
-### Kullanıcı Hesap Yönetimi:
-
-| Araç | Açıklama | Kullanım Senaryosu | Komut |
-| --- | --- | --- | --- |
-| **Set Up Autologin** | Otomatik oturum açma ayarla | Kişisel bilgisayarlar | `netplwiz` |
-
-### Sistem Bileşeni Onarımları:
-
-| Araç | Açıklama | Sorun Türü | İşlem Süresi |
-| --- | --- | --- | --- |
-| **Reset Windows Update** | Windows Update servisini sıfırla | Güncelleme takılmaları | 2-5 dakika |
-| **Reset Network** | Ağ yapılandırmasını sıfırla | İnternet bağlantı sorunları | 1-3 dakika |
-| **System Corruption Scan** | Sistem dosyası bütünlüğü kontrolü | Dosya bozulmaları | 10-30 dakika |
-
-### Uygulama Yöneticisi Onarımları:
-
-| Araç | Açıklama | Çözüm | Yeniden Kurulum |
-| --- | --- | --- | --- |
-| **WinGet Reinstall** | Windows Package Manager’ı yeniden yükle | WinGet sorunları | Otomatik |
-
-### Üçüncü Parti Temizlik:
-
-| Araç | Açıklama | Hedef | Etki |
-| --- | --- | --- | --- |
-| **Remove Adobe Creative Cloud** | Adobe Creative Cloud’u tamamen kaldır | Sistem temizliği | Kalıntı temizleme |
-
-### 🖥️ Legacy Windows Panels (Klasik Kontrol Panelleri)
-
-### Ana Sistem Panelleri:
-
-| Panel | Açıklama | Erişim Komutu | Kullanım Amacı |
-| --- | --- | --- | --- |
-| **Control Panel** | Klasik Windows kontrol paneli | `control` | Sistem ayarları |
-| **God Mode** | Tüm sistem ayarlarına tek erişim | Özel GUID | Gelişmiş yönetim |
-| **System Properties** | Sistem bilgileri ve ayarları | `sysdm.cpl` | Donanım/performans |
-
-### Ağ ve Bağlantı Panelleri:
-
-| Panel | Açıklama | Erişim | Yönetim |
-| --- | --- | --- | --- |
-| **Network Connections** | Ağ adaptörleri ve bağlantılar | `ncpa.cpl` | Ağ yapılandırması |
-
-### Güç ve Donanım Panelleri:
-
-| Panel | Açıklama | Kontrol | Hedef |
-| --- | --- | --- | --- |
-| **Power Panel** | Güç yönetimi ve pil ayarları | `powercfg.cpl` | Enerji optimizasyonu |
-| **Printer Panel** | Yazıcı kurulumu ve yönetimi | Yazıcı ayarları | Donanım yönetimi |
-
-### Bölgesel ve Ses Panelleri:
-
-| Panel | Açıklama | Yapılandırma | Kişiselleştirme |
-| --- | --- | --- | --- |
-| **Region** | Bölge, dil ve tarih/saat formatları | Yerelleştirme | Uluslararası kullanım |
-| **Sound Settings** | Ses aygıtları ve ses efektleri | `mmsys.cpl` | Ses yapılandırması |
-
-### Kullanıcı Yönetimi:
-
-| Panel | Açıklama | Yönetim | Güvenlik |
-| --- | --- | --- | --- |
-| **User Accounts** | Kullanıcı hesapları ve parola ayarları | `netplwiz` | Erişim kontrolü |
-
-### 💻 PowerShell Profile (CTT Özel Profili)
-
-### PowerShell Profil Yönetimi:
-
-| Eylem | Açıklama | İçerik | Fayda |
-| --- | --- | --- | --- |
-| **Install CTT PowerShell Profile** | Chris Titus Tech’in özel PowerShell profilini yükle | Özel komutlar, temalar | Gelişmiş terminal deneyimi |
-| **Uninstall CTT PowerShell Profile** | CTT PowerShell profilini kaldır | Varsayılan ayarlara dön | Sistem temizliği |
-
-### CTT Profil Özellikleri:
-
-**Dahil Edilen Özellikler:**
-- ✅ **Gelişmiş Komut Tamamlama:** Tab ile otomatik tamamlama
-- ✅ **Sözdizimi Vurgulama:** Renkli komut görünümü
-- ✅ **Git Entegrasyonu:** Git durumu gösterimi
-- ✅ **Özel Alias’lar:** Kısaltılmış komutlar
-- ✅ **Modern Tema:** Görsel iyileştirmeler
-- ✅ **Performans Optimizasyonu:** Hızlı başlatma
-
-**Eklenen Alias Örnekleri:**
-- `ll` → `Get-ChildItem` (Dosya listesi)
-- `la` → `Get-ChildItem -Force` (Gizli dosyalarla)
-- `..` → `Set-Location ..` (Üst dizin)
-- `cls` → `Clear-Host` (Ekran temizle)
-
-### 🌐 Remote Access (Uzaktan Erişim)
-
-### OpenSSH Server Kurulumu:
-
-| Özellik | Açıklama | Güvenlik Seviyesi | Yapılandırma |
-| --- | --- | --- | --- |
-| **Enable OpenSSH Server** | Windows’ta SSH sunucusunu etkinleştir | Yüksek güvenlik | Otomatik yapılandırma |
-
-### SSH Sunucu Özellikleri:
-
-**Temel Özellikler:**
-- 🔐 **Güvenli Bağlantı:** SSH protokolü ile şifreli erişim
-- 🖥️ **Komut Satırı Erişimi:** Uzaktan PowerShell/CMD kullanımı
-- 📁 **Dosya Transferi:** SCP/SFTP desteği
-- 🔑 **Anahtar Tabanlı Kimlik Doğrulama:** Gelişmiş güvenlik
-
-**Güvenlik Yapılandırması:**
-- Port 22 (varsayılan) veya özel port
-- Güvenlik duvarı kuralı otomatik ekleme
-- Başarısız girişim sınırlandırması
-- IP kısıtlama seçenekleri
-
-**Kullanım Senaryoları:**
-- 💼 **Uzaktan Yönetim:** Server ve workstation yönetimi
-- 🔧 **Geliştirme:** Remote development environment
-- 📊 **Monitoring:** Sistem izleme ve log analizi
-- 🛠️ **Bakım:** Uzaktan sistem bakımı
-
-### SSH İstemci Araçları:
-
-**Windows Uyumlu SSH İstemcileri:**
-- **Windows Terminal:** Modern terminal ile SSH
-- **PuTTY:** Klasik SSH istemcisi
-- **WSL/Linux:** Linux alt sistemi üzerinden
-- **PowerShell:** Yerleşik SSH istemcisi
-
-### 🔧 Config Sekmesi Kullanım Rehberi
-
-### Özellik Kurulum Sırası:
-
-1. **Öncelik:** Gerekli Windows özelliklerini seçin
-2. **Kurulum:** “Install Features” butonuna tıklayın
-3. **Bekleme:** Sistem yeniden başlatma gerekebilir
-4. **Test:** Kurulu özellikleri test edin
-
-### Sistem Onarım Adımları:
-
-1. **Tanı:** Sorunu belirleyin
-2. **Yedek:** Geri yükleme noktası oluşturun
-3. **Onarım:** İlgili Fix aracını çalıştırın
-4. **Doğrulama:** Sorunun çözüldüğünü kontrol edin
-
-### Güvenlik Önerileri:
-
-- ⚠️ **OpenSSH:** Sadece güvenli ağlarda etkinleştirin
-- 🔐 **God Mode:** Deneyimli kullanıcılar için
-- 🛡️ **Registry Backup:** Mutlaka aktif tutun
-- 🔄 **System Corruption Scan:** Düzenli çalıştırın
-
-## 🛠️ Yaygın Sorunlar ve Çözümleri
-
-### Sorun 1: PowerShell Execution Policy Hatası
-
-```powershell
-# Çözüm
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-# Geçici çözüm 
-PowerShell -ExecutionPolicy Bypass -File .\winutil.ps1
-```
-
-### Sorun 2: Internet Connection Required Hatası
-
-```powershell
-# Manuel download
-Invoke-WebRequest -Uri "https://github.com/ChrisTitusTech/winutil/releases/latest/download/winutil.ps1" -OutFile "winutil.ps1"
-```
-
-### Sorun 3: Tweakları Geri Alma
-
-| Tweak | Geri Alma Yöntemi |
-| --- | --- |
-| **Disable Telemetry** | `Settings > Privacy > Diagnostics & feedback` |
-| **Remove MS Store Apps** | `PowerShell: Get-AppxPackage -AllUsers` |
-| **Disable Windows Defender** | `Windows Security > Virus & threat protection` |
-
-## 🔄 Sistem Geri Yükleme
-
-### Geri Yükleme Noktasından Döndürme:
-
-```powershell
-# Geri yükleme noktaları listele
-Get-ComputerRestorePoint
-
-# Geri yükleme başlat
-Restore-Computer -RestorePoint 1
-```
-
-### Manuel Geri Yükleme:
-
-1. **Sistem Özellikleri** > **Sistem Koruması**
-2. **Sistem Geri Yükleme** > **Sonraki**
-3. Geri yükleme noktası seçin
-4. **Son** > **Evet**
-
-## 🛡️ Güvenlik ve Geri Alma
-
-### 🔒 Güvenlik En İyi Uygulamaları
-
-### Kurulum Öncesi:
-
-```powershell
-# Sistem bilgilerini kaydet
-Get-ComputerInfo | Out-File "system_info_backup.txt"
-
-# Geri yükleme noktası oluştur
-Checkpoint-Computer -Description "WinUtil Before Changes"
-
-# Uygulama listesini kaydet
-Get-AppxPackage | Select Name, Version | Export-Csv "installed_apps_backup.csv"
-```
-
-### Kurulum Sonrası:
-
-```powershell
-# Sistem kararlılığını test et
-sfc /scannow
-
-# Event log kontrol et
-Get-EventLog -LogName System -EntryType Error -Newest 10
-
-# Performans etkisini ölç
-Get-Counter "\Processor(_Total)\% Processor Time"
-```
-
-### 🔄 Geri Alma Prosedürleri
-
-### Hızlı Geri Alma Komutları:
-
-```powershell
-# Windows Store apps geri yükle
-Get-AppxPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-
-# Telemetry yeniden etkinleştir
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection" /v AllowTelemetry /t REG_DWORD /d 3 /f
-
-# Windows Defender yeniden etkinleştir
-Set-MpPreference -DisableRealtimeMonitoring $false
-```
-
-### ⚠️ Risk Değerlendirmesi
-
-| Risk Seviyesi | Tweaklar | Geri Alma Kolaylığı |
-| --- | --- | --- |
-| 🟢 **Düşük** | Tema, dosya görünümü, temporary files | Kolay |
-| 🟡 **Orta** | Telemetry, startup programs | Orta |
-| 🔴 **Yüksek** | Store apps removal, system services | Zor |
+> 💡 Emin değilsen önce **Install** ile uygulama kur, ardından Tweaks'te **Standard** hazır seçimini incele; hepsini birden uygulama.
 
 ---
 
-### GitHub Repository:
+## 🖥️ Ortak Arayüz
 
-- 📂 **Source Code**: https://github.com/ChrisTitusTech/winutil
+Üst çubukta tüm sekmelerde şunlar bulunur:
+
+
+| Öğe                                     | Ne işe yarar                                   |
+| --------------------------------------- | ---------------------------------------------- |
+| **Install / Tweaks / Config / Updates** | Ana sekmeler arası geçiş                       |
+| **Arama kutusu**                        | Uygulama veya tweak adı ara                    |
+| **Tema (ay/güneş)**                     | Arayüz koyu/açık mod                           |
+| **Bildirim / Ayarlar / Kapat**          | Bildirimler, WinUtil ayarları, pencereyi kapat |
+
+
+---
+
+# 📦 Install
+
+Popüler yazılımları kategoriler halinde listeler; işaretlediklerini toplu kurar, kaldırır veya günceller.
+
+## Sol panel — Actions
+
+
+| Düğme / öğe                        | Ne işe yarar                                                                            |
+| ---------------------------------- | --------------------------------------------------------------------------------------- |
+| **Install/Upgrade Applications**   | Seçili uygulamaları kurar veya günceller                                                |
+| **Uninstall Applications**         | Seçili uygulamaları kaldırır                                                            |
+| **Upgrade all Applications**       | Desteklenen tüm kurulu uygulamaları günceller                                           |
+| **Package Manager**                | **WinGet** (varsayılan, Microsoft resmi) veya **Chocolatey** (daha geniş paket listesi) |
+| **Highlight FOSS**                 | Açık kaynak uygulamaları yeşil renkle vurgular                                          |
+| **Clear Selection**                | Tüm işaretleri temizler                                                                 |
+| **Collapse/Expand All Categories** | Kategorileri toplu açar veya kapatır                                                    |
+| **Selected Apps**                  | Kaç uygulama seçili olduğunu gösterir                                                   |
+| **Show Installed Apps**            | Sistemde kurulu olanları otomatik işaretler                                             |
+
+
+## Kategoriler
+
+Uygulamalar şu kategorilere ayrılır; her kategoride onlarca program bulunur:
+
+
+| Kategori             | Örnek türler                                |
+| -------------------- | ------------------------------------------- |
+| **Browsers**         | Chrome, Firefox, Brave, Edge...             |
+| **Communications**   | Discord, Slack, Telegram, Zoom...           |
+| **Development**      | VS Code, Git, Python, Node.js...            |
+| **Games**            | Steam, Epic Games, GOG Galaxy...            |
+| **Microsoft Tools**  | PowerShell, PowerToys, Windows Terminal...  |
+| **Multimedia Tools** | VLC, OBS, GIMP, Audacity...                 |
+| **Pro Tools**        | Wireshark, PuTTY, WinSCP, Nmap...           |
+| **Selfhosted Tools** | Plex, Nextcloud Desktop...                  |
+| **Utilities**        | 7-Zip, Bitwarden, Rufus, CrystalDiskMark... |
+
+
+Tam liste arayüzde görünür; sürüme göre uygulama eklenip çıkarılabilir.
+
+## Nasıl kullanılır?
+
+1. **Install** sekmesine git
+2. Kategorilerden ihtiyacın olan uygulamaları işaretle
+3. **Package Manager** olarak WinGet veya Chocolatey seç
+4. **Install/Upgrade Applications** düğmesine tıkla
+5. Kurulum ilerlemesini pencerede takip et
+
+> 💡 **WinGet** Microsoft'un resmi paket yöneticisidir; çoğu kullanıcı için yeterlidir. **Chocolatey** daha fazla paket sunar ancak üçüncü taraf bir ekosistemdir. Kurulum hatası alırsan diğer paket yöneticisini dene.
+
+---
+
+# ⚙️ Tweaks
+
+Windows gizlilik, performans ve arayüz ayarlarını toplu veya tek tek uygular. Değişiklikler kayıt defteri, servisler veya uygulama kaldırma yoluyla yapılır.
+
+## Kullanım akışı
+
+1. **Recommended Selections** ile başla:
+  - **Standard** — Yaygın gizlilik ve temizlik tweak'leri
+  - **Minimal** — Daha az müdahale
+  - **Clear** — Tüm seçimleri temizle
+  - **Get Installed Tweaks** — Daha önce uygulanmış tweak'leri işaretle
+2. Listeden ekstra maddeleri işaretle veya **Customize Preferences** toggle'larını ayarla
+3. **Run Tweaks** ile uygula
+4. Sorun olursa aynı maddeleri seçip **Undo Selected Tweaks** ile geri al
+
+> ⚠️ Bu sekmedeki ayarlar sistemi ciddi şekilde değiştirir. Emin değilsen **Standard** veya **Minimal** ile başla. Her maddenin üzerine gelince İngilizce açıklama tooltip'i görünür.
+
+## Ek araçlar
+
+
+| Öğe                      | Ne işe yarar                                                                                               |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **O&O ShutUp10++ - Run** | Üçüncü taraf gizlilik aracı O&O ShutUp10++'ı indirip çalıştırır                                            |
+| **DNS - Set to:**        | Sistem DNS'ini seçilen sağlayıcıya ayarlar (Default DHCP, Google, Cloudflare, Quad9, OpenDNS, AdGuard vb.) |
+
+
+## Performance Plans
+
+
+| Düğme                                      | Ne işe yarar                                           |
+| ------------------------------------------ | ------------------------------------------------------ |
+| **Ultimate Performance Profile - Enable**  | Gizli "Ultimate Performance" güç planını etkinleştirir |
+| **Ultimate Performance Profile - Disable** | Ultimate Performance planını kaldırır                  |
+
+
+---
+
+## Essential Tweaks
+
+Genellikle güvenli kabul edilen temel düzenlemeler. Yine de geri yükleme noktası oluşturman önerilir.
+
+
+| Madde                                                    | Ne işe yarar                                                                    | Not                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Restore Point - Create**                               | WinUtil değişikliklerinden önce sistem geri yükleme noktası oluşturur           | Tweaks uygulamadan önce bunu seç                                 |
+| **Temporary Files - Remove**                             | Kullanıcı ve sistem TEMP klasörlerini temizler                                  |                                                                  |
+| **Disk Cleanup - Run**                                   | C: sürücüsünde Disk Temizleme çalıştırır; eski Windows güncellemelerini siler   |                                                                  |
+| **Telemetry - Disable**                                  | Microsoft telemetri ve tanılama veri gönderimini kapatır                        |                                                                  |
+| **Activity History - Disable**                           | Son belgeler, pano ve çalıştır geçmişi takibini kapatır                         |                                                                  |
+| **ConsumerFeatures - Disable**                           | Windows'un otomatik oyun ve Store uygulaması yüklemesini engeller               | Phone Link gibi bazı varsayılan uygulamalara erişim kapanabilir  |
+| **Location Tracking - Disable**                          | Konum takibini ve ilgili servisi devre dışı bırakır                             |                                                                  |
+| **Unwanted Pre-Installed Apps - Remove**                 | Bing News, Clipchamp, Solitaire, Teams gibi önceden yüklü uygulamaları kaldırır |                                                                  |
+| **Widgets - Remove**                                     | Görev çubuğundaki Widget'ları ve ilgili paketleri kaldırır                      |                                                                  |
+| **End Task With Right Click - Enable**                   | Görev çubuğunda sağ tık → Görevi sonlandır seçeneğini açar                      |                                                                  |
+| **Services - Set to Manual**                             | Bazı servisleri manuel başlatmaya alır; svchost süreç sayısını azaltabilir      |                                                                  |
+| **PowerShell 7 Telemetry - Disable**                     | PowerShell 7 telemetri ortam değişkenini kapatır                                |                                                                  |
+| **Windows Platform Binary Table (WPBT) - Disable**       | Üretici yazılımının önyüklemede çalışmasını engeller                            | Güvenlik odaklı                                                  |
+| **BitLocker - Disable**                                  | BitLocker disk şifrelemesini kapatır                                            | Şifreleme kullanıyorsan seçme                                    |
+| **Hibernation - Disable**                                | Hazırda bekletmeyi kapatır; hiberfil.sys dosyasını kaldırır                     | Disk alanı kazandırır                                            |
+| **Microsoft Store Recommended Search Results - Disable** | Başlat aramasında Store uygulama önerilerini gizler                             |                                                                  |
+| **Start Menu Previous Layout - Enable**                  | Windows 11 25H2 sonrası yeni Başlat menüsü yerine eski düzeni geri getirir      | ViVeTool indirir; yeniden başlatma gerekir                       |
+| **File Explorer Automatic Folder Discovery - Disable**   | Explorer'ın klasör tipini otomatik tahmin etmesini kapatır                      | Klasör gruplamasını devre dışı bırakır; oturumu kapat/aç gerekir |
+
+
+---
+
+## Advanced Tweaks — CAUTION
+
+Sistem davranışını belirgin şekilde değiştirir. Ne yaptığını bilmeden uygulama.
+
+
+| Madde                                              | Ne işe yarar                                                              | Not                                                    |
+| -------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **Microsoft Edge - Debloat**                       | Edge telemetri, popup ve gereksiz özelliklerini kapatır                   | Edge kalır, sadeleşir                                  |
+| **Microsoft Edge - Remove**                        | Edge kaldırma kısıtlamasını kaldırıp Edge'i siler                         | Bazı Windows özellikleri Edge'e bağımlı olabilir       |
+| **Microsoft OneDrive - Remove**                    | OneDrive'ı kaldırır ve senkron servisini kapatır                          | Bulut yedekleme kaybolur                               |
+| **Xbox & Gaming Components - Remove**              | Xbox uygulaması, Game Bar ve ilgili bileşenleri kaldırır                  | Oyun kaydı ve Xbox özellikleri gider                   |
+| **Windows AI - Disable**                           | Copilot, Recall ve diğer Windows AI paketlerini kaldırır veya kapatır     | AI özellikleri tamamen gider                           |
+| **File Explorer Home and Gallery - Disable**       | Explorer'dan Giriş ve Galeri'yi kaldırır; varsayılan "Bu bilgisayar" olur |                                                        |
+| **Visual Effects - Set to Best Performance**       | Görsel efektleri minimuma indirir; performans öncelikli                   | Arayüz sadeleşir                                       |
+| **Storage Sense - Disable**                        | Otomatik disk temizliğini (Storage Sense) kapatır                         | Manuel temizlik gerekir                                |
+| **Background Apps - Disable**                      | Store uygulamalarının arka planda çalışmasını engeller                    | Bildirim/bildirim gecikmesi olabilir                   |
+| **Fullscreen Optimizations - Disable**             | Tam ekran optimizasyonlarını kapatır                                      | Exclusive fullscreen'de renk yönetimi devre dışı kalır |
+| **System Tray Notifications & Calendar - Disable** | Bildirim merkezi ve takvim dahil tüm bildirimleri kapatır                 |                                                        |
+| **Right-Click Menu Previous Layout - Enable**      | Windows 11 sade sağ tık menüsü yerine klasik menüyü getirir               | Explorer yeniden başlar                                |
+| **Brave Browser - Debloat**                        | Brave Rewards, Leo AI, cüzdan ve VPN gibi özellikleri kapatır             | Brave kuruluysa geçerli                                |
+| **Adobe URL Block List - Enable**                  | hosts dosyasına Adobe aktivasyon/telemetri sunucularını ekler             | hosts dosyası yedeklenir                               |
+| **Razer Software Auto-Install - Disable**          | Razer yazılımının otomatik kurulumunu engeller                            | Donanım sürücüsü olmadan da çalışır                    |
+| **RDP Unsigned File Warnings - Disable**           | İmzasız RDP dosyası uyarılarını kapatır                                   | Güvenlik riski artabilir                               |
+| **IPv6 - Disable**                                 | IPv6 protokolünü tamamen kapatır                                          | Modern ağlarda sorun çıkarabilir                       |
+| **IPv6 - Set IPv4 as Preferred**                   | IPv4'ü IPv6'ya göre önceliklendirir                                       | IPv6'yi tamamen kapatmaz                               |
+| **Teredo - Disable**                               | Teredo tünelleme protokolünü kapatır                                      | Bazı oyunlarda bağlantı sorunu olabilir                |
+| **Date & Time - Set Time to UTC**                  | Sistem saatini UTC'ye ayarlar                                             | Çift önyükleme (Windows + Linux) için                  |
+| **O&O ShutUp10++ - Run**                           | Harici gizlilik aracını başlatır                                          | Ayrı pencere açılır                                    |
+| **DNS - Set to:**                                  | Seçilen DNS sağlayıcısını tüm ağ adaptörlerine uygular                    | Default DHCP ile geri alınabilir                       |
+
+
+---
+
+## Customize Preferences
+
+Toggle anahtarları: **açık** = madde adındaki özellik etkin, **kapalı** = devre dışı. Run Tweaks ile birlikte uygulanır.
+
+
+| Toggle                             | Açıkken ne olur                                          | Not                                                |
+| ---------------------------------- | -------------------------------------------------------- | -------------------------------------------------- |
+| **Dark Theme for Windows**         | Sistem geneli koyu tema                                  |                                                    |
+| **File Explorer File Extensions**  | Dosya uzantıları görünür (.txt, .exe)                    |                                                    |
+| **File Explorer Hidden Files**     | Gizli dosya ve klasörler listelenir                      |                                                    |
+| **Start Menu Bing Search**         | Başlat aramasına Bing web sonuçları dahil edilir         |                                                    |
+| **Start Menu Recommendations**     | Başlat menüsünde öneriler gösterilir                     | Kapalıyken Kilit ekranı Spotlight da etkilenebilir |
+| **Settings Home Page**             | Ayarlar uygulamasında ana sayfa görünür                  |                                                    |
+| **Taskbar Centered Icons**         | Görev çubuğu simgeleri ortada (Win11)                    | Kapalı = solda                                     |
+| **Taskbar Search Icon**            | Görev çubuğunda arama simgesi                            |                                                    |
+| **Taskbar Task View Icon**         | Görev çubuğunda Görev Görünümü düğmesi                   |                                                    |
+| **System Tray Battery Percentage** | Pil simgesinin yanında yüzde gösterilir                  | Laptop                                             |
+| **Mouse Acceleration**             | Fare imleci hızına göre ivmelenir                        | FPS oyunlarında genelde kapalı tercih edilir       |
+| **Num Lock on Startup**            | Bilgisayar açıldığında Num Lock açık                     |                                                    |
+| **Sticky Keys**                    | Yapışkan tuşlar erişilebilirlik özelliği açık            |                                                    |
+| **Game Mode**                      | Windows oyun için kaynak önceliği verir                  | Ses/video prodüksiyonunda kapatılabilir            |
+| **Cross-Device Resume**            | Telefon ve PC arası aktivite devam ettirme (Win11 24H2+) |                                                    |
+| **BSoD Verbose Mode**              | Mavi ekranda ayrıntılı hata bilgisi                      |                                                    |
+| **Logon Verbose Mode**             | Oturum açarken ayrıntılı durum mesajları                 |                                                    |
+| **Logon Screen Acrylic Blur**      | Giriş ekranında bulanık arka plan efekti                 |                                                    |
+| **Scrollbars Always Visible**      | Kaydırma çubukları her zaman görünür                     |                                                    |
+| **Multiplane Overlay**             | Multiplane Overlay grafik katmanı                        | Ekran kartı sorunlarında kapatılabilir             |
+| **S0 Sleep Network Connectivity**  | Modern bekleme modunda ağ bağlantısı                     |                                                    |
+| **S3 Sleep**                       | Modern Standby yerine klasik S3 uyku modu                | Donanıma bağlı                                     |
+| **Microsoft Outlook New Version**  | Yeni Outlook arayüzü ve geçiş seçeneği                   | Kapalı = klasik Outlook                            |
+| **Enable Long Paths**              | 260 karakterden uzun dosya yollarına izin verir          |                                                    |
+
+
+---
+
+# 🔧 Config
+
+Windows özelliklerini aç/kapat, sistem onarımı çalıştır ve klasik yönetim panellerine kısayol eriş.
+
+## Features
+
+İşaretle → **Run Features** ile uygula. Bazı özellikler yeniden başlatma gerektirir.
+
+
+| Özellik                                                | Ne işe yarar                                        |
+| ------------------------------------------------------ | --------------------------------------------------- |
+| **.NET Framework (Versions 2, 3, 4) - Enable**         | Eski .NET uygulamaları için framework desteği       |
+| **Hyper-V - Enable**                                   | Sanal makine desteği (Windows Pro/Enterprise)       |
+| **Windows Subsystem for Linux (WSL) - Enable**         | Linux alt sistemi                                   |
+| **Windows Sandbox - Enable**                           | Tek seferlik izole Windows ortamı (Hyper-V gerekir) |
+| **Legacy Media Components (WMP, DirectPlay) - Enable** | Windows Media Player ve DirectPlay                  |
+| **Network File System (NFS) - Enable**                 | NFS ağ dosya paylaşımı                              |
+| **Registry Backup (Daily Task 12:30am) - Enable**      | Her gece 00:30'da otomatik registry yedek görevi    |
+| **Legacy F8 Boot Recovery - Enable**                   | Önyüklemede F8 gelişmiş seçenekler menüsü           |
+| **Legacy F8 Boot Recovery - Disable**                  | F8 menüsünü kapatır; daha hızlı önyükleme           |
+
+
+## Fixes
+
+Tek tıkla sistem onarımı. Sorun yaşamadan rastgele çalıştırma.
+
+
+| Düğme                            | Ne işe yarar                                                           |
+| -------------------------------- | ---------------------------------------------------------------------- |
+| **AutoLogon - Run**              | Otomatik oturum açma yapılandırmasını açar                             |
+| **Network - Reset**              | Ağ yapılandırmasını sıfırlar                                           |
+| **NTP Server - Enable**          | Windows Time servisini etkinleştirir                                   |
+| **System Corruption Scan - Run** | SFC ve DISM ile sistem dosyası bütünlüğü kontrolü (10–30 dk sürebilir) |
+| **Windows Update - Reset**       | Windows Update servislerini ve önbelleğini sıfırlar                    |
+| **WinGet - Reinstall**           | Windows Package Manager'ı yeniden kurar                                |
+
+
+## Legacy Windows Panels
+
+İlgili Windows aracını doğrudan açar:
+
+Computer Management · Control Panel · Network Connections · Power Panel · Printer Panel · Region · Sound Settings · System Properties · Time and Date · Windows Restore
+
+## PowerShell Profile (PowerShell 7+ Only)
+
+
+| Düğme                                | Ne işe yarar                                                     |
+| ------------------------------------ | ---------------------------------------------------------------- |
+| **CTT PowerShell Profile - Install** | Chris Titus Tech'in özelleştirilmiş PowerShell 7 profilini kurar |
+| **CTT PowerShell Profile - Remove**  | CTT profilini kaldırır; varsayılana döner                        |
+
+
+## Remote Access
+
+
+| Düğme                       | Ne işe yarar                                |
+| --------------------------- | ------------------------------------------- |
+| **OpenSSH Server - Enable** | Windows'ta SSH sunucusunu kurar ve başlatır |
+
+
+> ⚠️ SSH sunucusunu yalnızca güvenilir ağlarda aç. Güçlü parola veya anahtar tabanlı kimlik doğrulama kullan.
+
+---
+
+# 🔄 Updates
+
+Windows Update politikasını üç hazır profilden biriyle yapılandırır.
+
+## Default Settings
+
+Windows Update'i fabrika varsayılanına döndürür. WinUtil'in daha önce uyguladığı güncelleme politikalarını ve ilgili Group Policy ayarlarını siler.
+
+**Kim için:** Güncelleme ayarlarını eski haline almak isteyenler.
+
+## Security Settings
+
+Dengeli güvenlik profili (Windows **Pro** gerekir — Group Policy kullanır):
+
+- **Feature update** gecikmesi: 365 gün — büyük Windows sürüm güncellemeleri ertelenir
+- **Güvenlik güncellemesi** gecikmesi: 4 gün — kritik yamalar kısa süre bekletilir
+- **Sürücü güncellemeleri** Windows Update üzerinden engellenir — manuel sürücü tercihini korur
+
+**Kim için:** Kararlı sistem isteyen, yine de güvenlik yamalarını almak isteyen Pro kullanıcılar.
+
+> 💡 Windows **Home** sürümünde Group Policy olmadığı için bu profilin bir kısmı uygulanmayabilir.
+
+## Disable All Updates — Önerilmez
+
+Tüm Windows güncellemelerini tamamen kapatır. Güvenlik yamaları da gelmez; sistem savunmasız kalır.
+
+**Kim için:** Yalnızca internete bağlı olmayan, izole sistemler. Günlük kullanım bilgisayarında seçme.
+
+---
+
+## ⚠️ Bilinen Sorunlar ve Çözümleri
+
+
+| Sorun                                  | Çözüm                                                                                                               |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Execution Policy hatası                | `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` veya `PowerShell -ExecutionPolicy Bypass -File .\winutil.ps1` |
+| Script indirilemiyor / internet hatası | [GitHub Releases](https://github.com/ChrisTitusTech/winutil/releases)'ten `winutil.ps1` indirip manuel çalıştır     |
+| Tweak sonrası sistem bozuldu           | Tweaks'te **Undo Selected Tweaks** veya Windows **Sistem Geri Yükleme**                                             |
+| WinGet kurulum hatası                  | Config → **WinGet - Reinstall**                                                                                     |
+
+
+---
+
+## 🔗 Faydalı Bağlantılar
+
+- 📂 [GitHub — ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil)
+- 📖 [Resmi Dokümantasyon](https://winutil.christitus.com)
+- 🚀 [Hızlı başlatma komutu](https://christitus.com/win)
+
+## 📝 Notlar
+
+> WinUtil'de bu rehberde anlatılan 4 sekme vardır: Install, Tweaks, Config, Updates. Tweaks sekmesinde 50'den fazla madde bulunur; emin olmadığın Advanced maddelere dokunma. Her maddenin üzerine gelince kısa İngilizce açıklama görünür. Değişiklik yapmadan önce **Restore Point - Create** seçmeyi unutma.
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-23*
