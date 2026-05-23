@@ -16,11 +16,13 @@ Windows "Uygulamalar ve Özellikler" yalnızca program kaydını siler; dosya ve
 
 ## 📂 Rehberler
 
-| Rehber | Ne için? |
-| ------ | -------- |
-| [Revo-Uninstaller .md](Uninstaller/Revo-Uninstaller%20.md) | Derin artık taraması, Hunter Mode, Free vs Pro |
-| [Bulk-Crap-Uninstaller .md](Uninstaller/Bulk-Crap-Uninstaller%20.md) | Toplu kaldırma, Steam/UWP/portable algılama, ücretsiz |
-| [Revo-vs-Bulk-Crap-Uninstaller.md](Uninstaller/Revo-vs-Bulk-Crap-Uninstaller.md) | Hangisini ne zaman kullanmalısın? |
+
+| Rehber                                                                           | Ne için?                                              |
+| -------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Revo-Uninstaller .md](Uninstaller/Revo-Uninstaller%20.md)                       | Derin artık taraması, Hunter Mode, Free vs Pro        |
+| [Bulk-Crap-Uninstaller .md](Uninstaller/Bulk-Crap-Uninstaller%20.md)             | Toplu kaldırma, Steam/UWP/portable algılama, ücretsiz |
+| [Revo-vs-Bulk-Crap-Uninstaller.md](Uninstaller/Revo-vs-Bulk-Crap-Uninstaller.md) | Hangisini ne zaman kullanmalısın?                     |
+
 
 ---
 
