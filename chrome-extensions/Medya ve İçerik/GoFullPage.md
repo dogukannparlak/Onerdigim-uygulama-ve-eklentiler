@@ -14,12 +14,12 @@ GoFullPage, görünen alanın ötesinde kalan tüm sayfa içeriğini tek bir gö
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Tam sayfa yakalama** — Sayfanın tamamını tek seferde birleştirir
-- **Karmaşık sayfa desteği** — İç kaydırma alanları ve gömülü iframe'lerle çalışır
-- **Çoklu format** — PNG, JPEG veya PDF olarak dışa aktarma
-- **Ek izin gerektirmez** — Standart tarayıcı izinleriyle çalışır
-- **Klavye kısayolu** — `Alt+Shift+P` ile hızlı yakalama
-- **Premium editör** — İsteğe bağlı kırpma ve not ekleme (ücretli)
+- **Tam sayfa yakalama** - Sayfanın tamamını tek seferde birleştirir
+- **Karmaşık sayfa desteği** - İç kaydırma alanları ve gömülü iframe'lerle çalışır
+- **Çoklu format** - PNG, JPEG veya PDF olarak dışa aktarma
+- **Ek izin gerektirmez** - Standart tarayıcı izinleriyle çalışır
+- **Klavye kısayolu** - `Alt+Shift+P` ile hızlı yakalama
+- **Premium editör** - İsteğe bağlı kırpma ve not ekleme (ücretli)
 
 ---
 

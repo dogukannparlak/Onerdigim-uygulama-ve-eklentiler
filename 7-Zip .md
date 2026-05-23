@@ -14,12 +14,12 @@ Güncel · Windows, Linux, macOS · Açık kaynak (LGPL) · Sistem Araçları
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Yüksek sıkıştırma** — 7z formatında güçlü oran; ZIP/RAR/TAR ve daha fazlasını açar
-- **AES-256 şifreleme** — Arşivlere parola koruması
-- **Explorer entegrasyonu** — Sağ tık menüsünden sıkıştır/çıkar
-- **Komut satırı** — `7z` ile otomasyon ve toplu işlem
-- **Ücretsiz ve açık kaynak** — Reklamsız, güvenilir
-- **Düşük RAM** — Hafif çalışma
+- **Yüksek sıkıştırma** - 7z formatında güçlü oran; ZIP/RAR/TAR ve daha fazlasını açar
+- **AES-256 şifreleme** - Arşivlere parola koruması
+- **Explorer entegrasyonu** - Sağ tık menüsünden sıkıştır/çıkar
+- **Komut satırı** - `7z` ile otomasyon ve toplu işlem
+- **Ücretsiz ve açık kaynak** - Reklamsız, güvenilir
+- **Düşük RAM** - Hafif çalışma
 
 ---
 
@@ -107,7 +107,7 @@ choco install 7zip
 
 ## 📝 Notlar
 
-> 7-Zip salt arşivleme aracıdır; bulut yedekleme veya senkronizasyon sunmaz. Paylaşılan arşivlerde `.zip` daha evrensel kabul görür; kişisel yedeklerde `.7z` daha iyi sıkıştırır. Şifre unutulursa arşiv kurtarılamaz — parolayı güvenli bir yerde sakla.
+> 7-Zip salt arşivleme aracıdır; bulut yedekleme veya senkronizasyon sunmaz. Paylaşılan arşivlerde `.zip` daha evrensel kabul görür; kişisel yedeklerde `.7z` daha iyi sıkıştırır. Şifre unutulursa arşiv kurtarılamaz - parolayı güvenli bir yerde sakla.
 
 ---
 

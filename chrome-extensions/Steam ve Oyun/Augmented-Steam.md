@@ -14,12 +14,12 @@ Augmented Steam, Steam'in varsayılan arayüzüne ek bilgi ve özelleştirme kat
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Fiyat analizi** — Güncel en iyi fiyat ve tarihsel en düşük fiyat gösterimi
-- **Oyun vurgulama** — Sahip olduğun, istediğin veya yok saydığın oyunları işaretle
-- **Gelişmiş arama** — İnceleme puanı, Erken Erişim gibi filtreler
-- **Toplu işlemler** — Çoklu DLC sepete ekleme, envanter hızlı satış
-- **Kişiselleştirme** — Ana sayfa düzeni, notlar, istenmeyen blokları gizleme
-- **IsThereAnyDeal entegrasyonu** — Bekleme listesi ve koleksiyon senkronizasyonu
+- **Fiyat analizi** - Güncel en iyi fiyat ve tarihsel en düşük fiyat gösterimi
+- **Oyun vurgulama** - Sahip olduğun, istediğin veya yok saydığın oyunları işaretle
+- **Gelişmiş arama** - İnceleme puanı, Erken Erişim gibi filtreler
+- **Toplu işlemler** - Çoklu DLC sepete ekleme, envanter hızlı satış
+- **Kişiselleştirme** - Ana sayfa düzeni, notlar, istenmeyen blokları gizleme
+- **IsThereAnyDeal entegrasyonu** - Bekleme listesi ve koleksiyon senkronizasyonu
 
 ---
 

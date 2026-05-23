@@ -8,18 +8,18 @@ Güncel (Chrome Web Store) · Chrome, Edge, Brave · Ücretsiz · Güvenlik ve G
 
 ## 📌 Genel Bakış
 
-"I don't care about cookies", GDPR sonrası neredeyse her sitede çıkan çerez bildirimlerini otomatik yönetir. Kurduktan sonra çoğu sitede banner görmezsin; eklenti gerekirse çerezleri arka planda kabul eder. Tarayıcının kendi çerez ayarlarından farklı olarak odak noktası bildirimleri kaldırmaktır — çerezleri silmez.
+"I don't care about cookies", GDPR sonrası neredeyse her sitede çıkan çerez bildirimlerini otomatik yönetir. Kurduktan sonra çoğu sitede banner görmezsin; eklenti gerekirse çerezleri arka planda kabul eder. Tarayıcının kendi çerez ayarlarından farklı olarak odak noktası bildirimleri kaldırmaktır - çerezleri silmez.
 
 ---
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Otomatik banner kapatma** — Çerez pop-up'larını gizler veya tek tıkla kapatır
-- **Akıllı kabul** — Site çalışması için gerekliyse çerezleri otomatik kabul eder
-- **Çoklu dil desteği** — Farklı dillerdeki çerez bildirimlerini tanır
-- **Sessiz çalışma** — Kurulum sonrası ek müdahale gerektirmez
-- **Hafif eklenti** — Arka planda minimum kaynak kullanır
-- **Geniş site uyumu** — Binlerce popüler sitede çalışır
+- **Otomatik banner kapatma** - Çerez pop-up'larını gizler veya tek tıkla kapatır
+- **Akıllı kabul** - Site çalışması için gerekliyse çerezleri otomatik kabul eder
+- **Çoklu dil desteği** - Farklı dillerdeki çerez bildirimlerini tanır
+- **Sessiz çalışma** - Kurulum sonrası ek müdahale gerektirmez
+- **Hafif eklenti** - Arka planda minimum kaynak kullanır
+- **Geniş site uyumu** - Binlerce popüler sitede çalışır
 
 ---
 
@@ -58,7 +58,7 @@ Kurulumdan sonra normal şekilde gez. Eklenti arka planda çalışır; çoğu si
 
 1. Sayfayı yenile
 2. Eklentinin güncel olduğunu kontrol et
-3. Sorun devam ederse o site henüz desteklenmiyor olabilir — geçici olarak manuel kapat
+3. Sorun devam ederse o site henüz desteklenmiyor olabilir - geçici olarak manuel kapat
 
 ---
 
@@ -81,7 +81,7 @@ Kurulumdan sonra normal şekilde gez. Eklenti arka planda çalışır; çoğu si
 
 ## 📝 Notlar
 
-> Eklenti Gen Digital Inc. (eski NortonLifeLock) tarafından geliştirilmektedir; kurmadan önce gizlilik politikasını incele. Otomatik çerez kabulü GDPR açısından gri bir alandır — bilinçli tercih yap. Eklenti çerezleri silmez; gizlilik odaklı gezinme için tarayıcının gizli modu veya çerez yönetim ayarlarını ayrıca kullan.
+> Eklenti Gen Digital Inc. (eski NortonLifeLock) tarafından geliştirilmektedir; kurmadan önce gizlilik politikasını incele. Otomatik çerez kabulü GDPR açısından gri bir alandır - bilinçli tercih yap. Eklenti çerezleri silmez; gizlilik odaklı gezinme için tarayıcının gizli modu veya çerez yönetim ayarlarını ayrıca kullan.
 
 ---
 

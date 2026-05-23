@@ -16,12 +16,12 @@ ExplorerBlurMica, yalnızca **Dosya Gezgini** pencerelerine cam benzeri arka pla
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Blur / Acrylic / Mica** — Beş farklı efekt türü (`effect=0`–`4`)
-- **Açık/koyu mod uyumu** — Sistem temasına göre renk ayarı
-- **RGBA renk kontrolü** — Karışım rengini ve şeffaflığı ince ayarla
-- **Temiz arayüz** — Adres çubuğu, scrollbar ve WinUI arka planlarını kaldır
-- **Hafif kurulum** — DLL kaydı; arka planda çalışan ayrı bir uygulama yok
-- **Ücretsiz ve açık kaynak** — GitHub'dan indirilir
+- **Blur / Acrylic / Mica** - Beş farklı efekt türü (`effect=0`–`4`)
+- **Açık/koyu mod uyumu** - Sistem temasına göre renk ayarı
+- **RGBA renk kontrolü** - Karışım rengini ve şeffaflığı ince ayarla
+- **Temiz arayüz** - Adres çubuğu, scrollbar ve WinUI arka planlarını kaldır
+- **Hafif kurulum** - DLL kaydı; arka planda çalışan ayrı bir uygulama yok
+- **Ücretsiz ve açık kaynak** - GitHub'dan indirilir
 
 ---
 
@@ -29,7 +29,7 @@ ExplorerBlurMica, yalnızca **Dosya Gezgini** pencerelerine cam benzeri arka pla
 
 > WinGet veya Store paketi yok; kurulum GitHub Release üzerinden yapılır.
 
-### Yöntem 1: GitHub Release — Önerilen
+### Yöntem 1: GitHub Release ( Önerilen )
 
 1. [Release sayfasından](https://github.com/Maplespe/ExplorerBlurMica/releases/latest) `Release_x64.zip` indir
 2. Arşivi `C:\Program Files\ExplorerBlurMica` gibi kalıcı bir klasöre çıkar
@@ -84,10 +84,10 @@ b=0
 a=120
 ```
 
-- **Acrylic (`effect=1`)** — Win10/11'de en dengeli seçenek
-- **Temizleme seçenekleri** — Adres çubuğu, scrollbar ve WinUI arka planı kaldırılır
-- `**showLine=true`** — Sol panel ile dosya listesi arasındaki ayırıcı çizgiyi gizler
-- **Renkler** — Açık modda beyaz ton, koyu modda siyah ton; `a` değeri şeffaflığı belirler (0–255)
+- **Acrylic (`effect=1`)** - Win10/11'de en dengeli seçenek
+- **Temizleme seçenekleri** - Adres çubuğu, scrollbar ve WinUI arka planı kaldırılır
+- `**showLine=true`** - Sol panel ile dosya listesi arasındaki ayırıcı çizgiyi gizler
+- **Renkler** - Açık modda beyaz ton, koyu modda siyah ton; `a` değeri şeffaflığı belirler (0–255)
 
 > 💡 Düşük performanslı sistemlerde `effect=0` veya `a` değerini düşürmeyi dene.
 

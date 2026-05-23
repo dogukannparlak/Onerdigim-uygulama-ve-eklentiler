@@ -1,6 +1,6 @@
 # ⚖️ Revo Uninstaller vs Bulk Crap Uninstaller
 
-> **Kısa Açıklama:** İki popüler kaldırma aracının hızlı karşılaştırması — hangisini ne zaman kullanmalısın?
+> **Kısa Açıklama:** İki popüler kaldırma aracının hızlı karşılaştırması - hangisini ne zaman kullanmalısın?
 
 ---
 
@@ -41,8 +41,8 @@ Detaylı rehberler: [Revo-Uninstaller .md](Revo-Uninstaller%20.md) · [Bulk-Crap
 | Chocolatey paketleri | ❌ | ✅ |
 | Windows Özellikleri / Update | ❌ | ✅ |
 | Başlangıç yöneticisi | ✅ (Free) | ✅ |
-| Sertifika doğrulama | — | ✅ |
-| Özel kaldırma listeleri | — | ✅ |
+| Sertifika doğrulama | - | ✅ |
+| Özel kaldırma listeleri | - | ✅ |
 
 ---
 
@@ -82,8 +82,8 @@ Mümkün. Revo'yu günlük tek program kaldırma için, BCU'yu nadir toplu temiz
 ## 🔗 Faydalı Bağlantılar
 
 - 🔴 [Revo Uninstaller](https://www.revouninstaller.com/)
-- 🔵 [BCU — SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
-- 🔵 [BCU — Resmi Site](https://www.bcuninstaller.com/)
+- 🔵 [BCU - SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
+- 🔵 [BCU - Resmi Site](https://www.bcuninstaller.com/)
 - 📖 [Revo rehberi](Revo-Uninstaller%20.md)
 - 📖 [BCU rehberi](Bulk-Crap-Uninstaller%20.md)
 

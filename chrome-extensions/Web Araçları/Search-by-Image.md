@@ -8,18 +8,18 @@
 
 ## 📌 Genel Bakış
 
-Search by Image, bir görseli kaynağını veya benzerlerini bulmak için tersine görsel arama (reverse image search) yapar. Sağ tık menüsü veya araç çubuğu simgesiyle çalışır; haber doğrulama, sahte görsel tespiti veya benzer ürün arama gibi senaryolarda kullanılır. Seçilen görsel, arama motoruna gönderilir — gizlilik politikasını incele.
+Search by Image, bir görseli kaynağını veya benzerlerini bulmak için tersine görsel arama (reverse image search) yapar. Sağ tık menüsü veya araç çubuğu simgesiyle çalışır; haber doğrulama, sahte görsel tespiti veya benzer ürün arama gibi senaryolarda kullanılır. Seçilen görsel, arama motoruna gönderilir - gizlilik politikasını incele.
 
 ---
 
 ## ✨ Öne Çıkan Özellikler
 
-- **30+ arama motoru** — Google, Bing, Yandex, Baidu, TinEye ve daha fazlası
-- **Sağ tık menüsü** — Sayfadaki görsele hızlı arama
-- **Araç çubuğu simgesi** — Tek tıkla arama başlat
-- **Çoklu arama modu** — URL, dosya, ekran yakalama, cihazdan yükleme
-- **Motor özelleştirme** — Hangi motorların kullanılacağını seç ve sırala
-- **Açık kaynak** — Kod GitHub'da incelenebilir
+- **30+ arama motoru** - Google, Bing, Yandex, Baidu, TinEye ve daha fazlası
+- **Sağ tık menüsü** - Sayfadaki görsele hızlı arama
+- **Araç çubuğu simgesi** - Tek tıkla arama başlat
+- **Çoklu arama modu** - URL, dosya, ekran yakalama, cihazdan yükleme
+- **Motor özelleştirme** - Hangi motorların kullanılacağını seç ve sırala
+- **Açık kaynak** - Kod GitHub'da incelenebilir
 
 ---
 
@@ -38,13 +38,13 @@ Search by Image, bir görseli kaynağını veya benzerlerini bulmak için tersin
 
 ## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-1. **Arama motorları:** Seçenekler → kullanmak istediğin motorları aç/kapat ve sırala. Tam liste: [Wiki — Search engines](https://github.com/dessant/search-by-image/wiki/Search-engines)
+1. **Arama motorları:** Seçenekler → kullanmak istediğin motorları aç/kapat ve sırala. Tam liste: [Wiki - Search engines](https://github.com/dessant/search-by-image/wiki/Search-engines)
 2. **Arama modu:** Sağ tık ve araç çubuğu için ayrı mod ayarlanabilir:
-  - **Select URL** — Görsel URL'si ile ara (varsayılan)
-  - **Select image** — Görsel dosyası ile ara (özel/korumalı siteler için)
-  - **Capture** — Sayfa alanı yakalayıp ara
-  - **Browse** — Cihazdan görsel seç veya panodan yapıştır
-  - **URL** — Görsel URL'si girerek ara
+  - **Select URL** - Görsel URL'si ile ara (varsayılan)
+  - **Select image** - Görsel dosyası ile ara (özel/korumalı siteler için)
+  - **Capture** - Sayfa alanı yakalayıp ara
+  - **Browse** - Cihazdan görsel seç veya panodan yapıştır
+  - **URL** - Görsel URL'si girerek ara
 3. **Yerel dosyalar:** Sekmede açık yerel görselde arama için `chrome://extensions` → eklenti ayrıntıları → **Dosya URL'lerine erişime izin ver** seçeneğini aç.
 
 > 💡 **İpucu:** Doğrudan bağlantı vermeyen sitelerde **Select image** modunu dene.
@@ -89,7 +89,7 @@ Search by Image, bir görseli kaynağını veya benzerlerini bulmak için tersin
 
 ## 📝 Notlar
 
-> Arama sırasında seçilen görsel ilgili arama servisine gönderilir; gizlilik politikasını oku. Hata ve özellik istekleri için Chrome Web Store yorumları izlenmez — [GitHub Issues](https://github.com/dessant/search-by-image) kullan. Görsel doğrulama aracı %100 kesin sonuç vermez; birden fazla kaynakla çapraz kontrol yap.
+> Arama sırasında seçilen görsel ilgili arama servisine gönderilir; gizlilik politikasını oku. Hata ve özellik istekleri için Chrome Web Store yorumları izlenmez - [GitHub Issues](https://github.com/dessant/search-by-image) kullan. Görsel doğrulama aracı %100 kesin sonuç vermez; birden fazla kaynakla çapraz kontrol yap.
 
 ---
 

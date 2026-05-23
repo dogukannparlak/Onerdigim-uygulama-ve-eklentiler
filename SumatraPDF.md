@@ -14,12 +14,12 @@ SumatraPDF, performans ve sadelik odaklı açık kaynaklı bir belge okuyucudur.
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Hafif ve hızlı** — Düşük RAM kullanımı, anında açılış
-- **Taşınabilir** — ZIP veya tek EXE; kurulum zorunlu değil
-- **Çoklu format** — PDF, EPUB, MOBI, DjVu, XPS, CBZ/CBR, CHM
-- **Minimal arayüz** — Menü varsayılan gizli (F9); odak okuma
-- **Arama ve gezinme** — Metin arama, sayfa atlama
-- **Açık kaynak** — Kod GitHub'da incelenebilir
+- **Hafif ve hızlı** - Düşük RAM kullanımı, anında açılış
+- **Taşınabilir** - ZIP veya tek EXE; kurulum zorunlu değil
+- **Çoklu format** - PDF, EPUB, MOBI, DjVu, XPS, CBZ/CBR, CHM
+- **Minimal arayüz** - Menü varsayılan gizli (F9); odak okuma
+- **Arama ve gezinme** - Metin arama, sayfa atlama
+- **Açık kaynak** - Kod GitHub'da incelenebilir
 
 ---
 

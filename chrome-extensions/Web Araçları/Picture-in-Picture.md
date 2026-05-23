@@ -1,4 +1,4 @@
-# 🛠️ Resim içinde Resim — Kayan Video Oynatıcı
+# 🛠️ Resim içinde Resim - Kayan Video Oynatıcı
 
 > **Kısa Açıklama:** Videoları oynatma kontrolleriyle kayan PiP penceresinde izlemenizi sağlar; gezinmeye devam ederken video ekranda kalır.
 
@@ -14,12 +14,12 @@ Resim içinde Resim (PiP) uzantısı, HTML video içeren sitelerde videoyu diğe
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Kayan PiP penceresi** — Video diğer uygulamaların üzerinde yüzer
-- **Oynatma kontrolleri** — PiP penceresinde temel oynatıcı kontrolleri
-- **Sayfa eylem düğmesi** — Sayfada video varken araç çubuğu simgesi aktifleşir
-- **Aktif oynatıcı algılama** — Çalışan videoyu otomatik hedeflemeye çalışır
-- **Çoklu site desteği** — HTML video öğesi olan sitelerde çalışır
-- **Gizlilik** — Geliştirici veri toplamadığını belirtir
+- **Kayan PiP penceresi** - Video diğer uygulamaların üzerinde yüzer
+- **Oynatma kontrolleri** - PiP penceresinde temel oynatıcı kontrolleri
+- **Sayfa eylem düğmesi** - Sayfada video varken araç çubuğu simgesi aktifleşir
+- **Aktif oynatıcı algılama** - Çalışan videoyu otomatik hedeflemeye çalışır
+- **Çoklu site desteği** - HTML video öğesi olan sitelerde çalışır
+- **Gizlilik** - Geliştirici veri toplamadığını belirtir
 
 ---
 

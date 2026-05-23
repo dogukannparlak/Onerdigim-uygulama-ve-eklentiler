@@ -14,12 +14,12 @@ Medium Parser, Medium'da üyelik gerektiren makalelere doğrudan erişim yerine 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Paywall atlama** — Member-only makalelere alternatif erişim yolları
-- **Çoklu yöntem** — Google Cache, Archive.is, Read-Medium, Freedium vb.
-- **Otomatik fallback** — Bir yöntem çalışmazsa diğerini dene
-- **Harici yayıncı arama** — Makalenin tam sürümünü başka sitede bul
-- **Açık kaynak** — Kod GitHub'da incelenebilir
-- **Tek tıkla erişim** — Makale sayfasında simgeye tıkla, yöntem seç
+- **Paywall atlama** - Member-only makalelere alternatif erişim yolları
+- **Çoklu yöntem** - Google Cache, Archive.is, Read-Medium, Freedium vb.
+- **Otomatik fallback** - Bir yöntem çalışmazsa diğerini dene
+- **Harici yayıncı arama** - Makalenin tam sürümünü başka sitede bul
+- **Açık kaynak** - Kod GitHub'da incelenebilir
+- **Tek tıkla erişim** - Makale sayfasında simgeye tıkla, yöntem seç
 
 ---
 
@@ -51,9 +51,9 @@ Bu eklenti kurulduktan sonra ek ayar gerektirmez. Makale sayfasında simgeye tı
 1. Medium'da member-only (ücretli) bir makaleye git
 2. Medium Parser simgesine tıkla
 3. Açılan menüden bir yöntem seç:
-   - **Open in Google Cache** — Önbelleğe alınmış sürüm
-   - **Open in Archive.is / Archive.today** — Web arşivi
-   - **Open in Read-Medium / Freedium** — Alternatif okuyucular
+   - **Open in Google Cache** - Önbelleğe alınmış sürüm
+   - **Open in Archive.is / Archive.today** - Web arşivi
+   - **Open in Read-Medium / Freedium** - Alternatif okuyucular
 4. Makale yeni sekmede açılır
 
 ### Yöntem çalışmıyorsa

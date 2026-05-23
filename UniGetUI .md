@@ -14,18 +14,18 @@ UniGetUI (eski adı WingetUI), Windows'ta komut satırı bilgisi gerektirmeden y
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Tek arayüz** — Birden fazla paket yöneticisini birleştirir
-- **Arama ve keşif** — Paket adı veya açıklama ile ara
-- **Toplu işlem** — Birden fazla paketi aynı anda kur, güncelle veya kaldır
-- **Otomatik güncelleme** — Güncelleme bildirimi ve zamanlanmış kontrol
-- **Export/Import** — Paket listesini yedekle ve başka PC'ye aktar
-- **Türkçe dil desteği** — 30+ dil arasında Türkçe mevcut
+- **Tek arayüz** - Birden fazla paket yöneticisini birleştirir
+- **Arama ve keşif** - Paket adı veya açıklama ile ara
+- **Toplu işlem** - Birden fazla paketi aynı anda kur, güncelle veya kaldır
+- **Otomatik güncelleme** - Güncelleme bildirimi ve zamanlanmış kontrol
+- **Export/Import** - Paket listesini yedekle ve başka PC'ye aktar
+- **Türkçe dil desteği** - 30+ dil arasında Türkçe mevcut
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Microsoft Store — Önerilen
+### Yöntem 1: Microsoft Store ( Önerilen )
 
 1. Microsoft Store'u aç
 2. **UniGetUI** ara (yayıncı: Devolutions)
@@ -108,7 +108,7 @@ winget install --exact --id Devolutions.UniGetUI
 
 ## 📝 Notlar
 
-> Bir paket UniGetUI'de kurulmazsa sorun çoğu zaman WinGet kaynağındadır — aynı komutu PowerShell'de `winget install --id ...` ile dene. npm/pip paketleri geliştirici araçları içindir; günlük yazılım kurulumu için WinGet yeterlidir.
+> Bir paket UniGetUI'de kurulmazsa sorun çoğu zaman WinGet kaynağındadır - aynı komutu PowerShell'de `winget install --id ...` ile dene. npm/pip paketleri geliştirici araçları içindir; günlük yazılım kurulumu için WinGet yeterlidir.
 
 ---
 

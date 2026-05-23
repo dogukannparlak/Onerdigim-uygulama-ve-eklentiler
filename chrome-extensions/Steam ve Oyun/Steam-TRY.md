@@ -14,12 +14,12 @@ Steam TRY, Steam'in resmi TL desteği olmayan bölgelerde fiyatları Türk Liras
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Mağaza fiyatları** — Oyun fiyatlarını TL olarak gösterir
-- **Market fiyatları** — Steam Market eşyalarının TL değerini hesaplar
-- **Anlık dönüşüm** — Güncel kur ile gerçek zamanlı hesaplama
-- **Sıfır konfigürasyon** — Kurulum sonrası otomatik çalışır
-- **Hafif eklenti** — Minimum kaynak kullanımı
-- **Tüm Steam sayfaları** — Mağaza ve market genelinde geçerli
+- **Mağaza fiyatları** - Oyun fiyatlarını TL olarak gösterir
+- **Market fiyatları** - Steam Market eşyalarının TL değerini hesaplar
+- **Anlık dönüşüm** - Güncel kur ile gerçek zamanlı hesaplama
+- **Sıfır konfigürasyon** - Kurulum sonrası otomatik çalışır
+- **Hafif eklenti** - Minimum kaynak kullanımı
+- **Tüm Steam sayfaları** - Mağaza ve market genelinde geçerli
 
 ---
 

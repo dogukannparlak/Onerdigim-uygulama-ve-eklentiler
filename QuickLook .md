@@ -14,18 +14,18 @@ QuickLook, Dosya Gezgini, masaüstü ve Aç/Kaydet pencerelerinde seçili dosyay
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Space ile önizleme** — Dosyayı seç, Space'e bas, anında gör
-- **Ok tuşlarıyla gezinme** — Aynı klasördeki dosyalar arasında hızlı geçiş
-- **Çok format desteği** — Resim, PDF, video, ses, metin, arşiv ve daha fazlası
-- **Plugin desteği** — Office, e-kitap, klasör listesi gibi ek görüntüleyiciler
-- **Arka planda çalışır** — Sistem tepsisinde; ihtiyaç anında devreye girer
-- **Ücretsiz** — Açık kaynak, reklamsız
+- **Space ile önizleme** - Dosyayı seç, Space'e bas, anında gör
+- **Ok tuşlarıyla gezinme** - Aynı klasördeki dosyalar arasında hızlı geçiş
+- **Çok format desteği** - Resim, PDF, video, ses, metin, arşiv ve daha fazlası
+- **Plugin desteği** - Office, e-kitap, klasör listesi gibi ek görüntüleyiciler
+- **Arka planda çalışır** - Sistem tepsisinde; ihtiyaç anında devreye girer
+- **Ücretsiz** - Açık kaynak, reklamsız
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Microsoft Store — Önerilen
+### Yöntem 1: Microsoft Store ( Önerilen )
 
 1. Microsoft Store'u aç
 2. **QuickLook** ara (yayıncı: Paddy Xu)
@@ -62,7 +62,7 @@ winget install QL-Win.QuickLook
 ### Dosya önizleme
 
 1. Dosya Gezgini veya masaüstünde bir dosyayı seç
-2. **Space** tuşuna bas — önizleme penceresi açılır
+2. **Space** tuşuna bas - önizleme penceresi açılır
 3. **↑ ↓ ← →** ile aynı klasördeki diğer dosyalara geç
 4. **Space** veya **Esc** ile kapat
 
@@ -104,7 +104,7 @@ winget install QL-Win.QuickLook
 
 ## 📝 Notlar
 
-> Store sürümünde bazı gelişmiş özellikler veya plugin desteği sınırlı olabilir; sorun yaşarsan GitHub/WinGet sürümünü dene. Windows Defender bazen QuickLook'u yanlış pozitif olarak işaretleyebilir — resmi kaynaktan indirdiğinden emin ol.
+> Store sürümünde bazı gelişmiş özellikler veya plugin desteği sınırlı olabilir; sorun yaşarsan GitHub/WinGet sürümünü dene. Windows Defender bazen QuickLook'u yanlış pozitif olarak işaretleyebilir - resmi kaynaktan indirdiğinden emin ol.
 
 ---
 

@@ -16,18 +16,18 @@ WinToys, Windows Ayarlar uygulamasında dağınık duran veya hiç bulunmayan si
 
 WinToys sol menüsünde 6 sekme vardır; rehber bu yapıya göre düzenlenmiştir:
 
-- **Giriş** — Donanım kartları, canlı CPU/GPU/RAM ve sistem özeti
-- **Uygulamalar** — Kurulu programları listele, kaldır, sıfırla
-- **Hizmetler** — Windows hizmetlerini filtrele, başlat veya durdur
-- **Performans** — Güç planı, oyun ayarları, başlangıç uygulamaları
-- **Sağlık** — Temizlik, güncelleme, onarım (DISM/SFC/CHKDSK), pil raporu
-- **İnce Ayarlar** — Masaüstü, Explorer, gizlilik, reklam ve sistem tweak'leri
+- **Giriş** - Donanım kartları, canlı CPU/GPU/RAM ve sistem özeti
+- **Uygulamalar** - Kurulu programları listele, kaldır, sıfırla
+- **Hizmetler** - Windows hizmetlerini filtrele, başlat veya durdur
+- **Performans** - Güç planı, oyun ayarları, başlangıç uygulamaları
+- **Sağlık** - Temizlik, güncelleme, onarım (DISM/SFC/CHKDSK), pil raporu
+- **İnce Ayarlar** - Masaüstü, Explorer, gizlilik, reklam ve sistem tweak'leri
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Microsoft Store — Önerilen
+### Yöntem 1: Microsoft Store ( Önerilen )
 
 1. Microsoft Store'u aç
 2. **WinToys** ara
@@ -43,13 +43,13 @@ winget install "WinToys"
 
 > UniGetUI açıkken arama çubuğuna **WinToys** yaz ve kur.
 
-**Alternatif:** [GitHub Releases](https://github.com/bogdandonduk/WinToys/releases) — kurulum dosyası (`WinToys-x.x.x-Setup.exe`) veya taşınabilir ZIP (`WinToys.exe`).
+**Alternatif:** [GitHub Releases](https://github.com/bogdandonduk/WinToys/releases) - kurulum dosyası (`WinToys-x.x.x-Setup.exe`) veya taşınabilir ZIP (`WinToys.exe`).
 
 ---
 
 ## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-1. **Yönetici izni:** İlk açılışta izin isteyebilir — onayla; uygulama ve hizmet listeleri için gereklidir
+1. **Yönetici izni:** İlk açılışta izin isteyebilir - onayla; uygulama ve hizmet listeleri için gereklidir
 2. **İlk tarama:** WinToys sistemi tarar ve varsayılan ayarları yükler; birkaç saniye bekle
 3. **Giriş sayfasını incele:** Donanım kartları ve canlı istatistiklerle sistemin genel durumunu kontrol et
 
@@ -84,8 +84,8 @@ WinToys açıldığında karşına çıkan ilk sekme; bilgisayarının genel dur
 Alt panelde anlık veriler görünür:
 
 - **CPU, GPU, RAM** kullanım yüzdeleri
-- **Ağ trafiği** — indirme/yükleme hızı ve toplam veri
-- **Özet sayaçlar** — kurulu uygulama, aktif süreç ve hizmet sayıları (yalnızca özet; ayrı süreç yönetimi sekmesi yok)
+- **Ağ trafiği** - indirme/yükleme hızı ve toplam veri
+- **Özet sayaçlar** - kurulu uygulama, aktif süreç ve hizmet sayıları (yalnızca özet; ayrı süreç yönetimi sekmesi yok)
 
 > 💡 Windows sürüm kartının üzerine gelince lisans durumu, ürün anahtarı ve güncelleme bilgisi gibi ek detaylar tooltip olarak görünür.
 
@@ -169,15 +169,15 @@ Sistem hızı, güç tüketimi ve oyun performansı için Windows ayarlarını t
 | **HAGS** (Donanım hızlandırmalı GPU zamanlaması) | GPU görev dağılımını iyileştirir; gecikmeyi ve CPU yükünü azaltabilir |
 | **VBS** (Sanallaştırma tabanlı güvenlik) | Ek güvenlik katmanı sağlar; kapalıyken oyunlarda hafif performans artışı görülebilir |
 
-> 💡 **Nihai performans** bazı cihazlarda desteklenmeyebilir; WinToys uyarı gösterir. **VBS** kapatmak güvenliği düşürür — yalnızca performans için bilinçli tercih et.
+> 💡 **Nihai performans** bazı cihazlarda desteklenmeyebilir; WinToys uyarı gösterir. **VBS** kapatmak güvenliği düşürür - yalnızca performans için bilinçli tercih et.
 
 ### Başlangıç uygulamaları
 
 **Yapılandır** ile açılan listede:
 
-- **Yenile** — listeyi güncelle
-- **Yeni başlangıç uygulaması ekle** — manuel program ekle
-- **Yenisi eklenince bildir** — yeni başlangıç öğesi uyarısı
+- **Yenile** - listeyi güncelle
+- **Yeni başlangıç uygulaması ekle** - manuel program ekle
+- **Yenisi eklenince bildir** - yeni başlangıç öğesi uyarısı
 
 Gereksiz başlangıç programlarını kapatmak açılış süresini kısaltır.
 
@@ -235,7 +235,7 @@ Sistem bakımı, temizlik, güncelleme ve onarım araçlarını tek ekranda topl
 
 | Araç | Ne işe yarar | Eylem |
 | ---- | ------------ | ----- |
-| **Bellek teşhis** | RAM hatalarını kontrol eder | **Denetle** — yeniden başlatma sonrası test çalışır |
+| **Bellek teşhis** | RAM hatalarını kontrol eder | **Denetle** - yeniden başlatma sonrası test çalışır |
 | **Grafik sürücüsü** | Ekran donması/titremesinde GPU sürücüsünü sıfırlar | **Yeniden Başlat** |
 | **Simge önbelleği** | Boş, bulanık veya bozuk simgeleri düzeltir | **Yeniden oluştur** |
 | **Uyku hapı** | Bilgisayarı uyku modundan uyandıran zamanlanmış görevleri bulur | **Durdur** |
@@ -291,13 +291,13 @@ WinToys → Sağlık → **Pil raporu** → **Oluştur** ile Windows'un standart
 | ----- | ----------- |
 | **Üst bilgi** | Bilgisayar adı, model, BIOS, Windows sürümü, rapor tarihi |
 | **Installed batteries** | Pil kimliği ve sağlık verileri |
-| **Recent usage** | Son 7 gün — Active/Suspended, AC/Battery, kalan % ve mWh |
-| **Battery usage** | Pil tüketim oturumları — süre, harcanan % ve mWh (+ grafik) |
+| **Recent usage** | Son 7 gün - Active/Suspended, AC/Battery, kalan % ve mWh |
+| **Battery usage** | Pil tüketim oturumları - süre, harcanan % ve mWh (+ grafik) |
 | **Usage history** | Haftalık/günlük AC ve pil kullanım süreleri |
 | **Battery capacity history** | Zaman içinde tam şarj kapasitesinin değişimi |
 | **Battery life estimates** | Gözlemlenen tüketime göre tahmini pil ömrü |
 
-#### Installed batteries — okuma rehberi
+#### Installed batteries - okuma rehberi
 
 | Alan | Anlamı |
 | ---- | ------ |
@@ -316,20 +316,20 @@ WinToys → Sağlık → **Pil raporu** → **Oluştur** ile Windows'un standart
 | ---- | ----- |
 | %90–100 | Mükemmel |
 | %80–89 | İyi |
-| %60–79 | Orta — belirgin azalma |
-| %40–59 | Zayıf — pil değişimi yaklaşabilir |
-| <%40 | Kritik — acil değişim önerilir |
+| %60–79 | Orta - belirgin azalma |
+| %40–59 | Zayıf - pil değişimi yaklaşabilir |
+| <%40 | Kritik - acil değişim önerilir |
 
-#### Battery usage — pil oturumları
+#### Battery usage - pil oturumları
 
 Son 7 günde pilde geçen her oturum listelenir:
 
-- **DURATION** — ne kadar süre pilde kaldın
-- **ENERGY DRAINED** — o oturumda harcanan % ve mWh
+- **DURATION** - ne kadar süre pilde kaldın
+- **ENERGY DRAINED** - o oturumda harcanan % ve mWh
 
 Uzun oturumlar ve yüksek mWh değerleri pilin hangi kullanımlarda hızlı bittiğini gösterir.
 
-#### Battery life estimates — tahmini ömür
+#### Battery life estimates - tahmini ömür
 
 İki sütun vardır:
 
@@ -340,7 +340,7 @@ Uzun oturumlar ve yüksek mWh değerleri pilin hangi kullanımlarda hızlı bitt
 
 En alttaki **Since OS install** satırı, kurulumdan bu yana tüm gözlemlere dayalı genel tahmini verir (ör. aktif kullanımda ~3–4 saat).
 
-> 💡 Raporu ayda bir oluştur; **Battery capacity history** bölümünden kapasite düşüşünü zaman içinde takip edebilirsin. Masaüstü bilgisayarlarda pil bölümü boş veya "no batteries" görünür — normaldir.
+> 💡 Raporu ayda bir oluştur; **Battery capacity history** bölümünden kapasite düşüşünü zaman içinde takip edebilirsin. Masaüstü bilgisayarlarda pil bölümü boş veya "no batteries" görünür - normaldir.
 
 ### Onar (DISM / SFC / CHKDSK)
 
@@ -348,9 +348,9 @@ Kilitlenme, donma, mavi ekran veya başarısız güncelleme sonrası önerilir.
 
 | Araç | Ne yapar |
 | ---- | -------- |
-| **DISM** | Bozuk Windows bileşen görüntüsünü onarır — internet gerekir |
+| **DISM** | Bozuk Windows bileşen görüntüsünü onarır - internet gerekir |
 | **SFC** | Korunan sistem dosyalarını tarar ve bozuk olanları değiştirir |
-| **CHKDSK** | Disk hatalarını ve bozuk sektörleri kontrol eder — C: sürücüsü için yeniden başlatma gerekebilir |
+| **CHKDSK** | Disk hatalarını ve bozuk sektörleri kontrol eder - C: sürücüsü için yeniden başlatma gerekebilir |
 
 1. En az bir aracı işaretle
 2. **Tara** ile sorun tespiti veya doğrudan **Tamirat** ile onarım başlat
@@ -367,11 +367,11 @@ Windows'un registry ve Ayarlar uygulamasında dağınık duran tweak'leri katego
 
 1. Sol menüden **İnce Ayarlar** sekmesine git
 2. Kategori başlığını aç (Masaüstü, Başlat Menüsü, Dosya Gezgini…)
-3. Anahtarı değiştir — çoğu ayar anında uygulanır
+3. Anahtarı değiştir - çoğu ayar anında uygulanır
 
 > 💡 Aşağıdaki **Benim ayarım** sütunu kişisel kurulumumu gösterir; senin ihtiyacına göre farklı seçebilirsin.
 
-### Özet — kişisel tercihlerim
+### Özet - kişisel tercihlerim
 
 - **Gizlilik odaklı:** Telemetri, konum ve reklamlar kapalı; yalnızca CEIP ve hata raporlama açık
 - **Temiz Başlat menüsü:** Bing arama, Store önerileri ve hesap bildirimleri kapalı
@@ -458,7 +458,7 @@ Microsoft'a giden kullanım ve tanılama verileri.
 
 ### 📢 Reklamlar
 
-Windows içi öneri, ipucu ve tanıtım içerikleri — hepsi kapalı.
+Windows içi öneri, ipucu ve tanıtım içerikleri - hepsi kapalı.
 
 | Ayar | Ne işe yarar | Benim ayarım |
 | ---- | ------------ | ------------ |
@@ -496,7 +496,7 @@ Günlük kullanımı hızlandıran sistem davranışları.
 
 ### 🔐 Yetkili Kullanıcı
 
-Güvenlik riski taşıyabilecek gelişmiş ayarlar — dikkatli kullan.
+Güvenlik riski taşıyabilecek gelişmiş ayarlar - dikkatli kullan.
 
 | Ayar | Ne işe yarar | Benim ayarım |
 | ---- | ------------ | ------------ |
@@ -505,7 +505,7 @@ Güvenlik riski taşıyabilecek gelişmiş ayarlar — dikkatli kullan.
 | **Kullanıcı Hesabı Denetimi (UAC)** | Yönetici izni uyarı seviyesi | **Yalnızca değişikliklerde (soluk)** |
 | **Kullanıcı seçimi koruma sürücüsü** | Varsayılan uygulama tercihlerini korur | ✅ Açık |
 
-**Spotlight resimleri** — Kilit ekranındaki Windows Spotlight görsellerini klasöre **Çıkart** ile dışa aktarabilirsin.
+**Spotlight resimleri** - Kilit ekranındaki Windows Spotlight görsellerini klasöre **Çıkart** ile dışa aktarabilirsin.
 
 > ⚠️ **God Mode** ve **Geliştirici Modu** güvenlik yüzeyini genişletir; günlük kullanımda kapalı tutmanı öneririm. UAC'yı tamamen kapatma.
 
@@ -534,7 +534,7 @@ Güvenlik riski taşıyabilecek gelişmiş ayarlar — dikkatli kullan.
 
 ## 📝 Notlar
 
-> WinToys'ta 6 sekme vardır (Giriş, Uygulamalar, Hizmetler, Performans, Sağlık, İnce Ayarlar) — hepsi bu rehberde anlatılır. Hizmet, performans, onarım ve ince ayarlarda acele etme; her seçeneğin üzerine gelince açıklama tooltip'i görünür. İnce Ayarlar bölümündeki **Benim ayarım** sütunu kişisel kurulumu yansıtır.
+> WinToys'ta 6 sekme vardır (Giriş, Uygulamalar, Hizmetler, Performans, Sağlık, İnce Ayarlar) - hepsi bu rehberde anlatılır. Hizmet, performans, onarım ve ince ayarlarda acele etme; her seçeneğin üzerine gelince açıklama tooltip'i görünür. İnce Ayarlar bölümündeki **Benim ayarım** sütunu kişisel kurulumu yansıtır.
 
 ---
 

@@ -8,29 +8,29 @@ Güncel · Windows · Ücretsiz · Sistem Araçları
 
 ## 📌 Genel Bakış
 
-Everything, Windows'un yerleşik aramasına kıyasla dosya adlarını neredeyse anında bulan bir arama motorudur. NTFS birimlerinde dosya adı indeksi tutar; yazdıkça sonuçlar gerçek zamanlı güncellenir. İçerik araması yapmaz — dosya adı ve meta veri odaklıdır. Reklamsız ve düşük bellek kullanır.
+Everything, Windows'un yerleşik aramasına kıyasla dosya adlarını neredeyse anında bulan bir arama motorudur. NTFS birimlerinde dosya adı indeksi tutar; yazdıkça sonuçlar gerçek zamanlı güncellenir. İçerik araması yapmaz - dosya adı ve meta veri odaklıdır. Reklamsız ve düşük bellek kullanır.
 
 ---
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Anlık arama** — Yazarken sonuçlar görünür
-- **Düşük kaynak** — Az RAM ve disk kullanımı
-- **NTFS entegrasyonu** — Dosya değişikliklerini otomatik izler
-- **Gelişmiş sorgular** — Joker (`*`, `?`), OR (`|`), NOT (`!`)
-- **Filtreler** — Ses, video, resim, doküman grupları
-- **Ücretsiz** — Reklam veya spyware içermez
+- **Anlık arama** - Yazarken sonuçlar görünür
+- **Düşük kaynak** - Az RAM ve disk kullanımı
+- **NTFS entegrasyonu** - Dosya değişikliklerini otomatik izler
+- **Gelişmiş sorgular** - Joker (`*`, `?`), OR (`|`), NOT (`!`)
+- **Filtreler** - Ses, video, resim, doküman grupları
+- **Ücretsiz** - Reklam veya spyware içermez
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Resmi Site — Önerilen
+### Yöntem 1: Resmi Site ( Önerilen )
 
 1. [voidtools.com](https://www.voidtools.com/) adresine git
 2. **Download** → **x64 Installer** (veya sisteme uygun sürüm) indir
 3. Kurulum sihirbazını takip et
-4. İsteğe bağlı: **Lite** sürüm — ETP/FTP/HTTP sunucu özellikleri olmadan daha sade kurulum
+4. İsteğe bağlı: **Lite** sürüm - ETP/FTP/HTTP sunucu özellikleri olmadan daha sade kurulum
 
 > Normal sürüm çoğu kullanıcı için uygundur; yalnızca arama istiyorsan Lite yeterli olabilir.
 
@@ -56,7 +56,7 @@ choco install everything
 
 Ayarlar: **Araçlar → Seçenekler** (veya `Ctrl+P`)
 
-1. **Everything Service:** Genel → **Everything Service** işaretle; **Run as administrator** kapalı bırak — UAC uyarısı azalır, NTFS indekslemesi sürekli çalışır.
+1. **Everything Service:** Genel → **Everything Service** işaretle; **Run as administrator** kapalı bırak - UAC uyarısı azalır, NTFS indekslemesi sürekli çalışır.
 2. **Arayüz:** Genel → **Arayüz** → **Arka planda çalıştır**, **Tepsi simgesi göster** ve **Tepsi simgesine tek tıklamayla aç** açık kalsın.
 3. **Kısayol tuşu:** Genel → **Klavye** → hızlı açma kısayolunu tanımla (ör. `Ctrl+Alt+E`).
 
@@ -64,43 +64,43 @@ Ayarlar: **Araçlar → Seçenekler** (veya `Ctrl+P`)
 
 ---
 
-## 📋 Seçenekler — Son Kullanıcı İçin Önemli Ayarlar
+## 📋 Seçenekler - Son Kullanıcı İçin Önemli Ayarlar
 
 Sol menüdeki kategorilerden günlük kullanımda işine yarayanlar:
 
 ### Genel → Arayüz
 
-- **Yazdığım gibi ara** — Yazdıkça anında sonuç (varsayılan açık)
-- **Arka planda çalıştır** — Kapatınca tepsi simgesinde kalır
-- **Tepsi simgesine tek tıklamayla aç** — Bildirim alanından hızlı erişim
+- **Yazdığım gibi ara** - Yazdıkça anında sonuç (varsayılan açık)
+- **Arka planda çalıştır** - Kapatınca tepsi simgesinde kalır
+- **Tepsi simgesine tek tıklamayla aç** - Bildirim alanından hızlı erişim
 
 ### Genel → Arama
 
-- **Hızlı ASCII araması** — Standart karakterlerde daha hızlı arama
-- **Yol ayıracı içerdiğinde yolu eşleştir** — `downloads\` gibi klasör yolu aramaları
-- **Jokerlerde bütün dosya adını eşleştir** — `*` ve `?` ile tam eşleşme
-- **İşletici üstünlüğü** — `OR > AND` (birden fazla kelimede mantık sırası)
+- **Hızlı ASCII araması** - Standart karakterlerde daha hızlı arama
+- **Yol ayıracı içerdiğinde yolu eşleştir** - `downloads\` gibi klasör yolu aramaları
+- **Jokerlerde bütün dosya adını eşleştir** - `*` ve `?` ile tam eşleşme
+- **İşletici üstünlüğü** - `OR > AND` (birden fazla kelimede mantık sırası)
 
 ### Genel → Sonuçlar
 
-- **Yeniden adlandırırken uzantıyı seçme** — `.pdf` uzantısını yanlışlıkla silmeyi önler
-- **Tarihi / boyutu büyükten küçüğe sırala** — En yeni veya en büyük dosyalar üstte
+- **Yeniden adlandırırken uzantıyı seçme** - `.pdf` uzantısını yanlışlıkla silmeyi önler
+- **Tarihi / boyutu büyükten küçüğe sırala** - En yeni veya en büyük dosyalar üstte
 
 ### Genel → Görünüm
 
-- **Vurgulanan arama terimlerini göster** — Eşleşen kısımlar vurgulanır
-- **Araç ipuçlarını göster** — Fare ile üzerine gelince bilgi
+- **Vurgulanan arama terimlerini göster** - Eşleşen kısımlar vurgulanır
+- **Araç ipuçlarını göster** - Fare ile üzerine gelince bilgi
 
 ### Genel → Bağlam Menüsü
 
-- Sağ tık menüsünden **Adı / Yolu / Tam adı panoya kopyala** — Dosya yolunu hızlı paylaş
+- Sağ tık menüsünden **Adı / Yolu / Tam adı panoya kopyala** - Dosya yolunu hızlı paylaş
 
 ### İndeksler
 
-- **NTFS** — Sabit diskler otomatik dahil; **Değişiklikleri izle** açık kalsın
-- **Klasörler** — NTFS olmayan veya ağ klasörlerini manuel ekle
-- **Dışında Tutma** — Temp, `$Recycle.Bin` gibi klasörleri aramadan hariç tut
-- **Yeniden Oluşturmaya Zorla** — İndeks bozulursa sıfırdan tara
+- **NTFS** - Sabit diskler otomatik dahil; **Değişiklikleri izle** açık kalsın
+- **Klasörler** - NTFS olmayan veya ağ klasörlerini manuel ekle
+- **Dışında Tutma** - Temp, `$Recycle.Bin` gibi klasörleri aramadan hariç tut
+- **Yeniden Oluşturmaya Zorla** - İndeks bozulursa sıfırdan tara
 
 > ETP/FTP ve HTTP Sunucusu gelişmiş özelliklerdir; yalnızca ağ üzerinden erişim gerekiyorsa kullan. Lite sürümde bu seçenekler yoktur.
 
@@ -111,7 +111,7 @@ Sol menüdeki kategorilerden günlük kullanımda işine yarayanlar:
 ### Hızlı arama
 
 1. Everything'i aç
-2. Arama kutusuna yaz — sonuçlar anında listelenir
+2. Arama kutusuna yaz - sonuçlar anında listelenir
 3. Dosyaya çift tıkla veya Enter ile aç
 
 ### Sık kullanılan sorgular
@@ -146,13 +146,13 @@ Sol menüdeki kategorilerden günlük kullanımda işine yarayanlar:
 
 - 🌐 [Resmi Web Sitesi](https://www.voidtools.com/)
 - 📖 [Arama Sözdizimi (FAQ)](https://www.voidtools.com/support/everything/searching/)
-- 🔧 [Everything Toolbar (isteğe bağlı)](https://github.com/srwi/EverythingToolbar) — Görev çubuğundan arama
+- 🔧 [Everything Toolbar (isteğe bağlı)](https://github.com/srwi/EverythingToolbar) - Görev çubuğundan arama
 
 ---
 
 ## 📝 Notlar
 
-> Everything yalnızca **dosya adı** indeksler; Windows Search gibi e-posta veya belge içeriği taramaz — bu yüzden çok hızlıdır. Görev çubuğu entegrasyonu isteyenler [Everything Toolbar](https://github.com/srwi/EverythingToolbar) eklentisine bakabilir (ayrı kurulum).
+> Everything yalnızca **dosya adı** indeksler; Windows Search gibi e-posta veya belge içeriği taramaz - bu yüzden çok hızlıdır. Görev çubuğu entegrasyonu isteyenler [Everything Toolbar](https://github.com/srwi/EverythingToolbar) eklentisine bakabilir (ayrı kurulum).
 
 ---
 

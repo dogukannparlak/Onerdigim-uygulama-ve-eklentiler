@@ -14,12 +14,12 @@ Dark Reader, binlerce site dahil karanlık mod sunmayan sayfalara otomatik koyu 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Evrensel karanlık mod** — Karanlık teması olmayan siteleri otomatik koyulaştırır
-- **Parlaklık, kontrast, sepia** — Üç kaydırıcı ile görünümü kişiselleştirme
-- **Site bazlı ayar** — Belirli siteler için farklı filtre veya tamamen kapalı mod
-- **Zamanlayıcı** — Belirlediğin saatlerde otomatik açılma/kapanma
-- **Açık kaynak** — Kodu inceleyebilir ve topluluk tarafından denetlenmiş bir projedir
-- **Hızlı aç/kapa** — Araç çubuğu simgesinden anında kontrol
+- **Evrensel karanlık mod** - Karanlık teması olmayan siteleri otomatik koyulaştırır
+- **Parlaklık, kontrast, sepia** - Üç kaydırıcı ile görünümü kişiselleştirme
+- **Site bazlı ayar** - Belirli siteler için farklı filtre veya tamamen kapalı mod
+- **Zamanlayıcı** - Belirlediğin saatlerde otomatik açılma/kapanma
+- **Açık kaynak** - Kodu inceleyebilir ve topluluk tarafından denetlenmiş bir projedir
+- **Hızlı aç/kapa** - Araç çubuğu simgesinden anında kontrol
 
 ---
 

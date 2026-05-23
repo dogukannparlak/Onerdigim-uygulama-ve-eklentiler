@@ -8,24 +8,24 @@
 
 ## 📌 Genel Bakış
 
-Playnite tüm oyunlarını tek arayüzde gösterir; kapak görselleri, filtreler ve istatistikler sunar. Oyun mağazası değildir — çoğu oyun yine Steam, Epic veya ilgili platform üzerinden başlatılır. Emülatör desteği ve Big Picture modu ile TV/kumanda kullanımına da uygundur.
+Playnite tüm oyunlarını tek arayüzde gösterir; kapak görselleri, filtreler ve istatistikler sunar. Oyun mağazası değildir - çoğu oyun yine Steam, Epic veya ilgili platform üzerinden başlatılır. Emülatör desteği ve Big Picture modu ile TV/kumanda kullanımına da uygundur.
 
 ---
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Çoklu platform** — Steam, Epic, GOG, Xbox, Ubisoft, EA, Battle.net ve daha fazlası
-- **Otomatik metadata** — IGDB vb. kaynaklardan kapak, açıklama, tür bilgisi
-- **Big Picture** — TV ve gamepad için tam ekran mod
-- **Tema ve eklenti** — Arayüz özelleştirme, ek entegrasyonlar
-- **Emülatör desteği** — Retro oyunları aynı kütüphanede topla
-- **Ücretsiz** — Açık kaynak, reklamsız
+- **Çoklu platform** - Steam, Epic, GOG, Xbox, Ubisoft, EA, Battle.net ve daha fazlası
+- **Otomatik metadata** - IGDB vb. kaynaklardan kapak, açıklama, tür bilgisi
+- **Big Picture** - TV ve gamepad için tam ekran mod
+- **Tema ve eklenti** - Arayüz özelleştirme, ek entegrasyonlar
+- **Emülatör desteği** - Retro oyunları aynı kütüphanede topla
+- **Ücretsiz** - Açık kaynak, reklamsız
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Resmi Site — Önerilen
+### Yöntem 1: Resmi Site ( Önerilen )
 
 1. [playnite.link](https://playnite.link/) adresine git
 2. **Download** → **Installer** veya **Portable** seç
@@ -62,8 +62,8 @@ Alternatif: [GitHub Releases](https://github.com/JosefNemec/Playnite/releases)
 
 ### Oyun oynama
 
-1. Playnite'ı aç — oyunlar grid veya liste görünümünde listelenir
-2. Oyuna çift tıkla veya **Play** — ilgili platform üzerinden başlar
+1. Playnite'ı aç - oyunlar grid veya liste görünümünde listelenir
+2. Oyuna çift tıkla veya **Play** - ilgili platform üzerinden başlar
 3. Yeni oyun eklediysen **Ctrl + F5** ile kütüphaneyi yenile
 
 ### Manuel oyun / emülatör

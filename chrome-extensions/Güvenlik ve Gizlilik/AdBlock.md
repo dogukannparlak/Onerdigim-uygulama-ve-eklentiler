@@ -14,12 +14,12 @@ AdBlock, web sitelerindeki banner, video ve pop-up reklamları engelleyen popül
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Reklam engelleme** — Banner, video ve pop-up reklamları filtreler
-- **İzleyici koruması** — Üçüncü taraf takip scriptlerini azaltır
-- **YouTube desteği** — Video reklamlarını atlama (site güncellemelerine bağlı)
-- **Site bazlı kontrol** — İstediğin sitelerde engellemeyi geçici veya kalıcı kapatabilirsin
-- **Zararlı içerik uyarıları** — Bilinen kötü amaçlı sitelere karşı ek koruma katmanı
-- **Kolay yönetim** — Araç çubuğundaki simgeden tek tıkla aç/kapa
+- **Reklam engelleme** - Banner, video ve pop-up reklamları filtreler
+- **İzleyici koruması** - Üçüncü taraf takip scriptlerini azaltır
+- **YouTube desteği** - Video reklamlarını atlama (site güncellemelerine bağlı)
+- **Site bazlı kontrol** - İstediğin sitelerde engellemeyi geçici veya kalıcı kapatabilirsin
+- **Zararlı içerik uyarıları** - Bilinen kötü amaçlı sitelere karşı ek koruma katmanı
+- **Kolay yönetim** - Araç çubuğundaki simgeden tek tıkla aç/kapa
 
 ---
 

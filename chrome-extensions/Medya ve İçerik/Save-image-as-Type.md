@@ -14,12 +14,12 @@ Save image as Type, tarayıcının varsayılan "Resmi farklı kaydet" seçeneği
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Sağ tık menüsü** — Resme sağ tıkla, format seç, kaydet
-- **3 format desteği** — PNG, JPG ve WebP
-- **Hafif eklenti** — Minimum kaynak kullanımı
-- **Açık kaynak** — Şeffaf ve güvenilir kod yapısı
-- **Çoklu dil** — Türkçe dahil birçok dilde menü
-- **Kurulum sonrası hazır** — Ek ayar gerektirmez
+- **Sağ tık menüsü** - Resme sağ tıkla, format seç, kaydet
+- **3 format desteği** - PNG, JPG ve WebP
+- **Hafif eklenti** - Minimum kaynak kullanımı
+- **Açık kaynak** - Şeffaf ve güvenilir kod yapısı
+- **Çoklu dil** - Türkçe dahil birçok dilde menü
+- **Kurulum sonrası hazır** - Ek ayar gerektirmez
 
 ---
 

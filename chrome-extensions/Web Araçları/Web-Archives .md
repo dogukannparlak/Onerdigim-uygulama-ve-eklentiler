@@ -14,12 +14,12 @@ Web Archives, kapanmış, silinmiş veya değiştirilmiş web sayfalarının esk
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Çoklu arşiv desteği** — Wayback Machine, Archive.is, Google Cache ve daha fazlası
-- **Sağ tık menüsü** — Link veya sayfa üzerinde hızlı arşiv araması
-- **Araç çubuğu araması** — Aktif sekmedeki sayfayı doğrudan arar
-- **Özelleştirilebilir kaynaklar** — Kullanmak istediğin arşiv servislerini seç
-- **Açık kaynak** — Kod GitHub'da incelenebilir
-- **Gizlilik odaklı** — URL yalnızca seçtiğin arşiv servisine gönderilir
+- **Çoklu arşiv desteği** - Wayback Machine, Archive.is, Google Cache ve daha fazlası
+- **Sağ tık menüsü** - Link veya sayfa üzerinde hızlı arşiv araması
+- **Araç çubuğu araması** - Aktif sekmedeki sayfayı doğrudan arar
+- **Özelleştirilebilir kaynaklar** - Kullanmak istediğin arşiv servislerini seç
+- **Açık kaynak** - Kod GitHub'da incelenebilir
+- **Gizlilik odaklı** - URL yalnızca seçtiğin arşiv servisine gönderilir
 
 ---
 

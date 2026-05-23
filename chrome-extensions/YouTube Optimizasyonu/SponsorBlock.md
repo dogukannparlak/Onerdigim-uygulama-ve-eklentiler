@@ -14,12 +14,12 @@ SponsorBlock, topluluk tarafından işaretlenen sponsor ve gereksiz segmentleri 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Sponsor atlama** — Ürün tanıtımı ve sponsorluk bölümlerini otomatik atla
-- **Çoklu kategori** — Intro, outro, abone ol hatırlatması, filler vb.
-- **Topluluk tabanlı** — Kullanıcılar segment işaretler, herkes yararlanır
-- **Kategori kontrolü** — Hangi segment türlerinin atlanacağını seç
-- **Yanlış segment bildirimi** — Hatalı atlama için report sistemi
-- **Açık kaynak** — Kod şeffaf ve denetlenebilir
+- **Sponsor atlama** - Ürün tanıtımı ve sponsorluk bölümlerini otomatik atla
+- **Çoklu kategori** - Intro, outro, abone ol hatırlatması, filler vb.
+- **Topluluk tabanlı** - Kullanıcılar segment işaretler, herkes yararlanır
+- **Kategori kontrolü** - Hangi segment türlerinin atlanacağını seç
+- **Yanlış segment bildirimi** - Hatalı atlama için report sistemi
+- **Açık kaynak** - Kod şeffaf ve denetlenebilir
 
 ---
 

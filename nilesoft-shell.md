@@ -14,12 +14,12 @@ Nilesoft Shell, Dosya Gezgini, masaüstü ve görev çubuğundaki bağlam menüs
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Tam menü kontrolü** — Mevcut öğeleri gizle, sırala veya kaldır
-- **Özel komutlar** — Uygulama, web sitesi veya script menüye eklenebilir
-- **İç içe menüler** — Alt menü, ayırıcı ve çok sütunlu düzen
-- **Win11 uyumu** — Modern ve klasik menü arasında geçiş desteği
-- **Hafif çalışma** — Arka planda sürekli açık bir arayüz yok
-- **Ücretsiz** — Kişisel ve ticari kullanım için bedava
+- **Tam menü kontrolü** - Mevcut öğeleri gizle, sırala veya kaldır
+- **Özel komutlar** - Uygulama, web sitesi veya script menüye eklenebilir
+- **İç içe menüler** - Alt menü, ayırıcı ve çok sütunlu düzen
+- **Win11 uyumu** - Modern ve klasik menü arasında geçiş desteği
+- **Hafif çalışma** - Arka planda sürekli açık bir arayüz yok
+- **Ücretsiz** - Kişisel ve ticari kullanım için bedava
 
 ---
 
@@ -27,7 +27,7 @@ Nilesoft Shell, Dosya Gezgini, masaüstü ve görev çubuğundaki bağlam menüs
 
 > Kurulum için **yönetici izni** gerekir. Kurulum sonunda Explorer'ı yeniden başlatmayı onayla.
 
-### Yöntem 1: Resmi Site — Önerilen
+### Yöntem 1: Resmi Site ( Önerilen )
 
 1. [nilesoft.org/download](https://nilesoft.org/download) adresine git
 2. **Setup x64** (veya sisteme uygun sürüm) indir
@@ -54,10 +54,10 @@ winget install Nilesoft.Shell
 
 Kurulumdan sonra:
 
-1. **Çalıştığını kontrol et** — Masaüstünde veya bir dosyada sağ tıkla; Shell menüsü görünmeli
-2. **Yapılandırma klasörünü aç** — Görev çubuğunda **Shift + sağ tık** → Shell → **directory**
-3. **`shell.nss` yedeği al** — Düzenlemeden önce dosyayı kopyala
-4. **Küçük bir değişiklikle başla** — Önce tek menü öğesi ekle veya gizle
+1. **Çalıştığını kontrol et** - Masaüstünde veya bir dosyada sağ tıkla; Shell menüsü görünmeli
+2. **Yapılandırma klasörünü aç** - Görev çubuğunda **Shift + sağ tık** → Shell → **directory**
+3. **`shell.nss` yedeği al** - Düzenlemeden önce dosyayı kopyala
+4. **Küçük bir değişiklikle başla** - Önce tek menü öğesi ekle veya gizle
 
 | Dosya | Konum | Açıklama |
 | ----- | ----- | -------- |
@@ -85,8 +85,8 @@ item(title='Merhaba!' cmd=msg('Selam @user.name'))
 
 ### Menüyü yeniden yükleme
 
-- **Ctrl + sağ tık** — Yapılandırmayı yükle
-- **Sağ tık + sol tık** — Alternatif yenileme
+- **Ctrl + sağ tık** - Yapılandırmayı yükle
+- **Sağ tık + sol tık** - Alternatif yenileme
 - Komut satırı: `shell -restart` (Explorer'ı yeniden başlatır)
 
 ### Klavye kısayolları
@@ -125,7 +125,7 @@ Sağ tık veya **Shift + F10** sırasında:
 
 ## 📝 Notlar
 
-> Nilesoft Shell sistem genelinde sağ tık menüsüne müdahale eder; StartAllBack, ExplorerBlurMica veya başka bağlam menüsü araçlarıyla çakışma olabilir. Gelişmiş özelleştirme NSS sözdizimi gerektirir — karmaşık menüler için resmi dokümantasyona bak. Resmi siteden indirmek önerilir; üçüncü parti paketlerde istenmeyen yazılım bulunabilir.
+> Nilesoft Shell sistem genelinde sağ tık menüsüne müdahale eder; StartAllBack, ExplorerBlurMica veya başka bağlam menüsü araçlarıyla çakışma olabilir. Gelişmiş özelleştirme NSS sözdizimi gerektirir - karmaşık menüler için resmi dokümantasyona bak. Resmi siteden indirmek önerilir; üçüncü parti paketlerde istenmeyen yazılım bulunabilir.
 
 ---
 

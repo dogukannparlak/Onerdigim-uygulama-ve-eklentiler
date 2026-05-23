@@ -14,18 +14,18 @@ Bulk Crap Uninstaller (BCU), Windows'un yerleşik kaldırıcısının ötesinde 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Toplu kaldırma** — Birden fazla uygulamayı tek seferde sil
-- **Geniş algılama** — Normal, gizli, portable, UWP, Steam, Windows Update
-- **Artık temizliği** — Kaldırma sonrası dosya ve kayıt defteri taraması
-- **Zorla kaldırma** — Bozuk veya kaldırıcısı olmayan programlar
-- **Başlangıç yöneticisi** — Otomatik başlayan uygulamaları yönet
-- **Taşınabilir sürüm** — USB'den çalıştırılabilir
+- **Toplu kaldırma** - Birden fazla uygulamayı tek seferde sil
+- **Geniş algılama** - Normal, gizli, portable, UWP, Steam, Windows Update
+- **Artık temizliği** - Kaldırma sonrası dosya ve kayıt defteri taraması
+- **Zorla kaldırma** - Bozuk veya kaldırıcısı olmayan programlar
+- **Başlangıç yöneticisi** - Otomatik başlayan uygulamaları yönet
+- **Taşınabilir sürüm** - USB'den çalıştırılabilir
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: SourceForge — Önerilen
+### Yöntem 1: SourceForge - Önerilen
 
 1. [SourceForge proje sayfasına](https://sourceforge.net/projects/bulk-crap-uninstaller/) git
 2. **Download** ile en güncel sürümü indir
@@ -109,7 +109,7 @@ Alternatif: [GitHub Releases](https://github.com/Klocman/Bulk-Crap-Uninstaller/r
 
 ## 📝 Notlar
 
-> BCU güçlü bir araçtır; kayıt defteri ve sistem dosyalarına müdahale eder. Kritik Windows bileşenlerini kaldırmaktan kaçın. [Revo-vs-Bulk-Crap-Uninstaller.md](Revo-vs-Bulk-Crap-Uninstaller.md) dosyasında Revo ile karşılaştırmaya bakabilirsin — toplu kaldırma ve ücretsiz kullanım için BCU genelde tercih edilir.
+> BCU güçlü bir araçtır; kayıt defteri ve sistem dosyalarına müdahale eder. Kritik Windows bileşenlerini kaldırmaktan kaçın. [Revo-vs-Bulk-Crap-Uninstaller.md](Revo-vs-Bulk-Crap-Uninstaller.md) dosyasında Revo ile karşılaştırmaya bakabilirsin - toplu kaldırma ve ücretsiz kullanım için BCU genelde tercih edilir.
 
 ---
 

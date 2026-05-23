@@ -14,12 +14,12 @@ YouTube Playlist Duration Calculator, bir oynatma listesindeki tüm videoların 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Toplam süre** — Playlist'in tam uzunluğunu saat:dakika:saniye formatında gösterir
-- **Video sayacı** — Hesaplanan ve hesaplanamayan video sayısını listeler
-- **Süre sıralaması** — Kısa→uzun veya uzun→kısa (≤100 video)
-- **Tarih sıralaması** — En yeni veya en eski videolar önce
-- **Kanal sıralaması** — Alfabetik creator sıralaması
-- **Sıfır konfigürasyon** — Kurulum sonrası otomatik çalışır
+- **Toplam süre** - Playlist'in tam uzunluğunu saat:dakika:saniye formatında gösterir
+- **Video sayacı** - Hesaplanan ve hesaplanamayan video sayısını listeler
+- **Süre sıralaması** - Kısa→uzun veya uzun→kısa (≤100 video)
+- **Tarih sıralaması** - En yeni veya en eski videolar önce
+- **Kanal sıralaması** - Alfabetik creator sıralaması
+- **Sıfır konfigürasyon** - Kurulum sonrası otomatik çalışır
 
 ---
 

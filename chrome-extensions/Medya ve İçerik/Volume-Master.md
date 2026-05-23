@@ -14,12 +14,12 @@ Volume Master, Windows'un sistem ses kontrolünden farklı olarak sekme bazlı s
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Sekme bazlı kontrol** — Her sekmenin sesi birbirinden bağımsız
-- **Ses yükseltme** — %600'e kadar amplifikasyon imkanı
-- **Hassas ayar** — Kaydırıcı ile ince ayar
-- **Sesli sekmeye geçiş** — Hangi sekmenin ses çıkardığını hızlı bul
-- **Anlık işlem** — Gecikme olmadan ses değişir
-- **Ücretsiz ve reklamsız** — Temel işlevler için ödeme gerekmez
+- **Sekme bazlı kontrol** - Her sekmenin sesi birbirinden bağımsız
+- **Ses yükseltme** - %600'e kadar amplifikasyon imkanı
+- **Hassas ayar** - Kaydırıcı ile ince ayar
+- **Sesli sekmeye geçiş** - Hangi sekmenin ses çıkardığını hızlı bul
+- **Anlık işlem** - Gecikme olmadan ses değişir
+- **Ücretsiz ve reklamsız** - Temel işlevler için ödeme gerekmez
 
 ---
 
@@ -82,7 +82,7 @@ Volume Master, Windows'un sistem ses kontrolünden farklı olarak sekme bazlı s
 
 ## 📝 Notlar
 
-> Volume Master ses amplifikasyonu yapar; bu işitme sağlığını ve hoparlör/kulaklık donanımını olumsuz etkileyebilir. Uzun süre yüksek seste dinleme önerilmez. Windows sistem sesi ile birlikte kullanıldığında toplam ses çok yüksek olabilir — her iki kaydırıcıyı da kontrol et.
+> Volume Master ses amplifikasyonu yapar; bu işitme sağlığını ve hoparlör/kulaklık donanımını olumsuz etkileyebilir. Uzun süre yüksek seste dinleme önerilmez. Windows sistem sesi ile birlikte kullanıldığında toplam ses çok yüksek olabilir - her iki kaydırıcıyı da kontrol et.
 
 ---
 

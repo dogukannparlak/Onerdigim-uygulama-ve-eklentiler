@@ -14,12 +14,12 @@ Hover Zoom+, Facebook, Amazon ve benzeri sitelerdeki küçük resimleri fareyle 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Otomatik büyütme** — Fareyi resmin üzerine getir, anında zoom gör
-- **Resim ve video desteği** — Her iki medya türünde çalışır
-- **Akıllı boyutlandırma** — Büyütülen görüntü pencereye sığacak şekilde ayarlanır
-- **Site uyumluluğu** — Popüler alışveriş ve sosyal medya sitelerinde çalışır
-- **Açık kaynak** — Kod şeffaf; orijinal sürümden temizlenmiş fork
-- **Kara liste** — İstenmeyen sitelerde devre dışı bırakma
+- **Otomatik büyütme** - Fareyi resmin üzerine getir, anında zoom gör
+- **Resim ve video desteği** - Her iki medya türünde çalışır
+- **Akıllı boyutlandırma** - Büyütülen görüntü pencereye sığacak şekilde ayarlanır
+- **Site uyumluluğu** - Popüler alışveriş ve sosyal medya sitelerinde çalışır
+- **Açık kaynak** - Kod şeffaf; orijinal sürümden temizlenmiş fork
+- **Kara liste** - İstenmeyen sitelerde devre dışı bırakma
 
 ---
 

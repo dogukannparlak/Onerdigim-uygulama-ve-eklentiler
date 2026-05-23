@@ -14,29 +14,29 @@ BentoPDF, 50'den fazla PDF aracını tek çatı altında sunan, gizlilik odaklı
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Gizlilik odaklı** — Dosyalar cihazında işlenir, sunucuya yüklenmez
-- **Kayıt gerekmez** — Anında kullanım, hesap açma yok
-- **Ücretsiz ve sınırsız** — Araç limiti veya deneme süresi yok
-- **50+ araç** — Birleştir, böl, sıkıştır, dönüştür, şifrele ve daha fazlası
-- **Toplu işlem** — Birden fazla PDF'i tek seferde işle
-- **Türkçe arayüz** — Dil seçenekleri arasında Türkçe desteği
+- **Gizlilik odaklı** - Dosyalar cihazında işlenir, sunucuya yüklenmez
+- **Kayıt gerekmez** - Anında kullanım, hesap açma yok
+- **Ücretsiz ve sınırsız** - Araç limiti veya deneme süresi yok
+- **50+ araç** - Birleştir, böl, sıkıştır, dönüştür, şifrele ve daha fazlası
+- **Toplu işlem** - Birden fazla PDF'i tek seferde işle
+- **Türkçe arayüz** - Dil seçenekleri arasında Türkçe desteği
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Resmi Site — Önerilen
+### Yöntem 1: Resmi Site ( Önerilen )
 
 Kurulum gerekmez; tarayıcıdan kullanılır.
 
 1. [bentopdf.com](https://www.bentopdf.com/) adresine git
 2. İhtiyacın olan aracı seç (ör. Merge PDFs, Compress PDF)
-3. Dosyayı sürükle veya seç — işlem tarayıcıda gerçekleşir
+3. Dosyayı sürükle veya seç - işlem tarayıcıda gerçekleşir
 4. Sonucu indir
 
 > Chrome, Edge, Firefox ve mobil tarayıcılarda çalışır. Sayfa yüklendikten sonra çevrimdışı kullanım da mümkündür.
 
-### Yöntem 2: Self-Host — İsteğe Bağlı
+### Yöntem 2: Self-Host - İsteğe Bağlı
 
 Kendi sunucunda, şirket ağında veya air-gap ortamda çalıştırmak isteyenler için BentoPDF self-host destekler. Detaylı adımlar için [GitHub deposuna](https://github.com/alam00000/bentopdf) bak.
 
@@ -55,7 +55,7 @@ Kendi sunucunda, şirket ağında veya air-gap ortamda çalıştırmak isteyenle
 2. **Araç seçimi:** Ana sayfadan kategoriye göre araç seç veya arama kutusunu kullan.
 3. **Ayarlar (isteğe bağlı):** Simge menüsünden dil, tam genişlik veya kompakt görünüm ayarlanabilir.
 
-> 💡 **İpucu:** SumatraPDF ile birlikte kullan — okuma için SumatraPDF, birleştirme/sıkıştırma/dönüştürme için BentoPDF.
+> 💡 **İpucu:** SumatraPDF ile birlikte kullan - okuma için SumatraPDF, birleştirme/sıkıştırma/dönüştürme için BentoPDF.
 
 ---
 

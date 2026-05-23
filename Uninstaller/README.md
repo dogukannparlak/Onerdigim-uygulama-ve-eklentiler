@@ -34,12 +34,12 @@ Karar veremiyorsan önce [karşılaştırma rehberine](Revo-vs-Bulk-Crap-Uninsta
 ### Revo Uninstaller
 
 - Kaldırma sonrası **Güvenli / Orta / Gelişmiş** artık taraması
-- **Hunter Mode** — simge veya pencereye sürükleyerek program bul ve kaldır
+- **Hunter Mode** - simge veya pencereye sürükleyerek program bul ve kaldır
 - **Free** çoğu kullanıcıya yeter; **Pro** zorla kaldırma, toplu silme ve kurulum izleme ekler
 
 ### Bulk Crap Uninstaller (BCU)
 
-- **Toplu kaldırma** — birden fazla programı tek seferde sil
+- **Toplu kaldırma** - birden fazla programı tek seferde sil
 - Steam, UWP, portable, Chocolatey ve gizli uygulama algılama
 - Tamamen **ücretsiz** ve açık kaynak
 
@@ -57,9 +57,9 @@ Karar veremiyorsan önce [karşılaştırma rehberine](Revo-vs-Bulk-Crap-Uninsta
 ## 🔗 Resmi Siteler
 
 - [Revo Uninstaller](https://www.revouninstaller.com/)
-- [BCU — bcuninstaller.com](https://www.bcuninstaller.com/)
-- [BCU — GitHub](https://github.com/Klocman/Bulk-Crap-Uninstaller)
-- [BCU — SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
+- [BCU - bcuninstaller.com](https://www.bcuninstaller.com/)
+- [BCU - GitHub](https://github.com/Klocman/Bulk-Crap-Uninstaller)
+- [BCU - SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
 
 ---
 

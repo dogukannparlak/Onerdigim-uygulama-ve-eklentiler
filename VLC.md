@@ -14,18 +14,18 @@ VLC, VideoLAN tarafından geliştirilen evrensel bir medya oynatıcısıdır. MP
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Evrensel format desteği** — Codec paketi gerekmez
-- **Altyazı desteği** — SRT, ASS ve diğer formatlar
-- **Dönüştürme** — Video/ses formatı değiştirme
-- **Ağ akışı** — URL ile çevrimiçi video oynatma
-- **Platformlar arası** — Windows, macOS, Linux, Android, iOS
-- **Ücretsiz** — Reklamsız, açık kaynak
+- **Evrensel format desteği** - Codec paketi gerekmez
+- **Altyazı desteği** - SRT, ASS ve diğer formatlar
+- **Dönüştürme** - Video/ses formatı değiştirme
+- **Ağ akışı** - URL ile çevrimiçi video oynatma
+- **Platformlar arası** - Windows, macOS, Linux, Android, iOS
+- **Ücretsiz** - Reklamsız, açık kaynak
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Resmi Site — Önerilen
+### Yöntem 1: Resmi Site ( Önerilen )
 
 1. [videolan.org/vlc](https://www.videolan.org/vlc/) adresine git
 2. **Download VLC** butonuna tıkla

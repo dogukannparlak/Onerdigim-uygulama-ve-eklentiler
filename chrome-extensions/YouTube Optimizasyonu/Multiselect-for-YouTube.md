@@ -14,12 +14,12 @@ Multiselect for YouTube, YouTube'un varsayılan playlist düzenleme arayüzüne 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Çoklu seçim** — Ctrl+Click ile birden fazla video seç
-- **Kopyala / kes / yapıştır** — Seçili videoları playlist'ler arası taşı
-- **Sürükle bırak** — Seçili videoları sürükleyerek sırala
-- **Tekrar bulucu** — Playlist'teki duplicate videoları tespit et
-- **Başlık filtresi** — Video adına göre hızlı arama
-- **Klavye kısayolları** — Ctrl+C/X/V/A ile verimli düzenleme
+- **Çoklu seçim** - Ctrl+Click ile birden fazla video seç
+- **Kopyala / kes / yapıştır** - Seçili videoları playlist'ler arası taşı
+- **Sürükle bırak** - Seçili videoları sürükleyerek sırala
+- **Tekrar bulucu** - Playlist'teki duplicate videoları tespit et
+- **Başlık filtresi** - Video adına göre hızlı arama
+- **Klavye kısayolları** - Ctrl+C/X/V/A ile verimli düzenleme
 
 ---
 
@@ -39,7 +39,7 @@ Multiselect for YouTube, YouTube'un varsayılan playlist düzenleme arayüzüne 
 ## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
 1. **Çoklu seçimi aç:** Playlist sayfasında eklenti simgesine tıklayarak çoklu seçim modunu etkinleştir.
-2. **Klavye kısayollarını öğren:** Ctrl+Click seçim, Ctrl+A tümünü seç — günlük kullanımda hız kazandırır.
+2. **Klavye kısayollarını öğren:** Ctrl+Click seçim, Ctrl+A tümünü seç - günlük kullanımda hız kazandırır.
 
 > 💡 **İpucu:** Duplicate bulucu özelliği büyük playlist'lerde tekrarlayan videoları temizlemek için kullanışlıdır.
 

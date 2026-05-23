@@ -14,18 +14,18 @@ EarTrumpet, Windows'un varsayılan ses karıştırıcısının ötesinde uygulam
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Uygulama bazlı ses** — Her programın seviyesi ayrı kaydırıcı
-- **Cihaz yönetimi** — Varsayılan çıkış/giriş cihazını hızlı değiştir
-- **Sistem tepsisi** — Bildirim alanından anında erişim
-- **Görsel ses çubukları** — Hangi uygulamanın ses verdiğini gör
-- **Tema desteği** — Açık, koyu veya sistem teması
-- **Ücretsiz** — Microsoft Store'dan güvenle kurulabilir
+- **Uygulama bazlı ses** - Her programın seviyesi ayrı kaydırıcı
+- **Cihaz yönetimi** - Varsayılan çıkış/giriş cihazını hızlı değiştir
+- **Sistem tepsisi** - Bildirim alanından anında erişim
+- **Görsel ses çubukları** - Hangi uygulamanın ses verdiğini gör
+- **Tema desteği** - Açık, koyu veya sistem teması
+- **Ücretsiz** - Microsoft Store'dan güvenle kurulabilir
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Microsoft Store — Önerilen
+### Yöntem 1: Microsoft Store ( Önerilen )
 
 1. Microsoft Store'u aç
 2. **EarTrumpet** ara (yayıncı: File-New-Project)
@@ -69,7 +69,7 @@ choco install eartrumpet
 
 1. Bildirim alanındaki EarTrumpet simgesine **sol tıkla**
 2. Listeden uygulamayı bul (Discord, Chrome, Spotify vb.)
-3. Kaydırıcıyı istediğin seviyeye getir — diğer uygulamalar etkilenmez
+3. Kaydırıcıyı istediğin seviyeye getir - diğer uygulamalar etkilenmez
 
 ### Çıkış cihazı değiştirme
 
@@ -108,7 +108,7 @@ choco install eartrumpet
 
 ## 📝 Notlar
 
-> EarTrumpet Windows ses API'sini kullanır; ses sürücüsü veya üçüncü parti ses yazılımı çakışmalarında sorun çıkabilir. Volume Master ile birlikte kullanıldığında toplam ses çok yüksek olabilir — her iki kaydırıcıyı da kontrol et.
+> EarTrumpet Windows ses API'sini kullanır; ses sürücüsü veya üçüncü parti ses yazılımı çakışmalarında sorun çıkabilir. Volume Master ile birlikte kullanıldığında toplam ses çok yüksek olabilir - her iki kaydırıcıyı da kontrol et.
 
 ---
 

@@ -20,16 +20,16 @@ Bu rehberde 4 ana sekme anlatılır: **Install**, **Tweaks**, **Config**, **Upda
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Install** — Kategorilere ayrılmış yüzlerce uygulamayı toplu kur, kaldır veya güncelle
-- **Tweaks** — Gizlilik, performans ve arayüz ayarlarını hazır profillerle veya tek tek uygula
-- **Config** — Windows özelliklerini aç/kapat, sistem onarımı çalıştır, klasik panellere kısayol
-- **Updates** — Windows Update politikasını varsayılan, dengeli veya kapalı moda al
+- **Install** - Kategorilere ayrılmış yüzlerce uygulamayı toplu kur, kaldır veya güncelle
+- **Tweaks** - Gizlilik, performans ve arayüz ayarlarını hazır profillerle veya tek tek uygula
+- **Config** - Windows özelliklerini aç/kapat, sistem onarımı çalıştır, klasik panellere kısayol
+- **Updates** - Windows Update politikasını varsayılan, dengeli veya kapalı moda al
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: PowerShell — Önerilen
+### Yöntem 1: PowerShell ( Önerilen )
 
 1. Başlat menüsünde **Terminal** veya **PowerShell** ara
 2. Sağ tık → **Yönetici olarak çalıştır**
@@ -90,7 +90,7 @@ Kurulumdan sonra WinUtil'i yönetici PowerShell'den başlat.
 
 Popüler yazılımları kategoriler halinde listeler; işaretlediklerini toplu kurar, kaldırır veya günceller.
 
-## Sol panel — Actions
+## Sol panel - Actions
 
 
 | Düğme / öğe                        | Ne işe yarar                                                                            |
@@ -145,10 +145,10 @@ Windows gizlilik, performans ve arayüz ayarlarını toplu veya tek tek uygular.
 ## Kullanım akışı
 
 1. **Recommended Selections** ile başla:
-  - **Standard** — Yaygın gizlilik ve temizlik tweak'leri
-  - **Minimal** — Daha az müdahale
-  - **Clear** — Tüm seçimleri temizle
-  - **Get Installed Tweaks** — Daha önce uygulanmış tweak'leri işaretle
+  - **Standard** - Yaygın gizlilik ve temizlik tweak'leri
+  - **Minimal** - Daha az müdahale
+  - **Clear** - Tüm seçimleri temizle
+  - **Get Installed Tweaks** - Daha önce uygulanmış tweak'leri işaretle
 2. Listeden ekstra maddeleri işaretle veya **Customize Preferences** toggle'larını ayarla
 3. **Run Tweaks** ile uygula
 4. Sorun olursa aynı maddeleri seçip **Undo Selected Tweaks** ile geri al
@@ -204,7 +204,7 @@ Genellikle güvenli kabul edilen temel düzenlemeler. Yine de geri yükleme nokt
 
 ---
 
-## Advanced Tweaks — CAUTION
+## Advanced Tweaks - CAUTION
 
 Sistem davranışını belirgin şekilde değiştirir. Ne yaptığını bilmeden uygulama.
 
@@ -348,17 +348,17 @@ Windows Update'i fabrika varsayılanına döndürür. WinUtil'in daha önce uygu
 
 ## Security Settings
 
-Dengeli güvenlik profili (Windows **Pro** gerekir — Group Policy kullanır):
+Dengeli güvenlik profili (Windows **Pro** gerekir - Group Policy kullanır):
 
-- **Feature update** gecikmesi: 365 gün — büyük Windows sürüm güncellemeleri ertelenir
-- **Güvenlik güncellemesi** gecikmesi: 4 gün — kritik yamalar kısa süre bekletilir
-- **Sürücü güncellemeleri** Windows Update üzerinden engellenir — manuel sürücü tercihini korur
+- **Feature update** gecikmesi: 365 gün - büyük Windows sürüm güncellemeleri ertelenir
+- **Güvenlik güncellemesi** gecikmesi: 4 gün - kritik yamalar kısa süre bekletilir
+- **Sürücü güncellemeleri** Windows Update üzerinden engellenir - manuel sürücü tercihini korur
 
 **Kim için:** Kararlı sistem isteyen, yine de güvenlik yamalarını almak isteyen Pro kullanıcılar.
 
 > 💡 Windows **Home** sürümünde Group Policy olmadığı için bu profilin bir kısmı uygulanmayabilir.
 
-## Disable All Updates — Önerilmez
+## Disable All Updates - Önerilmez
 
 Tüm Windows güncellemelerini tamamen kapatır. Güvenlik yamaları da gelmez; sistem savunmasız kalır.
 
@@ -381,7 +381,7 @@ Tüm Windows güncellemelerini tamamen kapatır. Güvenlik yamaları da gelmez; 
 
 ## 🔗 Faydalı Bağlantılar
 
-- 📂 [GitHub — ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil)
+- 📂 [GitHub - ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil)
 - 📖 [Resmi Dokümantasyon](https://winutil.christitus.com)
 - 🚀 [Hızlı başlatma komutu](https://christitus.com/win)
 

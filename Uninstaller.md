@@ -29,12 +29,12 @@ Windows "Uygulamalar ve Özellikler" yalnızca program kaydını siler; dosya ve
 ### Revo Uninstaller
 
 - Kaldırma sonrası **Güvenli / Orta / Gelişmiş** artık taraması
-- **Hunter Mode** — simge veya pencereye sürükleyerek kaldır
+- **Hunter Mode** - simge veya pencereye sürükleyerek kaldır
 - **Free** çoğu kullanıcıya yeter; **Pro** zorla kaldırma ve toplu silme ekler
 
 ### Bulk Crap Uninstaller (BCU)
 
-- **Toplu kaldırma** — birden fazla programı tek seferde sil
+- **Toplu kaldırma** - birden fazla programı tek seferde sil
 - Steam, UWP, portable, Chocolatey desteği
 - Tamamen **ücretsiz** ve açık kaynak; indirme: [SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
 
@@ -43,8 +43,8 @@ Windows "Uygulamalar ve Özellikler" yalnızca program kaydını siler; dosya ve
 ## 🔗 Resmi Siteler
 
 - [Revo Uninstaller](https://www.revouninstaller.com/)
-- [BCU — SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
-- [BCU — bcuninstaller.com](https://www.bcuninstaller.com/)
+- [BCU - SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
+- [BCU - bcuninstaller.com](https://www.bcuninstaller.com/)
 
 ---
 

@@ -14,24 +14,24 @@ Revo Uninstaller, önce programın kendi kaldırıcısını çalıştırır, ard
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Derin tarama** — Kaldırma sonrası artık dosya ve registry temizliği
-- **Hunter Mode** — Simge veya pencereye sürükleyerek program bul ve kaldır
-- **Windows UWP** — Mağaza uygulamalarını ayrı listeden yönet
-- **Yedekleme** — Kaldırma öncesi otomatik geri yükleme noktası
-- **Ek araçlar (Free)** — Başlangıç yöneticisi, geçici dosya ve tarayıcı temizliği
-- **Pro ekstraları** — Zorla kaldırma, toplu kaldırma, kurulum monitörü, Logs Database
+- **Derin tarama** - Kaldırma sonrası artık dosya ve registry temizliği
+- **Hunter Mode** - Simge veya pencereye sürükleyerek program bul ve kaldır
+- **Windows UWP** - Mağaza uygulamalarını ayrı listeden yönet
+- **Yedekleme** - Kaldırma öncesi otomatik geri yükleme noktası
+- **Ek araçlar (Free)** - Başlangıç yöneticisi, geçici dosya ve tarayıcı temizliği
+- **Pro ekstraları** - Zorla kaldırma, toplu kaldırma, kurulum monitörü, Logs Database
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Resmi Site — Önerilen
+### Yöntem 1: Resmi Site - Önerilen
 
 1. [revouninstaller.com](https://www.revouninstaller.com/) adresine git
 2. **Revo Uninstaller Free** veya **Pro** indir (30 gün Pro denemesi mevcut)
-3. Kurulum sihirbazını takip et — istenmeyen ek yazılım tekliflerine dikkat et
+3. Kurulum sihirbazını takip et - istenmeyen ek yazılım tekliflerine dikkat et
 
-### Yöntem 2: WinGet (Terminal) — Free
+### Yöntem 2: WinGet (Terminal) - Free
 
 ```powershell
 winget install RevoUninstaller.RevoUninstaller
@@ -71,7 +71,7 @@ winget install RevoUninstaller.RevoUninstaller
 2. Kaldırmak istediğin program simgesine veya penceresine sürükle
 3. Menüden **Uninstall** seç
 
-### Free vs Pro — hızlı karşılaştırma
+### Free vs Pro - hızlı karşılaştırma
 
 | Özellik | Free | Pro |
 | ------- | ---- | --- |

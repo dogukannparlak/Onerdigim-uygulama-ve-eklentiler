@@ -14,12 +14,12 @@ Immersive Translate, yabancı dildeki web içeriklerini orijinal metni koruyarak
 
 ## ✨ Öne Çıkan Özellikler
 
-- **İki dilli web çevirisi** — Orijinal metnin altında veya yanında çeviri gösterir
-- **PDF çevirisi** — Belgeleri düzen korunarak çevirir
-- **Video altyazısı** — YouTube ve benzeri platformlarda altyazı çevirisi
-- **Fare ile çeviri** — Paragraf üzerine gelince anında çeviri
-- **Çoklu çeviri motoru** — Google, Microsoft ve AI tabanlı motorlar (DeepL, ChatGPT vb.)
-- **EPUB desteği** — E-kitapları iki dilli okuma
+- **İki dilli web çevirisi** - Orijinal metnin altında veya yanında çeviri gösterir
+- **PDF çevirisi** - Belgeleri düzen korunarak çevirir
+- **Video altyazısı** - YouTube ve benzeri platformlarda altyazı çevirisi
+- **Fare ile çeviri** - Paragraf üzerine gelince anında çeviri
+- **Çoklu çeviri motoru** - Google, Microsoft ve AI tabanlı motorlar (DeepL, ChatGPT vb.)
+- **EPUB desteği** - E-kitapları iki dilli okuma
 
 ---
 

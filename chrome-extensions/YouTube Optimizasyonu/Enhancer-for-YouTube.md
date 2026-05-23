@@ -14,12 +14,12 @@ Enhancer for YouTube, YouTube'un varsayılan oynatıcı deneyimini genişletir. 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Oynatma hızı** — Varsayılan hız ayarı ve hassas hız kontrolü
-- **Video kalitesi** — Otomatik veya sabit kalite seçimi
-- **Sinema modu** — Video odaklı karartılmış arayüz
-- **Shorts gizleme** — Shorts bölümünü gizle veya normal video gibi izle
-- **Dikkat dağıtıcı engelleme** — Öneriler, yorumlar, bitiş ekranı gizleme
-- **Ses yükseltme** — Volume Booster ile ses amplifikasyonu
+- **Oynatma hızı** - Varsayılan hız ayarı ve hassas hız kontrolü
+- **Video kalitesi** - Otomatik veya sabit kalite seçimi
+- **Sinema modu** - Video odaklı karartılmış arayüz
+- **Shorts gizleme** - Shorts bölümünü gizle veya normal video gibi izle
+- **Dikkat dağıtıcı engelleme** - Öneriler, yorumlar, bitiş ekranı gizleme
+- **Ses yükseltme** - Volume Booster ile ses amplifikasyonu
 
 ---
 
@@ -27,21 +27,21 @@ Enhancer for YouTube, YouTube'un varsayılan oynatıcı deneyimini genişletir. 
 
 Tam ayar sayfasına eklenti simgesi → **Ayarlar** veya simgeye sağ tık → **Seçenekler** ile ulaşılır. Sol menüdeki kategoriler:
 
-- **Oynatma hızı** — Varsayılan çalma hızı, hız listesini geçersiz kılma, Ctrl + fare tekerleği ile hız kontrolü
-- **Ses** — Varsayılan ses seviyesi, ses yükseltici (Volume Booster), otomatik artırma, tekerlek ile ses ayarı
-- **Fare** — Hız ve ses kontrolü için tekerlek yönünü tersine çevirme
-- **Klavye kısayolları** — Tarayıcı kısayollarını yapılandırma
-- **Yedekle** — Ayarları dışa ve içe aktarma
-- **Oynatma kalitesi** — Otomatik kalite seçimi, tam ekran kalitesi, çıkışta önceki kaliteye dönüş
-- **Video codec ve formatı** — Standart kare hızı (24–30 FPS) zorlama; WebM/VP9 yerine MP4/H.264 tercihi (1080p60 sınırı)
-- **Açılır pencere oynatıcısı** — Pop-up oynatıcı boyutu
-- **Mini oynatıcı** — Yorum okurken mini oynatıcı başlatma, boyut ve konum
-- **Otomatik oynatma** — Otomatik oynatmayı kapatma, arka plan sekmelerini duraklatma, pop-up oynatıcıyı hariç tutma
-- **Kontrol düğmeleri** — Ekran görüntüsü, döngü, hız, PiP, filtre, ayarlar vb.; oynatıcı içine veya ayrı kontrol çubuğuna yerleştirme
-- **Özel komut** — Özel JavaScript yazma; araç çubuğu düğmesi veya sekme açılışında otomatik çalıştırma
-- **Tema** — YouTube resmi koyu tema, Enhancer teması, YouTube-DeepDark, özel CSS
-- **Görünüm** — Satır başına video/Shorts sayısı, Short gizleme/dönüştürme, ilgili video/yorum/sohbet gizleme, bilgi kartı ve bitiş ekranı gizleme, oynatıcı genişletme
-- **Sinema modu** — Overlay rengi ve opaklığı, otomatik açma, açıldığında oynatıcıyı genişletme
+- **Oynatma hızı** - Varsayılan çalma hızı, hız listesini geçersiz kılma, Ctrl + fare tekerleği ile hız kontrolü
+- **Ses** - Varsayılan ses seviyesi, ses yükseltici (Volume Booster), otomatik artırma, tekerlek ile ses ayarı
+- **Fare** - Hız ve ses kontrolü için tekerlek yönünü tersine çevirme
+- **Klavye kısayolları** - Tarayıcı kısayollarını yapılandırma
+- **Yedekle** - Ayarları dışa ve içe aktarma
+- **Oynatma kalitesi** - Otomatik kalite seçimi, tam ekran kalitesi, çıkışta önceki kaliteye dönüş
+- **Video codec ve formatı** - Standart kare hızı (24–30 FPS) zorlama; WebM/VP9 yerine MP4/H.264 tercihi (1080p60 sınırı)
+- **Açılır pencere oynatıcısı** - Pop-up oynatıcı boyutu
+- **Mini oynatıcı** - Yorum okurken mini oynatıcı başlatma, boyut ve konum
+- **Otomatik oynatma** - Otomatik oynatmayı kapatma, arka plan sekmelerini duraklatma, pop-up oynatıcıyı hariç tutma
+- **Kontrol düğmeleri** - Ekran görüntüsü, döngü, hız, PiP, filtre, ayarlar vb.; oynatıcı içine veya ayrı kontrol çubuğuna yerleştirme
+- **Özel komut** - Özel JavaScript yazma; araç çubuğu düğmesi veya sekme açılışında otomatik çalıştırma
+- **Tema** - YouTube resmi koyu tema, Enhancer teması, YouTube-DeepDark, özel CSS
+- **Görünüm** - Satır başına video/Shorts sayısı, Short gizleme/dönüştürme, ilgili video/yorum/sohbet gizleme, bilgi kartı ve bitiş ekranı gizleme, oynatıcı genişletme
+- **Sinema modu** - Overlay rengi ve opaklığı, otomatik açma, açıldığında oynatıcıyı genişletme
 
 ---
 
@@ -86,8 +86,8 @@ Tam ayar sayfasına eklenti simgesi → **Ayarlar** veya simgeye sağ tık → *
 
 ### Sık kullanılan kısayollar
 
-- **Ctrl + tekerlek** (oynatıcı üzerinde): Çalma hızını değiştir — **Oynatma hızı** kategorisinde etkinleştirilmeli
-- **Fare tekerleği** (oynatıcı üzerinde): Ses seviyesi — **Ses** kategorisinde etkinleştirilmeli
+- **Ctrl + tekerlek** (oynatıcı üzerinde): Çalma hızını değiştir - **Oynatma hızı** kategorisinde etkinleştirilmeli
+- **Fare tekerleği** (oynatıcı üzerinde): Ses seviyesi - **Ses** kategorisinde etkinleştirilmeli
 - **Kontrol düğmeleri:** Oynatıcıya eklenen düğmelerle ekran görüntüsü, döngü, PiP vb.
 
 ---

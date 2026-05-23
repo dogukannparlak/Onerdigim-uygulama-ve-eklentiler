@@ -14,16 +14,16 @@ qBittorrent, dosyaları merkezi sunucudan değil diğer kullanıcılardan (P2P) 
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Reklamsız ve ücretsiz** — Spyware veya gizli yazılım yok
-- **Magnet desteği** — Link yapıştırarak hızlı indirme
-- **RSS otomasyonu** — Kurallara göre otomatik indirme
-- **Platformlar arası** — Windows, Linux, macOS
+- **Reklamsız ve ücretsiz** - Spyware veya gizli yazılım yok
+- **Magnet desteği** - Link yapıştırarak hızlı indirme
+- **RSS otomasyonu** - Kurallara göre otomatik indirme
+- **Platformlar arası** - Windows, Linux, macOS
 
 ---
 
 ## 📥 İndirme ve Kurulum
 
-### Yöntem 1: Resmi Site — Önerilen
+### Yöntem 1: Resmi Site ( Önerilen )
 
 1. [qbittorrent.org/download](https://www.qbittorrent.org/download) adresine git
 2. Windows sürümünü indir
@@ -102,7 +102,7 @@ winget install qBittorrent.qBittorrent
 
 ## 📝 Notlar
 
-> BitTorrent yasal içerikler (Linux ISO, açık kaynak yazılımlar vb.) için kullanılabilir; telif hakkı ihlali yasal sorumluluk doğurur. P2P ağında IP adresin görünür — VPN kullanımı gizlilik tercihinize bağlıdır. Yalnızca güvendiğin kaynaklardan torrent indir.
+> BitTorrent yasal içerikler (Linux ISO, açık kaynak yazılımlar vb.) için kullanılabilir; telif hakkı ihlali yasal sorumluluk doğurur. P2P ağında IP adresin görünür - VPN kullanımı gizlilik tercihinize bağlıdır. Yalnızca güvendiğin kaynaklardan torrent indir.
 
 ---
 
