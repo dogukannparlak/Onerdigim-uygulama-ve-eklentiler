@@ -1,585 +1,557 @@
-# wintoys
+# 🛠️ WinToys
+
+> **Kısa Açıklama:** Windows'un gizli ayarlarına, sistem araçlarına ve optimizasyon seçeneklerine tek arayüzden erişmeni sağlayan ücretsiz sistem yönetim aracı.
+
+2.x · Windows 10/11 · Ücretsiz · Sistem yönetimi
 
 ---
 
-## 🎯 Genel Bakış
+## 📌 Genel Bakış
 
-### Araç Hakkında
-
-WinToys, Windows işletim sistemi için geliştirilmiş ücretsiz ve kapsamlı bir sistem yönetim aracıdır. Windows’un gizli özelliklerine erişim sağlayan, sistem optimizasyonu ve yönetimi için gerekli tüm araçları tek bir arayüzde toplayan bu uygulama, teknik kullanıcılar ve power user’lar için vazgeçilmez bir yardımcıdır.
-
-### Hedef Kitle
-
-- **Başlangıç Seviyesi**: Temel sistem yönetimi öğrenmek isteyen kullanıcılar
-- **Orta Seviye**: IT profesyonelleri ve sistem yöneticileri
-- **Gelişmiş Seviye**: Power user’lar ve geliştiriciler
-
-### Ana Özellikler
-
-- ✅ **Sistem Bilgileri**: Detaylı donanım ve yazılım bilgileri
-- ✅ **Uygulamalar**: Kurulu programların yönetimi ve kontrolü
-- ✅ **Süreçler**: Aktif işlemlerin izlenmesi ve yönetimi
-- ✅ **Servisler**: Windows servislerinin kontrolü
-- ✅ **Ağ Araçları**: Ağ yapılandırması ve tanılama
-- ✅ **Sistem Araçları**: Windows’un gizli araçlarına hızlı erişim
-- ✅ **Optimizasyon**: Sistem performansını artırma
-- ✅ **Güvenlik**: Sistem güvenliği ve gizlilik ayarları
-- ✅ **Temizlik**: Gereksiz dosyaların temizlenmesi
+WinToys, Windows Ayarlar uygulamasında dağınık duran veya hiç bulunmayan sistem yönetimi araçlarını tek yerde toplar. Donanım bilgisi, uygulama kaldırma, hizmet yönetimi, temizlik ve gizlilik ayarları gibi işlemleri terminal veya registry açmadan yapmanı sağlar. Windows'un yerleşik araçlarına kıyasla daha hızlı erişim ve açıklayıcı arayüz sunar.
 
 ---
 
-# 🚀 Kurulum ve Başlangıç
+## ✨ Öne Çıkan Özellikler
 
-### Kurulum Yöntemleri
+WinToys sol menüsünde 6 sekme vardır; rehber bu yapıya göre düzenlenmiştir:
 
-### 1️⃣ Microsoft Store (Önerilen)
+- **Giriş** — Donanım kartları, canlı CPU/GPU/RAM ve sistem özeti
+- **Uygulamalar** — Kurulu programları listele, kaldır, sıfırla
+- **Hizmetler** — Windows hizmetlerini filtrele, başlat veya durdur
+- **Performans** — Güç planı, oyun ayarları, başlangıç uygulamaları
+- **Sağlık** — Temizlik, güncelleme, onarım (DISM/SFC/CHKDSK), pil raporu
+- **İnce Ayarlar** — Masaüstü, Explorer, gizlilik, reklam ve sistem tweak'leri
 
-1. Microsoft Store’u açın
-2. “WinToys” araması yapın
-3. **WinToys** uygulamasını seçin
-4. **Al** butonuna tıklayın
+---
 
-### 2️⃣ Winget ile Kurulum
+## 📥 İndirme ve Kurulum
 
-```
+### Yöntem 1: Microsoft Store — Önerilen
+
+1. Microsoft Store'u aç
+2. **WinToys** ara
+3. **Al** butonuna tıkla
+
+### Yöntem 2: WinGet (Terminal)
+
+```powershell
 winget install "WinToys"
 ```
 
-### 3️⃣ GitHub Releases
+### Yöntem 3: UniGetUI
 
-1. https://github.com/bogdandonduk/WinToys/releases adresine gidin
-2. En son sürümü indirin: `WinToys-x.x.x-Setup.exe`
-3. İndirilen dosyayı çalıştırın
+> UniGetUI açıkken arama çubuğuna **WinToys** yaz ve kur.
 
-### 4️⃣ Taşınabilir Sürüm
-
-1. GitHub’dan taşınabilir sürümü indirin
-2. ZIP dosyasını çıkarın
-3. `WinToys.exe` dosyasını çalıştırın
-
-### ⚙️ İlk Yapılandırma
-
-WinToys ilk açılışta:
-- Yönetici izinleri isteyebilir
-- Sistem taraması gerçekleştirir
-- Varsayılan ayarları yükler
+**Alternatif:** [GitHub Releases](https://github.com/bogdandonduk/WinToys/releases) — kurulum dosyası (`WinToys-x.x.x-Setup.exe`) veya taşınabilir ZIP (`WinToys.exe`).
 
 ---
 
-# 🏠 Giriş - Ana Sayfa
+## ⚙️ İlk Kurulum ve Önerilen Ayarlar
 
-### 📊 Sistem Bilgi Kartları
+1. **Yönetici izni:** İlk açılışta izin isteyebilir — onayla; uygulama ve hizmet listeleri için gereklidir
+2. **İlk tarama:** WinToys sistemi tarar ve varsayılan ayarları yükler; birkaç saniye bekle
+3. **Giriş sayfasını incele:** Donanım kartları ve canlı istatistiklerle sistemin genel durumunu kontrol et
 
-WinToys’un ana sayfası, sistemin temel bilgilerini kart görünümünde sunar:
+> 💡 Tam liste göremiyorsan WinToys'u sağ tık → **Yönetici olarak çalıştır** ile aç.
 
-### Üst Sıra - Donanım Bilgileri
+---
 
-| Kart | Bilgi Türü | Açıklama | Örnek |
-| --- | --- | --- | --- |
-| **💻 Sistem** | Model/Build | Bilgisayar modeli | 82K2 |
-| **🔧 İşlemci** | CPU Modeli | İşlemci türü ve markası | AMD Ryzen 7 5800H with Radeon Graphics |
-| **🎮 Ekran Kartı** | GPU Modeli | Grafik kartı bilgisi | NVIDIA GeForce RTX 3060 Laptop GPU |
-| **💾 Hafıza** | RAM Miktarı | Toplam bellek kapasitesi | 16 GB |
+# 🏠 Giriş
 
-### Orta Sıra - Sistem Durumu
+WinToys açıldığında karşına çıkan ilk sekme; bilgisayarının genel durumunu tek bakışta gösterir.
 
-| Kart | Bilgi Türü | Açıklama | Örnek |
-| --- | --- | --- | --- |
-| **💿 Depolama** | Disk Kapasitesi | Toplam depolama alanı | 1,37 TB |
-| **🪟 Windows** | İşletim Sistemi | Windows sürümü | 11 |
-| **⏱️ Çalışma Süresi** | Uptime | Sistemin açık kalma süresi | 11:03:40:38 |
-| **⭐ Performans** | Performans Skoru | Sistem performans değerlendirmesi | 9,2/10 |
+### Donanım kartları
 
-### 📈 Canlı İstatistik Kartları
+| Kart | Ne gösterir |
+| ---- | ----------- |
+| **Sistem** | Bilgisayar modeli |
+| **İşlemci** | CPU marka ve modeli |
+| **Ekran Kartı** | GPU bilgisi |
+| **Hafıza** | Toplam RAM |
 
-### Alt Panel - Gerçek Zamanlı Veriler
+### Sistem durumu
 
-📊 Sistem İstatistikleri:
+| Kart | Ne gösterir |
+| ---- | ----------- |
+| **Depolama** | Toplam disk kapasitesi |
+| **Windows** | İşletim sistemi sürümü |
+| **Çalışma Süresi** | Bilgisayarın açık kaldığı süre |
+| **Performans** | Genel performans skoru |
 
-├── 📱 Uygulamalar: 183 adet kurulu
+### Canlı istatistikler
 
-├── ⚙️ İşlemler: 299 aktif süreç
+Alt panelde anlık veriler görünür:
 
-├── 🔧 Hizmetler: 146 Windows servisi
+- **CPU, GPU, RAM** kullanım yüzdeleri
+- **Ağ trafiği** — indirme/yükleme hızı ve toplam veri
+- **Özet sayaçlar** — kurulu uygulama, aktif süreç ve hizmet sayıları (yalnızca özet; ayrı süreç yönetimi sekmesi yok)
 
-└── 🧹 Alan Temizlendi: 710.49 MB
-
-### Performans Göstergeleri
-
-| Metrik | Anlık Değer | Açıklama |
-| --- | --- | --- |
-| **🔧 İşlemci** | %20 | CPU kullanım yüzdesi |
-| **🎮 Ekran Kartı** | %43 | GPU kullanım yüzdesi |
-| **💾 Hafıza** | %80 | RAM kullanım yüzdesi |
-| **🌐 Ağ** | 199,56 GB | Toplam ağ trafiği |
-
-### Ağ Aktivitesi
-
-🌐 Ağ Aktivitesi:
-
-├── Download Hızı: ↓ 1.2 KB/s
-
-├── Upload Hızı: ↑ 0 B/s
-
-└── Toplam Veri: 199,56 GB
+> 💡 Windows sürüm kartının üzerine gelince lisans durumu, ürün anahtarı ve güncelleme bilgisi gibi ek detaylar tooltip olarak görünür.
 
 ---
 
 # 📱 Uygulamalar
 
-## 🔍 Uygulama Arayüzü ve Navigasyon
+Kurulu tüm programları listeler; arama, filtre ve hızlı eylemler sunar.
 
-### Ana Arayüz Elemanları
+### Nasıl kullanılır?
 
-WinToys Uygulamalar sekmesi şu bileşenlerden oluşur:
+1. Sol menüden **Uygulamalar** sekmesine git
+2. Arama çubuğuyla program bul veya filtre/sıralama menüsünü kullan
+3. Her satırda sürüm, geliştirici, boyut ve kurulum tarihi görünür
 
-| Bileşen | Konum | İşlev | Kullanım |
-| --- | --- | --- | --- |
-| **🔍 Arama Çubuğu** | Üst sol | “Uygulama bul” | Hızlı uygulama arama |
-| **📊 Uygulama Sayacı** | Üst orta | “183 uygulamalar” | Toplam kurulu uygulama sayısı |
-| **🔽 Filtre/Sıralama** | Üst sağ | Dropdown menüler | Liste özelleştirme |
-| **📋 Uygulama Listesi** | Ana alan | Detaylı liste | Tüm uygulamaları görüntüle |
+### Renk kodları
 
-## 🎨 Renk Kodlama Sistemi
+| Renk | Tür | Örnek |
+| ---- | --- | ----- |
+| 🟡 **Sarı** | Klasik masaüstü programı (Win32) | 7-Zip, Chrome |
+| 🔵 **Mavi** | Microsoft Store uygulaması (UWP) | Ayarlar, Store uygulamaları |
 
-### Uygulama Türü Göstergeleri
+### ⋯ menü eylemleri
 
-WinToys, uygulamaları türlerine göre renk kodlaması ile ayırt eder:
+| Eylem | Ne işe yarar |
+| ----- | ------------ |
+| **Kapat** | Açık programı sonlandır |
+| **Gözat** | Kurulum klasörünü aç |
+| **Arama** | Uygulama hakkında web'de ara |
+| **Sıfırla** | Uygulama verilerini sıfırla (sorun giderme) |
+| **Kaldır** | Programı sistemden kaldır |
 
-| Renk | Tür | Açıklama | Örnekler |
-| --- | --- | --- | --- |
-| 🟡 **Sarı** | Win32 Uygulamaları | Klasik masaüstü programları | 7-Zip, Chrome, Photoshop |
-| 🔵 **Mavi** | Microsoft Store Apps | UWP/Modern uygulamalar | Amazon Games, Apple TV, Ayarlar |
-
-### Uygulama Liste Görünümü
-
-📱 Gerçek Uygulama Listesi Formatı:
-
-```
-🟡 7-Zip 24.09 (x64) 5.59 MB ⋯
-   24.9.0.0 | Igor Pavlov 17.09.2024
-
-🔵 Amazon Games 451 MB ⋯
-   3.0.9495.3 | Amazon.com Services, Inc. 16.03.2025
-
-🔵 AMD Radeon Software 612.79 MB ⋯
-   10.23.19011.0 | Advanced Micro Devices 19.06.2025
-```
-
-## ⚙️ Uygulama Detay Bilgileri
-
-### Her Uygulama İçin Gösterilen Bilgiler
-
-| Bilgi | Açıklama | Örnek | Konum |
-| --- | --- | --- | --- |
-| **📱 Uygulama Adı** | Program başlığı | “7-Zip 24.09 (x64)” | Sol üst |
-| **🏷️ Sürüm** | Versiyon numarası | “24.9.0.0” | Alt satır sol |
-| **🏢 Geliştirici** | Yapımcı şirket | “Igor Pavlov” | Alt satır orta |
-| **💾 Boyut** | Disk kullanımı | “5.59 MB” | Sağ üst |
-| **📅 Kurulum Tarihi** | Yüklenme tarihi | “17.09.2024” | Sağ alt |
-| **⋯ Eylem Menüsü** | Üç nokta butonu | Sağ tık menüsü | En sağ |
-
-## 🎛️ Uygulama Eylemleri
-
-### Sağ Tık Menü Seçenekleri
-
-Uygulamaların yanındaki “⋯” butonuna tıklayarak erişilebilen eylemler:
-
-| Eylem | Simge | Açıklama | Kullanım |
-| --- | --- | --- | --- |
-| **⚡ Kapat** | 🔌 | Uygulamayı sonlandır | Açık programları kapat |
-| **📁 Gözat** | 📂 | Dosya konumunu aç | Kurulum klasörüne git |
-| **🔍 Arama** | 🔎 | Web’de ara | Uygulama hakkında bilgi |
-| **🔄 Sıfırla** | ↻ | Uygulama verilerini sıfırla | Sorun giderme |
-| **🗑️ Kaldır** | ❌ | Uygulamayı kaldır | Tam kaldırma |
+> 💡 **Sıfırla** ve **Kaldır** geri alınamaz olabilir; özellikle Store uygulamalarında dikkatli ol.
 
 ---
 
 # ⚙️ Hizmetler
 
-## 🔍 Hizmetler Arayüzü
+Windows arka plan hizmetlerini listeler; durumlarını görmeni ve yönetmeni sağlar.
 
-### Ana Arayüz Bileşenleri
+### Nasıl kullanılır?
 
-WinToys Hizmetler sekmesi Windows servislerini yönetmek için kapsamlı araçlar sunar:
+1. Sol menüden **Hizmetler** sekmesine git
+2. Arama çubuğu veya filtre menüsüyle hizmet bul
+3. Yeşil çizgi = çalışıyor; çizgi yok = durdurulmuş
 
-| Bileşen | Konum | İşlev | Kullanım |
-| --- | --- | --- | --- |
-| **🔍 Arama Çubuğu** | Üst sol | “Arama hizmetleri” | Hizmet ara |
-| **📊 Hizmet Sayacı** | Üst orta | “146 hizmetler” | Toplam hizmet sayısı |
-| **🔽 Filtre Menüsü** | Üst sağ | Kategorik filtreler | Hizmet türü seçimi |
-| **📋 Hizmet Listesi** | Ana alan | Detaylı hizmet bilgileri | Tam görünüm |
+### Filtreler
 
-## 🎨 Hizmet Durum Göstergeleri
+**Tümü** · **Kullanışsız** · **Microsoft** · **Üçüncü taraf** · **Durum** · **Mod**
 
-### Görsel Durum Çizgileri
+### ⋯ menü eylemleri
 
-| Renk | Durum | Açıklama | Örnek Hizmetler |
-| --- | --- | --- | --- |
-| 🟢 **Yeşil Çizgi** | Çalışıyor | Aktif olarak çalışan hizmetler | AMD Crash Defender Service |
-| ⚫ **Çizgi Yok** | Durdurulmuş | Pasif/durdurulmuş hizmetler | Ağ Bağlantısı Aracısı |
-| 🔵 **Mavi Vurgu** | Seçili | Aktif olarak seçilen hizmet | - |
+| Eylem | Ne işe yarar |
+| ----- | ------------ |
+| **Başlat** | Durdurulmuş hizmeti çalıştır |
+| **Durdur** | Çalışan hizmeti durdur |
+| **Yeniden Başlat** | Hizmeti yenile |
+| **Gözat** | Hizmet dosyasının konumunu aç |
+| **Arama** | Hizmet hakkında web'de ara |
+| **Mod** | Başlangıç türünü değiştir (Otomatik / Elle / Devre dışı) |
 
-### Hizmet Bilgi Formatı
+> ⚠️ Tanımadığın bir hizmeti kapatma veya devre dışı bırakma. Yanlış müdahale ağ, ses, yazdırma veya güncelleme sorunlarına yol açabilir.
 
-📋 Gerçek Hizmet Liste Formatı:
-
-```
-🟢 AMD Crash Defender Service    Çalışıyor  Otomatik  ⋯
-   C:\WINDOWS\System32\DriverStore\...amdfedr.exe
-
-   Ağ Bağlantısı Aracısı         Çalışıyor  Elle      ⋯
-   C:\WINDOWS\System32\svchost.exe
-```
-
-## 🗂️ Filtre ve Kategori Sistemi
-
-### Hizmet Filtreleri
-
-Sağ üst köşedeki filtre menüsü ile hizmetleri kategorilere ayırabilirsiniz:
-
-| Filtre | Açıklama | Kullanım |
-| --- | --- | --- |
-| **Tümü** | Tüm hizmetleri göster | Genel görünüm |
-| **Kullanışsız** | Gereksiz hizmetler | Optimizasyon için |
-| **Microsoft** | Microsoft hizmetleri | Sistem hizmetleri |
-| **Üçüncü taraf** | 3. parti hizmetler | Kurulu program hizmetleri |
-| **Durum** | Durum bazlı filtre | Çalışan/durmuş |
-| **Mod** | Başlangıç türü | Otomatik/Manuel |
-
-## 🎛️ Hizmet Yönetim Eylemleri
-
-### Sağ Tık Menü Seçenekleri
-
-Her hizmetin yanındaki “⋯” menüsünden erişilebilen eylemler:
-
-| Eylem | Simge | Açıklama | Kullanım |
-| --- | --- | --- | --- |
-| **▶️ Başlat** | ▶️ | Durdurulmuş hizmeti başlat | Hizmet başlatma |
-| **⏹️ Durdur** | ⏹️ | Çalışan hizmeti durdur | Sorun giderme |
-| **🔄 Yeniden Başlat** | 🔄 | Hizmeti yeniden başlat | Yenileme |
-| **📁 Gözat** | 📁 | Hizmet dosya konumu | Dosya analizi |
-| **🔍 Arama** | 🔍 | Web’de hizmet ara | Bilgi alma |
-| **⚙️ Mod** | ⚙️ | Başlangıç türü değiştir | Otomasyonu ayarla |
+---
 
 # 🚀 Performans
 
-WinToys Performans sekmesi, sisteminizi maksimum verimlilik için optimize etmenizi sağlayan kapsamlı ayarlar sunar:
+Sistem hızı, güç tüketimi ve oyun performansı için Windows ayarlarını tek ekranda toplar. Her seçeneğin üzerine gelince açıklama tooltip'i görünür.
 
-## 🔋 Güç ve Performans Yönetimi
+### Nasıl kullanılır?
 
-| Ayar | Açıklama |
-| --- | --- |
-| **⚡ Nihai performans güç planı** | Bileşenlerin maksimum performans için ihtiyaç
-duydukları tüm gücü tüketmelerine olanak tanır |
-| **🎮 HAGS (Donanım Hızlandırmalı GPU)** | Ekran kartının görevleri daha verimli bir şekilde tahsis hti)
-etmesini sağlayarak işlemci gecikmesini ve kullanım
-yükünü azaltır |
-| **🛡️ VBS (Sanallaştırma Tabanlı Güvenlik)** | Güvenlik açıklarına ve kötü amaçlı kullanımlara karşı
-korumayı artırmak için yalıtılmış bir sanal bellek bölgesi
-oluşturur |
+1. Sol menüden **Performans** sekmesine git
+2. İhtiyacına göre anahtarı aç/kapat
+3. **Başlangıç uygulamaları** için **Yapılandır** butonuna tıkla
 
-📊 Başlangıç Uygulamaları
+### Güç ve performans
 
-- Yenile: Listeyi güncelle
-- Yeni başlangıç uygulaması ekle: Manuel uygulama ekleme
-- Yenisi eklenince bildir: Otomatik uyarı sistemi
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **Nihai performans güç planı** | CPU ve GPU'nun tam güç kullanmasına izin verir; dizüstünde pil tüketimini artırır |
+| **HAGS** (Donanım hızlandırmalı GPU zamanlaması) | GPU görev dağılımını iyileştirir; gecikmeyi ve CPU yükünü azaltabilir |
+| **VBS** (Sanallaştırma tabanlı güvenlik) | Ek güvenlik katmanı sağlar; kapalıyken oyunlarda hafif performans artışı görülebilir |
 
-## 🔧 Sistem Optimizasyon Ayarları
+> 💡 **Nihai performans** bazı cihazlarda desteklenmeyebilir; WinToys uyarı gösterir. **VBS** kapatmak güvenliği düşürür — yalnızca performans için bilinçli tercih et.
 
-### Uygulama ve Süreç Yönetimi
+### Başlangıç uygulamaları
 
-| Ayar | Açıklama |
-| --- | --- |
-| **🔄 Uygulamaları yeniden başlat** | Yeniden başlatılabilir uygulamaları otomatik kaydet ve tekrar oturum açınızda bunları yeniden başlatır |
-| **⚙️ Arka plan uygulamaları** | Uygulamaların arka planda çalışmasına izin verir |
-| **📋 Etkinlik geçmişi** | Kullandığınız uygulama ve hizmetleri, açtığınız dosyaları ve gezindiğiniz web sitelerini takip eder |
+**Yapılandır** ile açılan listede:
 
-## 🎨 Görsel  Ayarlar
+- **Yenile** — listeyi güncelle
+- **Yeni başlangıç uygulaması ekle** — manuel program ekle
+- **Yenisi eklenince bildir** — yeni başlangıç öğesi uyarısı
 
-| Ayar | Açıklama |
-| --- | --- |
-| **🎭 En iyi performans için görsel efektleri ayarlayın** | Windows kullanıcı arayüzü ile ilgili ayarlar |
-| **💎 Saydamlık** | Şeffaflık efektleri |
+Gereksiz başlangıç programlarını kapatmak açılış süresini kısaltır.
 
-## 🎮 Oyun Ayarları
+### Uygulama ve arka plan
 
-| Ayar | Açıklama |
-| --- | --- |
-| **🎯 Oyun modu** | Belirli oyunlarda kare hızını artırabilecek ayarlar |
-| **🪟 Pencereli mod iyileştirme seçenekleri** | Pencereli oyunlarda performans iyileştirmeleri |
-| **📹 Arka planda kayıt** | Arka plan oyun kaydı özelliği |
-| **💾 Diskten Hızlı Getirme** | Disk’ten verileri hızlı okuma |
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **Uygulamaları yeniden başlat** | Oturum kapanınca açık uygulamaları otomatik geri yükler |
+| **Arka plan uygulamaları** | Store uygulamalarının arka planda çalışmasına izin verir |
+| **Etkinlik geçmişi** | Kullandığın uygulama, dosya ve site geçmişini kaydeder |
 
-## 🔍 Sistem Hizmetleri Optimizasyonu
+> 💡 **Etkinlik geçmişi** kapalıyken gizlilik artar; Windows zaman çizelgesi ve geçmiş önerileri sınırlanır.
 
-### Arka Plan Hizmetleri
+### Görsel ayarlar
 
-| Hizmet | Açıklama |
-| --- | --- |
-| **🔍 Arama indeksleme** | Daha hızlı arama sonuçları sağlayarak indekslemenin arka planda çalışmasına izin verir |
-| **📦 Teslim İyileştirme** | İndirilen Windows güncellemelerini yerel ağınızda veya internetten diğer cihazlarla paylaşır |
-| **🌐 Ağ bağdaştırıcısı yerleşik işlemci** | Bazı ağ işlemlerini işlemcinizden ağ bağdaştırıcının yerleşik işlemcisine aktarır |
+Eski veya düşük donanımlı cihazlar için önerilir.
+
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **En iyi performans için görsel efektleri ayarlayın** | Animasyon ve efektleri azaltır; arayüz daha sade olur |
+| **Saydamlık** | Başlat menüsü ve görev çubuğu şeffaflık efektleri |
+
+### Oyun ayarları
+
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **Oyun modu** | Oyun oynarken arka plan işlemlerini önceliklendirir |
+| **Pencereli mod iyileştirme seçenekleri** | Tam ekran olmayan oyunlarda performans iyileştirmesi |
+| **Arka planda kayıt** | Xbox Game Bar arka plan kaydı; kapalıyken kaynak tasarrufu |
+| **Diskten Hızlı Getirme** (DirectStorage) | Uyumlu SSD ve oyunlarda daha hızlı yükleme |
+
+### Arka plan hizmetleri
+
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **Arama indeksleme** | Windows aramasını hızlandırır; arka planda disk taraması yapar |
+| **Teslim İyileştirme** | Windows güncellemelerini ağdaki diğer cihazlarla paylaşır |
+| **Ağ bağdaştırıcısı yerleşik işlemci** | Ağ işlerini CPU yerine ağ kartına devreder (destekleyen kartlarda) |
+
+> ⚠️ **Teslim İyileştirme** internetten güncelleme paylaşımını açabilir; yalnızca yerel ağda bırakmak için Windows Ayarlar'dan ince ayar yap. **Arama indekslemeyi** kapatmak aramayı yavaşlatır.
 
 ---
 
 # 🏥 Sağlık
 
-## ⚡ Sistem Performans ve Hızlandırma
+Sistem bakımı, temizlik, güncelleme ve onarım araçlarını tek ekranda toplar. Kilitlenme, yavaşlık veya disk doluluğu gibi sorunlarda ilk bakılacak bölümdür.
 
-### Önyükleme ve Güç Yönetimi
+### Nasıl kullanılır?
 
-| Ayar | Açıklama |
-| --- | --- |
-| **🚀 Hızlı başlatmayı** | Cihazın kapatıldıktan sonra daha hızlı açılmasını sağlayarak önyükleme süresini  azaltır |
-| **😴 Hazırda bekletme** | Açık uygulamalarınız da dahil olmak üzere işletim sisteminin durumunu diskte hiberfil.sys adlı bir dosyaya kaydeder |
+1. Sol menüden **Sağlık** sekmesine git
+2. Soruna göre ilgili aracı seç (temizlik, onarım, tanılama vb.)
+3. Butonlu işlemlerde (**Denetle**, **Oluştur**, **Tamirat**) işlem bitene kadar bekle
 
-## 🧹 Temizlik
+### Tanılama ve hızlı onarım
 
-### Manuel Temizlik Seçenekleri
+| Araç | Ne işe yarar | Eylem |
+| ---- | ------------ | ----- |
+| **Bellek teşhis** | RAM hatalarını kontrol eder | **Denetle** — yeniden başlatma sonrası test çalışır |
+| **Grafik sürücüsü** | Ekran donması/titremesinde GPU sürücüsünü sıfırlar | **Yeniden Başlat** |
+| **Simge önbelleği** | Boş, bulanık veya bozuk simgeleri düzeltir | **Yeniden oluştur** |
+| **Uyku hapı** | Bilgisayarı uyku modundan uyandıran zamanlanmış görevleri bulur | **Durdur** |
 
-WinToys’un Temizlik bölümü çeşitli sistem alanlarını temizlemenizi sağlar:
+> 💡 **Bellek teşhis** çalışırken bilgisayar kapanır; kaydedilmemiş işlerini kapat.
 
-| Temizlik Türü | Açıklama |
-| --- | --- |
-| **🗑️ Gereksiz** | Geçici dosyalar, çöp kutusu, cache |
-| **📁 Dosya Gezgini** | Dosya gezgini geçmişi ve önbellekleri |
-| **🏪 Microsoft Store** | Store uygulamaları cache’i |
-| **🌐 DNS** | DNS önbelleğini temizle |
-| **🗑️ Sistem Geri Yükleme** | Eski geri yükleme noktalarını sil |
+### Güncelleme yönetimi
 
-### Otomatik Sistem Bakımı
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **Sistem Güncellemeleri** | Windows güncelleme davranışını ayarlar; yeni güncellemeleri kontrol eder |
+| **Sürücü güncellemeleri** | Donanım sürücülerini otomatik arar ve günceller |
+| **Uygulama Güncellemeleri** | Store uygulamalarını otomatik indirip kurar |
+| **Ortak kurulumcular** | Yeni çevre birimi takılınca ek kurulum görevlerini çalıştırır |
 
-| Özellik | Açıklama |
-| --- | --- |
-| **⚡ Sürücü İyileştirme** | Cihazınızın daha verimli çalışmasına yardımcı olur |
-| **🧹 Akıllı Depolama** | Bazı geçici sistem dosyalarını otomatik olarak temizler |
+### Önyükleme ve güç
 
-## **🔋 Pil Raporu**
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **Hızlı başlatma** | Kapatma sonrası açılışı hızlandırır (hibrit kapatma) |
+| **Hazırda bekletme** | Oturum durumunu `hiberfil.sys` dosyasına kaydeder; disk alanı kullanır |
 
-### **Kapsamlı Pil Durumu Analizi**
+> 💡 **Hızlı başlatma** kapalıyken tam kapatma yapılır; çift önyükleme sorunlarında kapatmayı dene. **Hazırda bekletme** kapalıyken hiberfil.sys silinir ve disk alanı açılır.
 
-WinToys'un Sağlık bölümü, dizüstü bilgisayarlar için detaylı pil analizi yapabilir. **"Pil raporu oluştur"** butonu ile PowerShell komutu çalıştırarak kapsamlı bir HTML raporu oluşturur.
+### Temizlik
 
-### **Pil Raporu Örneği**
+Disk alanı açmak için manuel temizlik seçenekleri:
 
-**⚠️ Not:** Aşağıdaki veriler örnek amaçlıdır. Gerçek verileriniz farklı olacaktır.
+| Seçenek | Ne temizler |
+| ------- | ----------- |
+| **Gereksiz** | Geçici dosyalar, çöp kutusu, önbellek |
+| **Dosya Gezgini** | Gezginci geçmişi ve önbellekleri |
+| **Microsoft Store** | Store uygulama önbelleği |
+| **Ağ** | DNS önbelleği |
+| **Sistem Geri Yükleme** | Eski geri yükleme noktaları |
 
-**📊 Pil Genel Bilgileri:**
+> ⚠️ **Sistem Geri Yükleme** temizliği geri alınamaz; önemli noktaları silmeden önce düşün.
 
-```
-🔋 Pil Model: L20D4PC0
-🏭 Üretici: Sunwoda
-🔢 Seri No: 6000
-⚗️ Kimya: Li-Ion (Lityum İyon)
-📅 Rapor Tarihi: 2025-06-24 01:54:21
+### Otomatik bakım
 
-```
+| Ayar | Ne işe yarar |
+| ---- | ------------ |
+| **Sürücü İyileştirme** | SSD/HDD birleştirme ve optimizasyon zamanlaması |
+| **Akıllı Depolama** | Geçici sistem dosyalarını otomatik temizler |
 
-**📈 Kapasite Durumu:**
+### Pil raporu (dizüstü)
 
-| Metrik | Örnek Değer |
-| --- | --- |
-| **🎯 Tasarım Kapasitesi** | 60.000 mWh |
-| **⚡ Tam Şarj Kapasitesi** | 49.720 mWh |
-| **🔄 Şarj Döngüsü** | 420 döngü |
-| **📉 Kapasite Kaybı** | 10.280 mWh |
+WinToys → Sağlık → **Pil raporu** → **Oluştur** ile Windows'un standart pil raporu (`battery-report.html`) üretilir. Dosya genelde kullanıcı klasöründe oluşur; tarayıcıda aç.
 
-### **Pil Sağlık Değerlendirmesi**
+#### Raporda neler var?
 
-| Sağlık Durumu | Kapasite Oranı | Açıklama |
-| --- | --- | --- |
-| **🟢 Mükemmel** | %90-100 | Yeni pil performansı |
-| **🟢 İyi** | %80-89 | Sağlıklı çalışma durumu |
-| **🟡 Orta** | %60-79 | Belirgin kapasite azalması |
-| **🔴 Zayıf** | %40-59 | Pil değişimi yaklaşıyor |
-| **🔴 Kritik** | <%40 | Acil pil değişimi |
+| Bölüm | Ne gösterir |
+| ----- | ----------- |
+| **Üst bilgi** | Bilgisayar adı, model, BIOS, Windows sürümü, rapor tarihi |
+| **Installed batteries** | Pil kimliği ve sağlık verileri |
+| **Recent usage** | Son 7 gün — Active/Suspended, AC/Battery, kalan % ve mWh |
+| **Battery usage** | Pil tüketim oturumları — süre, harcanan % ve mWh (+ grafik) |
+| **Usage history** | Haftalık/günlük AC ve pil kullanım süreleri |
+| **Battery capacity history** | Zaman içinde tam şarj kapasitesinin değişimi |
+| **Battery life estimates** | Gözlemlenen tüketime göre tahmini pil ömrü |
 
-### **Örnek Kullanım Analizi (Son 7 Gün)**
+#### Installed batteries — okuma rehberi
 
-**⚡ Pil Kullanım Seansları:**
+| Alan | Anlamı |
+| ---- | ------ |
+| **NAME / MANUFACTURER** | Pil modeli ve üretici |
+| **SERIAL NUMBER** | Seri numarası |
+| **CHEMISTRY** | Pil tipi (ör. Li-I = lityum iyon) |
+| **DESIGN CAPACITY** | Fabrika çıkışı hedef kapasite (mWh) |
+| **FULL CHARGE CAPACITY** | Şu an %100 şarjda alabildiğin gerçek kapasite (mWh) |
+| **CYCLE COUNT** | Tam şarj döngüsü sayısı |
 
-```
-📅 2025-06-20: 1:09 dakika kullanım → %1 enerji tüketimi (640 mWh)
-📅 2025-06-23: 1:19:51 kullanım → %63 enerji tüketimi (31.280 mWh)
-📅 2025-06-23: 1:13:33 kullanım → %76 enerji tüketimi (37.700 mWh)
+**Kapasite oranı** = FULL CHARGE ÷ DESIGN × 100
 
-```
+Örnek: 49.770 ÷ 60.000 = **%83** → aşağıdaki tabloda **İyi** aralığı.
 
-**📊 Pil Performans Örneği:**
+| Oran | Durum |
+| ---- | ----- |
+| %90–100 | Mükemmel |
+| %80–89 | İyi |
+| %60–79 | Orta — belirgin azalma |
+| %40–59 | Zayıf — pil değişimi yaklaşabilir |
+| <%40 | Kritik — acil değişim önerilir |
 
-- **🔋 Aktif Kullanım**: 2:19:35 saat (örnek tahmin)
-- **⏱️ Tasarım Hedefi**: 2:48:27 saat (yeni pil)
-- **📉 Performans Farkı**: %17 azalma
-- **🎯 Günlük Ortalama**: 45 dakika pil kullanımı
+#### Battery usage — pil oturumları
 
-## **🔧 Onar**
+Son 7 günde pilde geçen her oturum listelenir:
 
-WinToys'un Onar sekmesi kapsamlı sistem onarım araçları sunar:
+- **DURATION** — ne kadar süre pilde kaldın
+- **ENERGY DRAINED** — o oturumda harcanan % ve mWh
 
-🛠️ Sistem Tanılama Araçları:
+Uzun oturumlar ve yüksek mWh değerleri pilin hangi kullanımlarda hızlı bittiğini gösterir.
 
-**🔧 DISM (Deployment Image Servicing and Management)**
+#### Battery life estimates — tahmini ömür
 
-- Bozuk sistem dosyalarını veya bileşenlerini değiştirmek için kullanılan yerel Windows görüntüsünü, sağlıklı indirmiş olan yedek olarak kontrol eder ve onarır
-- ⚠️ İnternet bağlantısı gerektirir
+İki sütun vardır:
 
-**🔍 SFC (System File Checker)**
+| Sütun | Anlamı |
+| ----- | ------ |
+| **AT FULL CHARGE** | Mevcut pil kapasitesiyle tahmini kullanım süresi |
+| **AT DESIGN CAPACITY** | Fabrika kapasitesiyle tahmini kullanım süresi |
 
-- Tüm korunan sistem dosyalarını tarar ve DISM tarafından sunulan önbelleğe alınmış bir kopya kullanarak bozuk olanları değiştirir
+En alttaki **Since OS install** satırı, kurulumdan bu yana tüm gözlemlere dayalı genel tahmini verir (ör. aktif kullanımda ~3–4 saat).
 
-**💾 CHKDSK (Check Disk)**
+> 💡 Raporu ayda bir oluştur; **Battery capacity history** bölümünden kapasite düşüşünü zaman içinde takip edebilirsin. Masaüstü bilgisayarlarda pil bölümü boş veya "no batteries" görünür — normaldir.
 
-- Depolama cihazınızı kontrol eder ve onarır (bozuk sektörler, okuma/yazma hataları, dosya sistemi)
-- ⚠️ C bölümü Windows tarafından kullanılırken kontrol edilemediğinden, işlem bir sonraki yeniden başlatma için programlanacaktır
+### Onar (DISM / SFC / CHKDSK)
 
-💡 **Not**: Bu araçların hiçbiri mevcut sorunları çözmezse yeni bir Windows yüklemesi önerilir.
+Kilitlenme, donma, mavi ekran veya başarısız güncelleme sonrası önerilir.
 
-### 🔋 Donanım Tanılama
+| Araç | Ne yapar |
+| ---- | -------- |
+| **DISM** | Bozuk Windows bileşen görüntüsünü onarır — internet gerekir |
+| **SFC** | Korunan sistem dosyalarını tarar ve bozuk olanları değiştirir |
+| **CHKDSK** | Disk hatalarını ve bozuk sektörleri kontrol eder — C: sürücüsü için yeniden başlatma gerekebilir |
 
-### Sistem Bileşeni Kontrolleri
+1. En az bir aracı işaretle
+2. **Tara** ile sorun tespiti veya doğrudan **Tamirat** ile onarım başlat
 
-| Test Türü | Açıklama |
-| --- | --- |
-| **🧠 Bellek teşhis** | Muhtemel hafıza sorunları için cihazınızı kontrol edin |
-| **🔌 Uyku hapi** | Zamanlanmış görevlerin cihazınızı rastgele uyandırmasını tespit edin ve durdurun |
-| **🎮 Grafik sürücüsü** | Ekranınızda donma veya titreme gibi tuhaf sorunlar varsa sürücüyü yeniden başlatın |
-| ⏳Simge önbelleği | Simgeleriniz veya küçük resimleriniz boş, bulanık veya
-bozuksa önbelleği yeniden oluşturun |
+> ⚠️ Onarım uzun sürebilir; işlem sırasında bilgisayarı kapatma. Sorun devam ederse Windows yeniden kurulumu düşün.
 
-## 🔄 Güncelleme Yönetimi
+---
 
 # 🔧 İnce Ayarlar
 
-WinToys’un İnce Ayarlar sekmesi, Windows’un derinlerinde bulunan gelişmiş yapılandırma seçeneklerini kullanıcı dostu bir arayüzle sunar. Bu bölüm 6 ana kategoriye ayrılmıştır:
+Windows'un registry ve Ayarlar uygulamasında dağınık duran tweak'leri kategorilere ayırarak sunar. Her seçeneğin üzerine gelince açıklama tooltip'i görünür.
 
-## 🖥️ Masaüstü (Desktop)
+### Nasıl kullanılır?
 
-### Masaüstü Simge ve Görünüm Yönetimi
+1. Sol menüden **İnce Ayarlar** sekmesine git
+2. Kategori başlığını aç (Masaüstü, Başlat Menüsü, Dosya Gezgini…)
+3. Anahtarı değiştir — çoğu ayar anında uygulanır
 
-WinToys’un Masaüstü bölümü, masaüstü deneyiminizi özelleştirmek için kapsamlı seçenekler sunar:
+> 💡 Aşağıdaki **Benim ayarım** sütunu kişisel kurulumumu gösterir; senin ihtiyacına göre farklı seçebilirsin.
 
-| Ayar | Açıklama |
-| --- | --- |
-| **💻 Bu Bilgisayar** | Masaüstünde bu bilgisayar ikonun görünmesini sağlar |
-| **🗑️ Geri Dönüşüm Kutusu** | Silinen dosyaların geçici depolandığı masaüstü simgesi |
-| **📄 Araçlar** | Sistem araçlarına hızlı erişim masaüstü simgesi |
-| **🔗 Kısayol oku** | Kısayol simgelerindeki ok işaretlerini gizler/gösterir |
-| **🏷️ Simge etiketleri için gölgeler** | Masaüstü simge metinlerinin altında gölge efekti ekler  |
-| **🖥️ Masaüstünü Göster** | Sağ alt köşeye basılınca masaüsütüne dönülmesini sağlar/kapatır |
-| **📁 Başlık çubuğu pencereleri salla** | Pencere başlığını salladığınızda diğer pencereleri minimize eder (Aero Shake) |
-| **🖱️ Klasik içerik menüsü** | Eski Windows sağ tık menü stilini kullanır |
-| **🖼️** Duvar Kağıdı Kalitesi | Slider ile masaüstü arka plan görüntünüzün kalitesini ayarlayabilirsiniz. |
+### Özet — kişisel tercihlerim
 
-## 📱 Başlat Menüsü (Start Menu)
+- **Gizlilik odaklı:** Telemetri, konum ve reklamlar kapalı; yalnızca CEIP ve hata raporlama açık
+- **Temiz Başlat menüsü:** Bing arama, Store önerileri ve hesap bildirimleri kapalı
+- **Verimli Explorer:** Uzantılar ve gizli dosyalar görünür; açılış **Bu bilgisayar**
+- **Prodüktivite:** Pano geçmişi, Print Screen ekran görüntüsü, görevi sonlandır açık
+- **Güvenli gelişmiş:** God Mode ve Geliştirici Modu kapalı; UAC standart seviyede
 
-### Başlat Menüsü Gizlilik ve Performans Kontrolü
+---
 
-WinToys’un Başlat Menüsü bölümü, arama davranışı ve veri paylaşımını tam kontrol etmenizi sağlar:
+### 🖥️ Masaüstü
 
-| Ayar | Açıklama |
-| --- | --- |
-| **🌐 Arama yaparken web sonuçlarını dahil et** | Bing arama motorunu kullanarak internet sonuçlarını başlat menüsünde gösterir |
-| **📦 Otomatik yükleme önerileri** | Microsoft Store’dan uygulama önerilerini başlat menüsünde görüntüler |
-| **👤 Hesap bildirimleri** | Microsoft hesabınızla ilgili bildirimleri ve önerileri gösterir |
-| **💤 Güç menüsünde hazırda bekletme modunu göster** | Güç seçeneklerinde uyku/hibernation modunu görüntüler |
+Masaüstü simgeleri, sağ tık menüsü ve duvar kağıdı kalitesi.
 
-## 📁 Dosya Gezgini (File Explorer)
+| Ayar | Ne işe yarar | Benim ayarım |
+| ---- | ------------ | ------------ |
+| **Bu Bilgisayar** | Masaüstünde Bu PC simgesi | ✅ Açık |
+| **Geri Dönüşüm Kutusu** | Çöp kutusu simgesi | ✅ Açık |
+| **Araçlar** | Masaüstünde sistem araçları kısayolu simgesi | ❌ Kapalı |
+| **Kısayol oku** | Kısayol simgelerindeki ok işareti | ❌ Kapalı |
+| **Simge etiketleri için gölgeler** | Simge yazılarının altında gölge | ✅ Açık |
+| **Masaüstünü Göster** | Sağ alt köşeye tıklayınca pencereleri gizle | ✅ Açık |
+| **Başlık çubuğu penceresi salla** | Pencere sallayınca diğerlerini küçült (Aero Shake) | ❌ Kapalı |
+| **Klasik içerik menüsü** | Windows 10 tarzı sağ tık menüsü | ❌ Kapalı |
+| **Duvar kağıdı kalitesi** | Arka plan görüntü sıkıştırma (kaydırıcı) | Maksimum |
 
-### Dosya Gezgini Görünüm ve İşlevsellik Kontrolü
+---
 
-WinToys’un Dosya Gezgini bölümü, dosya yönetimi deneyiminizi tam olarak özelleştirmenizi sağlar:
+### 📱 Başlat Menüsü
 
-| Ayar | Açıklama | Fayda |
-| --- | --- | --- |
-| **📄 Dosya uzantısını göster** | Dosya uzantılarını görünür hale getirerek .pdf, .exe, .md gibi uzantıları dosya adlarının sonunda görmenizi sağlar.” | Güvenlik artışı, dosya türü tanıma |
-| **👁️ Gizli öğeleri ve sistem öğelerini göster** | Windows tarafından gizlenen sistem dosyalarını ve klasörlerini görüntüler | Gelişmiş sistem kontrolü |
-| **📂 Çıkarma işlemi tamamlandıktan sonra dosyaları göster** | Arşiv çıkarma işlemi bittikten sonra hedef klasörü otomatik açar | Kullanılabilirlik artışı |
-| **🎨 Klasik Arayüz** | Eski Windows Dosya Gezgini görünümünü kullanır | Nostalji, bazı durumlarda hız |
-| **📋 Dosyalar için önizleme bölmesini göster** | Seçili dosyanın önizlemesini sağ panelde gösterir | Hızlı dosya görüntüleme |
-| **🗑️ Gezinti bölmesinde geri dönüşüm kutusunu göster** | Sol panelde çöp kutusu kısayolu görüntüler | Hızlı çöp kutusu erişimi |
-| **🏠 Giriş** | Dosya Gezgini açılış sayfasını “Seçtiğiniz” yere“Giriş” yapar | Hızlı erişim dosyaları |
-| **🖼️ Galeri** | Görsel dosyalar için gelişmiş galeri görünümü | Resim/video yönetimi |
-| **☑️ Öğeleri seçmek için onay kutularını kullanın** | Dosya seçimi için onay kutuları ekler | Çoklu seçim kolaylığı |
-| **🔄 Sağlayıcı bildirimlerini eşitle** | Bulut depolama senkronizasyon bildirimleri | Senkronizasyon durumu takibi |
-| ↗️Şununla Aç  | Dosya Gezgini başlatıldığında açılacak varsayılan konumu seçin: Bu Bilgisayar, Giriş veya İndirilenler. | İstenilen bölüme hızlı erişim |
+Başlat araması, Store önerileri ve güç menüsü.
 
-## 🛡️ Gizlilik (Privacy)
+| Ayar | Ne işe yarar | Benim ayarım |
+| ---- | ------------ | ------------ |
+| **Arama yaparken web sonuçlarını dahil et** | Başlat aramasında Bing sonuçları | ❌ Kapalı |
+| **Otomatik yükleme önerileri** | Store uygulama önerileri | ❌ Kapalı |
+| **Hesap bildirimleri** | Microsoft hesabı bildirimleri | ❌ Kapalı |
+| **Güç menüsünde hazırda bekletme modunu göster** | Kapat menüsünde Hibernate seçeneği | ❌ Kapalı |
 
-### Kapsamlı Gizlilik ve Telemetri Kontrolü
+> 💡 Bing aramasını kapatmak Başlat menüsünü hızlandırır ve yerel sonuçlara odaklanır.
 
-WinToys’un Gizlilik bölümü, Windows’un veri toplama ve paylaşma davranışını detaylı şekilde kontrol etmenizi sağlar:
+---
 
-| Ayar | Açıklama |
-| --- | --- |
-| **👤 Konum** | Microsoftun konum verilerinize erişimi |
-| **📡 Telemetri** | Microsoft’a tanılama ve kullanım verisi gönderimi |
-| **📊 Müşteri Deneyimini Geliştirme Programı** | Windows Customer Experience Improvement Program |
-| **📈 Uygulama telemetrisi** | Uygulamaların kullanım verisi toplama |
-| **🚀 Uygulama izlemeyi başlat** | Başlangıç uygulamalarının izlenmesi |
-| **✍️ Çizim oluşturmayı ve yazmayı geliştirin** | El yazısı ve klavye öğrenme |
-| **📝 Çizim oluşturmayı ve yazmayı kişiselleştirin** | Kişisel yazım verisi toplama |
-| **❌ Hata raporlama** | Windows Error Reporting servisi |
-| **📷 Kilit ekranında kamera** | Kilit ekranı kamera erişimi |
-| **📸 Kamera açma/kapama göstergesi** | Kamera kullanım bildirimi |
-| **💬 Çevrimiçi konuşma tanıma** | Online speech recognition |
+### 📁 Dosya Gezgini
 
-## 📢 Reklamlar (Advertisements)
+Dosya görünümü, gizli dosyalar ve açılış konumu.
 
-Ürünleri veya yeni özellikleri tanıtan içeriği görüntüleyebilecek reklamlarla ilgili ayarları değiştirin
+| Ayar | Ne işe yarar | Benim ayarım |
+| ---- | ------------ | ------------ |
+| **Dosya uzantısını göster** | `.exe`, `.pdf` gibi uzantıları gösterir | ✅ Açık |
+| **Gizli öğeleri ve sistem öğelerini göster** | Gizli dosya ve klasörleri listeler | ✅ Açık |
+| **Çıkarma işlemi tamamlandıktan sonra dosyaları göster** | ZIP çıkarınca hedef klasörü açar | ❌ Kapalı |
+| **Klasik Arayüz** | Eski Explorer görünümü | ❌ Kapalı |
+| **Dosyalar için önizleme bölmesini göster** | Sağ panelde dosya önizlemesi | ❌ Kapalı |
+| **Gezinti bölmesinde geri dönüşüm kutusunu göster** | Sol panelde çöp kutusu kısayolu | ✅ Açık |
+| **Giriş** | Explorer açılış sayfası olarak Giriş | ❌ Kapalı |
+| **Galeri** | Fotoğraf/video galeri görünümü | ❌ Kapalı |
+| **Öğeleri seçmek için onay kutularını kullanın** | Dosya seçiminde checkbox | ❌ Kapalı |
+| **Sağlayıcı bildirimlerini eşitle** | OneDrive vb. senkron bildirimleri | ✅ Açık |
+| **Şununla Aç** | Explorer ilk açıldığında gidilecek yer | **Bu bilgisayar** |
 
-| **Öğe** | **Açıklama** |
-| --- | --- |
-| **Kişiye Özel Deneyimler** | Microsoft’un ürünleri kullanım alışkanlıklarınıza göre kişiselleştirilmiş öneriler sunmasını sağlar. |
-| **Reklam Kimliği** | Uygulamaların size özel reklamlar gösterebilmesi için kullanılan benzersiz kimliği etkinleştirir veya devre dışı bırakır. |
-| **Ayarlarda Önerilen İçerik** | Ayarlar menüsünde Microsoft’un önerdiği içeriklerin (ipuçları, ürünler vb.) gösterilip gösterilmeyeceğini belirler. |
-| **Ayarlarda Ana Sayfa** | Ayarlar uygulaması açıldığında varsayılan olarak ana sayfanın gösterilip gösterilmeyeceğini belirler. |
-| **Önerilen Bildirimler** | Windows’un öneri, güncelleme ve tavsiye bildirimlerini gösterip göstermeyeceğini ayarlamanızı sağlar. |
-| **Kilit Ekranıyla İlgili Eğlenceli İçerikler, İpuçları ve Püf Noktaları** | Kilit ekranında haberler, ipuçları veya önerilen içeriklerin gösterilip gösterilmeyeceğini ayarlamanızı sağlar. |
-| **Windows İpuçları ve Önerileri** | Windows kullanımı hakkında yardımcı olabilecek öneri ve ipuçlarının gösterilmesini sağlar. |
-| **Windows’a Hoş Geldiniz Deneyimi** | Yeni güncellemeler veya hesap oturumları sonrası tanıtım içeriklerinin gösterilmesini sağlar. |
-| **Cihazınızın Kurulumunu Tamamlayın** | Yeni bir cihaz kurulumunda yapılması gereken ek adımlar için hatırlatmalar sağlar. |
+> 💡 **Dosya uzantısı** açık tutmak sahte `.pdf.exe` gibi tuzak dosyaları fark etmeyi kolaylaştırır.
 
-## ⚙️ Sistem (System)
+---
 
-### Gelişmiş Sistem Davranışı ve Performans Ayarları
+### 🛡️ Gizlilik
 
-WinToys’un Sistem bölümü, Windows’un temel işleyişini optimize etmek için kritik ayarlar sunar: İşinizi kolaylaştırabilecek sistemle ilgili ayarları değiştirin
+Microsoft'a giden kullanım ve tanılama verileri.
 
-| Ayar | Açıklama |
-| --- | --- |
-| **🕒 Saniye cinsinden saat** | Görev çubuğu saatinde saniye gösterimini ekler |
-| **📵 Görevi sonlandır** | Sağ tık menüsüne “Görevi Sonlandır” seçeneği ekler |
-| **📋 Pano geçmişi** | Windows+V ile clipboard geçmişi erişimi |
-| **📸 Ekran Yazdırma tuşuyla ekran görüntüsü alma** | Print Screen tuşu ile ekran görüntüsü almanızı sağlar |
-| **🐭 Fare hızlandırma** | Mouse acceleration/pointer precision ayarı |
-| **🔔 Geri Bildirim Hatırlatmaları** | Windows feedback reminder bildirimleri |
-| **🔄 Alt+Tab İçeriği** | Alt+Tab’da hangi içeriklerin gösterileceği |
-| **📅 Dijital Pazarlar Yasası** | EU Digital Markets Act compliance ayarları |
+| Ayar | Ne işe yarar | Benim ayarım |
+| ---- | ------------ | ------------ |
+| **Konum** | Konum verisi paylaşımı | ❌ Kapalı |
+| **Telemetri** | Tanılama ve kullanım verisi | ❌ Kapalı |
+| **Müşteri Deneyimini Geliştirme Programı** | Anonim kullanım istatistikleri (CEIP) | ✅ Açık |
+| **Uygulama telemetrisi** | Store uygulamalarından veri | ❌ Kapalı |
+| **Uygulama izlemeyi başlat** | Başlangıç uygulaması izleme | ❌ Kapalı |
+| **Çizim oluşturmayı ve yazmayı geliştirin** | El yazısı/klavye iyileştirme verisi | ❌ Kapalı |
+| **Çizim oluşturmayı ve yazmayı kişiselleştirin** | Kişisel yazım profili | ❌ Kapalı |
+| **Hata raporlama** | Windows Error Reporting | ✅ Açık |
+| **Kilit ekranında kamera** | Kilit ekranından kamera erişimi | ❌ Kapalı |
+| **Kamera açma/kapama göstergesi** | Kamera kullanım bildirimi | ❌ Kapalı |
+| **Çevrimiçi konuşma tanıma** | Bulut tabanlı ses tanıma | ❌ Kapalı |
 
-### Sistem Ayarları Detaylı Analizi
+---
 
-### Prodüktivite Artırıcı Ayarlar
+### 📢 Reklamlar
 
-1. **📋 Pano geçmişi**:
-    - **Fayda**: Son 25 kopyalanan öğeye erişim
-    - **Kullanım**: Windows+V kısayolu
-2. **📸 Print Screen → Snipping Tool**:
-    - **Fayda**: Modern ekran görüntüsü deneyimi
-    - **Özellikler**: Düzenleme, annotation, otomatik kaydetme
-3. **📵 Görevi sonlandır**:
-    - **Fayda**: Donmuş uygulamaları hızla kapatma
-    - **Kullanım**: Sağ tık → “Görevi Sonlandır”
+Windows içi öneri, ipucu ve tanıtım içerikleri — hepsi kapalı.
 
-## 🔐 Yetkili Kullanıcı
+| Ayar | Ne işe yarar | Benim ayarım |
+| ---- | ------------ | ------------ |
+| **Kişiye Özel Deneyimler** | Kullanıma göre kişiselleştirilmiş öneriler | ❌ Kapalı |
+| **Reklam Kimliği** | Uygulamalara özel reklam kimliği | ❌ Kapalı |
+| **Ayarlarda önerilen içerik** | Ayarlar uygulamasında Microsoft önerileri | ❌ Kapalı |
+| **Ayarlarda ana sayfa** | Ayarlar açılışında öneri sayfası | ❌ Kapalı |
+| **Önerilen bildirimler** | İpucu ve tavsiye bildirimleri | ❌ Kapalı |
+| **Kilit ekranı ipuçları** | Kilit ekranında haber/ipucu | ❌ Kapalı |
+| **Windows ipuçları ve önerileri** | Sistem geneli ipuçları | ❌ Kapalı |
+| **Windows'a hoş geldiniz deneyimi** | Güncelleme/oturum sonrası tanıtım | ❌ Kapalı |
+| **Cihazınızın kurulumunu tamamlayın** | Kurulum hatırlatmaları | ❌ Kapalı |
 
-### ⚠️ Güvenlik Açığı Riski Oluşturabilecek Gelişmiş Ayarlar
+> 💡 Reklam bölümünü tamamen kapatmak Windows deneyimini sadeleştirir; güncelleme bildirimleri Ayarlar → Windows Update'ten gelmeye devam eder.
 
-WinToys’un Yetkili Kullanıcı bölümü, sistem güvenliğini etkileyebilecek kritik ayarlar içerir. Bu ayarlar sadece deneyimli kullanıcılar tarafından dikkatli şekilde kullanılmalıdır:
+---
 
-| Ayar | Açıklama | Kullanım Amacı |
-| --- | --- | --- |
-| **⚠️ God Mode(Tanrı Modu)** | Tüm Windows ayarlarına erişim sağlayan  | Gelişmiş sistem yönetimi |
-| **👨‍💻 Geliştirici Modu** | Windows Geliştirici Modu aktivasyonu | Uygulama geliştirme, yan yükleme |
-| **👤 Kullanıcı Hesabı Denetimi** | UAC (User Account Control) seviyesi | Sistem güvenlik kontrolü |
-| **🛡️ Kullanıcı seçimi koruma sürücüsü** | Windows Defender Credential Guard | Kimlik bilgisi koruması |
+### ⚙️ Sistem
+
+Günlük kullanımı hızlandıran sistem davranışları.
+
+| Ayar | Ne işe yarar | Benim ayarım |
+| ---- | ------------ | ------------ |
+| **Saniye cinsinden saat** | Görev çubuğu saatinde saniye | ❌ Kapalı |
+| **Görevi sonlandır** | Görev çubuğu sağ tık → Görevi sonlandır | ✅ Açık |
+| **Pano geçmişi** | `Win + V` ile pano geçmişi | ✅ Açık |
+| **Ekran Yazdırma tuşuyla ekran görüntüsü alma** | Print Screen → Ekran Alıntısı Aracı | ✅ Açık |
+| **Fare hızlandırma** | İşaretçi hassasiyeti (mouse acceleration) | ✅ Açık |
+| **Num Lock varsayılan olarak açık** | Açılışta Num Lock açık | ✅ Açık |
+| **Geri Bildirim Hatırlatmaları** | Windows geri bildirim bildirimleri | ❌ Kapalı |
+| **Alt+Tab İçeriği** | Alt+Tab'da gösterilecek pencere sayısı | **En yeni 5 sekme** |
+| **Dijital Pazarlar Yasası** | AB DMA uyumluluk seçenekleri | ❌ Kapalı |
+
+---
+
+### 🔐 Yetkili Kullanıcı
+
+Güvenlik riski taşıyabilecek gelişmiş ayarlar — dikkatli kullan.
+
+| Ayar | Ne işe yarar | Benim ayarım |
+| ---- | ------------ | ------------ |
+| **Tam Hakimiyet Modu (God Mode)** | Tüm Windows ayarlarına tek klasörden erişim | ❌ Kapalı |
+| **Geliştirici Modu** | Yan yükleme, geliştirici araçları | ❌ Kapalı |
+| **Kullanıcı Hesabı Denetimi (UAC)** | Yönetici izni uyarı seviyesi | **Yalnızca değişikliklerde (soluk)** |
+| **Kullanıcı seçimi koruma sürücüsü** | Varsayılan uygulama tercihlerini korur | ✅ Açık |
+
+**Spotlight resimleri** — Kilit ekranındaki Windows Spotlight görsellerini klasöre **Çıkart** ile dışa aktarabilirsin.
+
+> ⚠️ **God Mode** ve **Geliştirici Modu** güvenlik yüzeyini genişletir; günlük kullanımda kapalı tutmanı öneririm. UAC'yı tamamen kapatma.
+
+---
+
+## ⚠️ Bilinen Sorunlar ve Çözümleri
+
+| Sorun | Neden Olur | Çözüm |
+| ----- | ---------- | ----- |
+| Uygulama/servis listesi boş veya eksik | Yetersiz izin | WinToys'u yönetici olarak çalıştır; uygulamayı kapatıp tekrar aç |
+| Uygulama kaldırılamıyor | Store vs Win32 farkı | Sarı/mavi renk koduna dikkat et; ⋯ → **Kaldır** dene |
+| Sistem yavaşladı veya özellik bozuldu | Yanlış kapatılan hizmet | Hizmeti **Başlat** ile geri aç; gerekirse Sistem Geri Yükleme |
+| İzin / erişim hatası | Registry veya sistem koruması | Yönetici olarak çalıştır; antivirüs engelini kontrol et |
+
+---
+
+## 🔗 Faydalı Bağlantılar
+
+- 🌐 [Resmi Web Sitesi](https://bogdan-patraucean.github.io/about/wintoys/)
+- 💾 [GitHub Releases](https://github.com/bogdandonduk/WinToys/releases)
+- 📖 [Changelog](https://bogdan-patraucean.github.io/about/wintoys/changelog.html)
+- ❓ [SSS](https://bogdan-patraucean.github.io/about/wintoys/faq.html)
+- 🏪 [Microsoft Store](https://apps.microsoft.com/detail/9P8LTPGCBZXD)
+
+---
+
+## 📝 Notlar
+
+> WinToys'ta 6 sekme vardır (Giriş, Uygulamalar, Hizmetler, Performans, Sağlık, İnce Ayarlar) — hepsi bu rehberde anlatılır. Hizmet, performans, onarım ve ince ayarlarda acele etme; her seçeneğin üzerine gelince açıklama tooltip'i görünür. İnce Ayarlar bölümündeki **Benim ayarım** sütunu kişisel kurulumu yansıtır.
+
+---
+
+## ⚠️ Sorumluluk Reddi
+
+Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar ve eklentiler:
+
+- **Kendi sorumluluğunuzda kullanın**: Uygulamaların sisteminizde neden olabileceği herhangi bir sorun, veri kaybı veya sistem hasarından sorumlu değiliz
+- **Resmi kaynaklardan indirin**: Mutlaka uygulamaları resmi web sitelerinden veya güvenilir kaynaklardan indirin
+- **Güncellik garantisi yoktur**: Uygulama bilgileri zaman içinde güncelliğini yitirebilir
+- **Virüs/malware kontrolü yapın**: İndirdiğiniz dosyaları güvenlik yazılımınızla tarayın
+- **Sistem yedeklemesi alın**: Önemli verilerinizi yedeklemeden yeni yazılım kurmayın
+- **Lisans koşullarına dikkat edin**: Her uygulamanın kendi lisans koşulları vardır
+- **Kişisel veri güvenliği**: Uygulamaların gizlilik politikalarını inceleyin
+
+**Kullanım öncesi mutlaka araştırma yapın ve bu uygulamaları kendi riskinizle kullanın.**
+
+---
+
+*Son güncelleme: 2026-05-25*
