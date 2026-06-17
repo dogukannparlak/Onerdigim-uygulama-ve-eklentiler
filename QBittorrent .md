@@ -102,7 +102,7 @@ winget install qBittorrent.qBittorrent
 
 ## 📝 Notlar
 
-> BitTorrent yasal içerikler (Linux ISO, açık kaynak yazılımlar vb.) için kullanılabilir; telif hakkı ihlali yasal sorumluluk doğurur. P2P ağında IP adresin görünür - VPN kullanımı gizlilik tercihinize bağlıdır. Yalnızca güvendiğin kaynaklardan torrent indir.
+> BitTorrent yasal içerikler (işletim sistemi ISO'ları, açık kaynak yazılımlar vb.) için kullanılabilir; telif hakkı ihlali yasal sorumluluk doğurur. P2P ağında IP adresin görünür - VPN kullanımı gizlilik tercihinize bağlıdır. Yalnızca güvendiğin kaynaklardan torrent indir.
 
 ---
 

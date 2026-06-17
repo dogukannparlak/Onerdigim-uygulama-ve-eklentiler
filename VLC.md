@@ -2,7 +2,7 @@
 
 > **Kısa Açıklama:** Neredeyse tüm video ve ses formatlarını ek codec paketi gerektirmeden oynatan ücretsiz medya oynatıcısı.
 
-Güncel · Windows/macOS/Linux/Android · Ücretsiz / açık kaynak · Medya
+Güncel · Windows / Android · Ücretsiz / açık kaynak · Medya
 
 ---
 
@@ -18,7 +18,7 @@ VLC, VideoLAN tarafından geliştirilen evrensel bir medya oynatıcısıdır. MP
 - **Altyazı desteği** - SRT, ASS ve diğer formatlar
 - **Dönüştürme** - Video/ses formatı değiştirme
 - **Ağ akışı** - URL ile çevrimiçi video oynatma
-- **Platformlar arası** - Windows, macOS, Linux, Android, iOS
+- **Platformlar arası** - Windows, Android, iOS
 - **Ücretsiz** - Reklamsız, açık kaynak
 
 ---

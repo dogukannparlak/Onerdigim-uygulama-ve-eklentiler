@@ -8,7 +8,7 @@ Windows · Chrome / Edge / Brave · Ücretsiz seçenekler ağırlıklı · Bilgi
 
 ## Genel Bakış
 
-Bu repository, kişisel kullanım için seçtiğim uygulama ve eklentilerin son kullanıcı rehberlerini içerir. Her rehberde kurulum yöntemleri, önerilen ayarlar, temel kullanım ve bilinen sorunlar yer alır; mümkün olduğunca resmi kaynaklara yönlendirilir.
+Bu repository, kişisel kullanım için seçtiğim uygulama ve eklentilerin son kullanıcı rehberlerini içerir. Rehberler **Windows odaklıdır**; kurulum ve ayar adımları Windows 10/11 için yazılır. Her rehberde kurulum yöntemleri, önerilen ayarlar, temel kullanım ve bilinen sorunlar yer alır; mümkün olduğunca resmi kaynaklara yönlendirilir.
 
 
 | Koleksiyon             | İçerik                 |
@@ -44,6 +44,7 @@ Onerdigim-uygulama-ve-eklentiler/
 │   ├── Web Araçları/
 │   └── README.md
 │
+├── TEMPLATE.md
 └── README.md
 ```
 
@@ -258,4 +259,4 @@ Bu repository yalnızca bilgilendirme amaçlıdır. Burada önerilen uygulamalar
 
 ---
 
-*Son güncelleme: 2026-05-24*
+*Son güncelleme: 2026-06-18*

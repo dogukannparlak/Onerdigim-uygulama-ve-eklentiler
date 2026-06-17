@@ -2,7 +2,7 @@
 
 > **Kısa Açıklama:** Gizlilik odaklı Chromium tabanlı tarayıcı; yerleşik reklam/izleyici engelleme, parmak izi koruması ve cihazlar arası şifreli senkronizasyon.
 
-Güncel · Windows/macOS/Linux/Android/iOS · Ücretsiz (Premium: VPN, Talk) · Tarayıcı
+Güncel · Windows / Android / iOS · Ücretsiz (Premium: VPN, Talk) · Tarayıcı
 
 ---
 

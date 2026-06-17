@@ -2,7 +2,7 @@
 
 > **Kısa Açıklama:** Yüksek sıkıştırma oranı ve geniş format desteği sunan ücretsiz, açık kaynaklı dosya arşivleyici.
 
-Güncel · Windows, Linux, macOS · Açık kaynak (LGPL) · Sistem Araçları
+Güncel · Windows · Açık kaynak (LGPL) · Sistem Araçları
 
 ---
 

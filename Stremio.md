@@ -2,7 +2,7 @@
 
 > **Kısa Açıklama:** Film, dizi ve canlı yayın içeriklerini eklentilerle tek arayüzde toplayan modern medya merkezi.
 
-4.4.x · Windows/macOS/Linux/Android · Ücretsiz · Medya / Streaming
+4.4.x · Windows / Android · Ücretsiz · Medya / Streaming
 
 ---
 
