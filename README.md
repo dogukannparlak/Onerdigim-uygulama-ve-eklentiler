@@ -4,6 +4,8 @@
 
 Windows · Chrome / Edge / Brave · Ücretsiz seçenekler ağırlıklı · Bilgilendirme amaçlı
 
+> **macOS kullanıcısı mısın?** Aynı koleksiyonun macOS rehberleri: [Önerdiğim Uygulama ve Eklentiler — macOS](https://github.com/dogukannparlak/Onerdigim-uygulama-ve-eklentiler-macos)
+
 ---
 
 ## Genel Bakış
